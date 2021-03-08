@@ -13,14 +13,12 @@ int main() {
 		cin >> num_ejercicios;
 	} while (num_ejercicios <= 0);
 	
-	fichero << "\t\\begin{enumerate}\n";
-	
 	for (int i=0; i<num_ejercicios; i++) {
 		string nombre_ejercicio = "ejercicio-" + to_string(i+1) + ".tex";
-		fichero << "\t\t \\item \\input{" << nombre_ejercicio << "}" << endl;
+		fichero << "\t\\section{Problema " << i+1 << "} \\\\" << endl;
+		fichero << "\t\\input{" << nombre_ejercicio << "} \\\\";
+		fichero << endl << endl;
 	}
-	
-	fichero << "\t\\end{enumerate}\n";
 	
 	cout << "\nFichero creado con exito." << endl;
 	
