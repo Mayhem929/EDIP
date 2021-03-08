@@ -1,0 +1,88 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\usepackage[a4paper,bindingoffset=0.2in,%
+left=1in,right=1in,top=1in,bottom=1in,%
+footskip=.25in]{geometry}
+
+\begin{document}
+	
+\title{Relaciones de Ejercicios Cálculo II}
+\author{Adrián Jaén Fuentes}
+\date{\today}
+\maketitle	
+\tableofcontents
+
+\newpage
+
+\section{Relación 1}
+
+\begin{center}
+	\textsc{{\Large Ejercicio 1}}\\
+\end{center}
+
+
+Estudiar la derivabilidad de la función $f: A \rightarrow \mathbb{R}$, en cada uno de los siguientes casos:
+
+\begin{enumerate}
+	\item[a)] $A = [-1,1] $ y $f(x)=\sqrt{1-x^{2}}$
+	\item[b)] $A = \mathbb{R} $ y $f(x)=\sqrt[3]{|x|}$
+	\item[c)] $A = \mathbb{R} $ y $f(x)=\dfrac{2x}{1+|x|}$
+	\item[d)] $A = \mathbb{R}_0^{+} $ y $f(x)=\sqrt{x^{x}}$ si $x \in \mathbb{R}^{+} $ y $f(0) = 0$\\
+\end{enumerate}
+
+\begin{center}
+	{\Large Solución}\\
+\end{center}
+
+\begin{enumerate}
+	\item[a)] Empecemos estudiando la continuidad de $f$. Para que la función sea continua en el dominio el argumento ha de ser mayor o igual a 0: \\
+	\begin{center}
+		$1-x^{2} \geq 0 \leftrightarrow x^{2} \leq 1 \leftrightarrow x \in [-1,1]$
+	\end{center}
+	Por tanto $f$ es continua en A. Comprobemos ahora su derivabilidad. Para ello obtengamos su derivada:
+	\begin{center}
+		$f'(x)=\dfrac{-2x}{2\sqrt{1-x^{2}}}$
+	\end{center}
+	Podemos ver fácilmente que el dominio de esta función será
+	$Domf'(x) = Dom(\sqrt{1-x^{2}}) \backslash \{0\}$
+	\begin{center}
+		$1-x^{2} > 0 \leftrightarrow x^{2} < 1 \leftrightarrow x \in (-1,1)$
+	\end{center}
+	Por tanto la función $f(x)$ es derivable en $(-1, 1)$
+	
+	\item[b)] Veamos la continuidad de $f$. Dividamos el valor absoluto.
+	
+	\begin{center}
+		$f(x) = $ 
+		$\left\lbrace
+		\begin{array}{rcl}
+			\sqrt[3]{-x} \quad  x < 0
+		\\
+		\\  \sqrt[3]{x} \quad x \geq 0
+		\end{array}
+		\right.$ \\ 
+	\end{center}
+	Como la raíz cúbica es continua en todo $\mathbb{R}$ y $f_-(0) = f_+(0) = f(0) = 0$, $f$ es continua en todo $\mathbb{R}$. Veamos ahora si es derivable. Tomemos su derivada:
+	
+	\begin{center}
+		$f'(x) = $ 
+		$\left\lbrace
+		\begin{array}{rcl}
+		   \dfrac{-1}{3\sqrt[3]{x^{2}}} \quad  x < 0
+		\\
+		\\ \dfrac{1}{3\sqrt[3]{x^{2}}} \quad x \geq 0
+		\end{array}
+		\right.$
+	\end{center}
+	Podemos ver que existe la derivada en $\mathbb{R} \backslash \{0\}$, sin embargo, $f'(x)$ no está definida en x = 0 por lo que $f$ no es derivable en su dominio.
+ 
+\end{enumerate}
+	
+\end{document}
