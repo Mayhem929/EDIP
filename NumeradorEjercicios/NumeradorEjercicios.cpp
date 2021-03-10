@@ -13,12 +13,18 @@ int main() {
 		cin >> num_ejercicios;
 	} while (num_ejercicios <= 0);
 	
+	fichero << "%CUERPO" << endl;
+	
+	fichero << "\\begin{document}" << endl << endl;
+	
 	for (int i=0; i<num_ejercicios; i++) {
 		string nombre_ejercicio = "ejercicio-" + to_string(i+1) + ".tex";
-		fichero << "\t\\section{Problema " << i+1 << "} \\\\" << endl;
-		fichero << "\t\\input{" << nombre_ejercicio << "} \\\\";
+		fichero << "\t\\section{Problema " << i+1 << "}" << endl;
+		fichero << "\t\\input{" << nombre_ejercicio << "}";
 		fichero << endl << endl;
 	}
+	
+	fichero << "\\end{document}" << endl;
 	
 	cout << "\nFichero creado con exito." << endl;
 	
