@@ -1,0 +1,85 @@
+Escribamos las tablas con los datos que nos pueden interesar para la resolución del ejercicio: \\
+
+\begin{tabular}{| c | c | c | c |}
+	\hline
+	$I_i^{(1)}$ & $c_i^{(1)}$ & $n_i^{(1)}$ & $N_i^{(1)}$ \\ \hline
+	$(0, 1]$ & $0.5$ & $12$ & $12$ \\
+	$(1, 2]$ & $1.5$ & $13$ & $25$ \\
+	$(2, 3]$ & $2.5$ & $11$ & $36$ \\
+	$(3, 4]$ & $3.5$ & $8$ & $44$ \\
+	$(4, 5]$ & $4.5$ & $6$ & $50$ \\ \hline
+	
+\end{tabular} \\\\\\
+	
+\begin{tabular}{| c | c | c | c |}
+	\hline
+	$I_i^{(2)}$ & $c_i^{(2)}$ & $n_i^{(2)}$ & $N_i^{(2)}$ \\ \hline
+	$(0, 1]$ & $0.5$ & $1$ & $1$ \\
+	$(1, 3]$ & $2$ & $6$ & $7$ \\
+	$(3, 6]$ & $4.5$ & $7$ & $14$ \\
+	$(6, 10]$ & $8$ & $12$ & $26$ \\
+	$(10, 12]$ & $11$ & $2$ & $28$ \\ \hline
+
+\end{tabular}\\
+\\ 
+\\
+\textbf{Apartado a)}\\
+
+La media aritmética de una variable es la suma de sus valores entre en número total de observaciones. Como los datos están organizados en intervalos de clase, para calcular la media aritmética vamos a suponer que todos los datos de un intervalo son idénticos a la marca de clase de cada intervalo. Por tanto, la media la calculamos de la siguiente manera: 
+\begin{center}
+	$\overline{x} = \dfrac{1}{n}\sum_{i=1}^{k}n_i·c_i$
+\end{center}
+
+Para la primera distribución, $n = 50$, luego la media aritmética es 2.082. 
+
+Para la segunda, $n = 28$, luego la media aritmética será 5.786. \\
+
+
+La media armónica se usa para promediar datos de magnitudes relativas. La definimos como la inversa de la media aritmética de los valores inversos de la variable (en nuestro caso, usamos las marcas de clase):
+\begin{center}
+	$H = \dfrac{n}{\dfrac{n_1}{c_1}+\dfrac{n_2}{c_2}+ ...+\dfrac{n_k}{c_k}} = \dfrac{n}{\sum_{i=1}^{k}\dfrac{n_i}{c_i}}$
+\end{center}
+
+Para la primera distribución: H = 1.223.
+
+Para la segunda distribución: H = 3.399.  \\
+
+
+Finalmente la media geométrica se usa cuando se desea promediar datos de una variable que tiene efectos
+multiplicativos acumulativos en la evolución de una determinada característica con un
+valor inicial fijo.
+
+Es la raíz n-ésima del producto de los $n$ valores (o marcas de clase) de la distribución:
+
+\begin{center}
+	$G = \sqrt[n]{\prod_{i=1}^{k}c_i^{n_i}}$
+\end{center}
+
+Para no perder precisión en el resultado, la calcularemos sabiendo que el logaritmo de la media geométrica es la media aritmética de los logaritmos de los valores de la variable:
+
+\begin{center}
+	$\log G = \log \sqrt[n]{\prod_{i=1}^{k}c_i^{n_i}} = \dfrac{1}{n}\sum_{i=1}^{k}n_i \log c_i$
+\end{center}
+
+Para la primera distribución: G = 1.685.
+
+Para la segunda distribución: G = 1.562.  \\
+
+
+\textbf{Apartado b)}\\
+
+Se nos pide calcular la moda de las distribuciones, es decir, el valor  de mayor frecuencia: \\
+
+En el caso primero, este es el intervalo (1,2], luego tomamos su marca de clase como la moda: 1.5.
+
+En el segundo caso la moda proviene del intervalo (6, 10] luego será 8.\\
+
+\textbf{Apartado c)}\\
+
+Si miramos las frecuencias absolutas acumuladas tendremos que tomar la parte inferior del intervalo donde se encuentre $n/2$:
+
+Para la primera distrubución: $n/2 = 25$ luego el $50\%$ de la población supera el valor 2.
+
+Para la segunda distrubución: $n/2 = 14$ luego el $50\%$ de la población supera el valor 6.
+
+\textbf{Apartado d)}\\
