@@ -10,7 +10,7 @@ Escribamos las tablas con los datos que nos pueden interesar para la resolución
 	$(4, 5]$ & $4.5$ & $6$ & $50$ \\ \hline
 	
 \end{tabular} \\\\\\
-	
+
 \begin{tabular}{| c | c | c | c |}
 	\hline
 	$I_i^{(2)}$ & $c_i^{(2)}$ & $n_i^{(2)}$ & $N_i^{(2)}$ \\ \hline
@@ -19,7 +19,7 @@ Escribamos las tablas con los datos que nos pueden interesar para la resolución
 	$(3, 6]$ & $4.5$ & $7$ & $14$ \\
 	$(6, 10]$ & $8$ & $12$ & $26$ \\
 	$(10, 12]$ & $11$ & $2$ & $28$ \\ \hline
-
+	
 \end{tabular}\\
 \\ 
 \\
@@ -70,16 +70,60 @@ Para la segunda distribución: G = 1.562.  \\
 
 Se nos pide calcular la moda de las distribuciones, es decir, el valor  de mayor frecuencia: \\
 
-En el caso primero, este es el intervalo (1,2], luego tomamos su marca de clase como la moda: 1.5.
+En el caso primero, observamos que se encuentra en el intervalo (1,2], luego haremos un promedio teniendo en cuenta los intervalos contiguos. Para ello apliquemos el algoritmo suponiendo que es una distribución continua.
 
-En el segundo caso la moda proviene del intervalo (6, 10] luego será 8.\\
+\begin{center}
+	$M_O = e_{i-1} + \dfrac{h_i - h_{i-1}}{2h_i - h_{i-1} - h_{i+1}} (e_i - e_{i-1})$
+\end{center}
+
+Por tanto, la moda será: $M_O = 1.\overline{3}$.\\
+
+
+En el segundo caso la moda proviene del intervalo (6, 10] luego apliquemos el mismo método teniendo en cuenta que $e_{i-1} = 6, e_i=10, h_{i-1} = 7, h_i = 12, h_{i+1} = 2 $ \\ 
+$M_O = 7.\overline{3}$\\
+\\
 
 \textbf{Apartado c)}\\
 
-Si miramos las frecuencias absolutas acumuladas tendremos que tomar la parte inferior del intervalo donde se encuentre $n/2$:
+Para calcular la mediana hemos de observar las frecuencias absolutas acumuladas; tendremos que encontrar el punto que divida a la población en dos partes iguales, luego buscamos el punto bajo el que se encuentre la mitad de la población, es decir, $n/2$:\\
 
-Para la primera distrubución: $n/2 = 25$ luego el $50\%$ de la población supera el valor 2.
+Para la primera distribución: $n/2 = 25$ luego el $50\%$ de la población supera el valor 2.
 
-Para la segunda distrubución: $n/2 = 14$ luego el $50\%$ de la población supera el valor 6.
+Para la segunda distribución: $n/2 = 14$ luego el $50\%$ de la población supera el valor 6.\\
+\\
 
 \textbf{Apartado d)}\\
+
+\begin{enumerate}
+	\item Recorrido: Es la amplitud del intervalo en la que se mueven los valores de la variable, por tanto, se calcula restando el valor mas grande posible menos el más pequeño. Como en nuestro caso tenemos intervalos, cojamos los valores de las cotas: \\
+	Para la primera distribución será 5 y para la segunda será 12.
+	\item Recorrido intercuartílico: Para calcularlo necesitamos los cuartiles 1 y 3:
+	
+	\begin{center}
+		$Qk = e_{i-1} + \dfrac{\dfrac{n}{k} - N_{i-1}}{n_i}(e_i-e_{i-1})$
+	\end{center}
+	
+	Para la distribución 1 será $Q_1 = 1.038, Q_3 = 3.187; R_I = 2.1$
+	
+	Para la distribución 2 será $Q_1 = 3, Q_3 = 7.75; R_I = 4.75$\\
+	
+	\item Desviación típica: es una medida de dispersión, una medida de cómo los valores individuales de el conjunto pueden diferir de la media. Es la media de los valores absolutos de las distancias de cada uno de los valores de la variable a la media de la distribución. El valor absoluto se usa para evitar que las desviaciones de signo contrario se cancelan mutuamente. También se puede calcular como la raíz cuadrada positiva de la varianza.
+	\begin{center}
+		$\sigma^2 = \dfrac{1}{n} \sum_{i=1}^{n}(x_i-\overline{x})^2$
+	\end{center}
+	
+	Para la distribución 1 será $\sigma^2 = 1.75; \sigma = 1.323$
+	
+	Para la distribución 1 será $\sigma^2 = 4.64; \sigma = 2.154$\\
+	
+	
+	Para ver cuál es mas homogénea, calculemos el Coeficiente de variación de Pearson:
+	
+	$C.V._1 = \dfrac{1.323}{2.082}= 0.635$ \\
+	\\
+	\\
+	$C.V._2 = \dfrac{2.154}{5.786}= 0.372$
+	
+	La segunda distribución es más homogénea.
+	
+\end{enumerate}
