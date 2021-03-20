@@ -1,0 +1,103 @@
+Escribamos las tablas con los datos que nos pueden interesar para la resolución del ejercicio: \\
+
+\begin{tabular}{| c | c | c | c | c | c |}
+	\hline
+	$I_i$   & $n_i$ &$N_i$&$c_i$&$h_i$ & $n_i(x_i-\overline{x})^2$ \\ \hline
+	$(10, 30]$ & 15 & 15  & 20  & 0.75 & 12355.55\\
+	$(30, 40]$ & 22 & 37  & 35  & 2.2  & 4129.18 \\
+	$(40, 50]$ & 48 & 85  & 45  & 4.8  & 657.12  \\
+	$(50, 60]$ & 40 & 125 & 55  & 4    & 1587.6  \\
+	$(60, 90]$ & 25 & 150 & 75  & 0.833& 17292.25\\ \hline
+	           & 150&     &     &      & 36021.7 \\ \hline
+	
+\end{tabular} \\\\\\
+
+\textbf{Apartado a)}\\
+
+Se nos pide calcular la edad más común, luego buscamos la moda de la distribución. Dado que los intervalos son de diferente tamaño tenemos que calcular las densidades de frecuencia de cada intervalo. El mayor $h_i$ es 4.8 luego la moda está en el intervalo (40, 50]. Para calcularla tendremos que dibujar el histograma con el intervalo en cuestión y los dos contiguos. Unimos la esquina superior derecha del primer rectángulo con la del segundo, y la esquina superior izquierda del segundo con la del tercero. Ahora, aplicando semejanza de triángulos calculamos la intersección, con lo que obtenemos la moda.
+\begin{center}
+	$\dfrac{4.8-2.2}{4.8-4} = \dfrac{M_O-40}{50-M_O}; M_O = 47.647 \approx 48$ años
+\end{center}
+
+
+\textbf{Apartado b)}\\
+
+Se nos pide calcular el percentil 35 y el 65. Hay que buscar el intervalo asociado al valor inmediatamente superior a $n*p$ en la frecuencia absoluta acumulada. Después, se calcula aplicando semejanza de triángulos : \\
+
+
+\begin{center}
+	$n*0.35 = 52.5; N_i = 85; I_i = (40, 50]$\\
+	$\dfrac{52.5-37}{P_{35}-40} = \dfrac{85-37}{50-40} = 43.229
+	\approx 43$ años.
+\end{center}
+
+Luego la edad mínima será aproximadamente 43 años.
+
+\begin{center}
+	$n*0.65 = 97.5; N_i = 125 ; I_i = (50, 60]$\\
+	$\dfrac{97.5-85}{P_{65}-50} = \dfrac{125-85}{60-50} = 53.125
+	\approx 53$ años.
+\end{center}
+
+Por tanto, la edad máxima será aproximadamente 53 años.\\
+
+
+\textbf{Apartado c)}\\
+
+Para el recorrido intercuartílico necesitaremos los cuartiles 1 y 3, es decir, los percentiles 25 y 75. Procedemos de la misma manera que en el apartado anterior:\\ \\ 
+
+\begin{center}
+	$n*0.35 = 37.5\quad  N_i = 85\quad  I_i = (40, 50]$\\
+\end{center}
+
+\begin{center}
+	$\dfrac{37.5-37}{Q_{1}-40} = \dfrac{85-37}{50-40} = 40.104
+	\approx 40$ años.
+\end{center}
+
+\begin{center}
+	$n*0.75 = 112.5\quad  N_i = 125 \quad  I_i = (50, 60]$\\
+	
+\end{center}
+
+\begin{center}
+	$\dfrac{112.5-85}{Q_{3}-50} = \dfrac{125-85}{60-50} = 56.875
+	\approx 57$ años.
+\end{center}
+
+Por tanto el recorrido intercuartílico será $Q_3-Q_1 = 16.771 \approx 17$ años, lo que nos indica que el 50\% de la población central se encuentra en un intervalo de unos 17 años.\\
+
+Para la calcular la desviación típica necesitamos calcular la raíz cuadrada positiva de la varianza. Tenemos que calcular la media del área de los cuadrados de lado la diferencia de cada dato a la media. La media es 48.7. Escribamos los $n_i(x_i-\overline{x})^2$ en la tabla. La varianza será 240.144 años$^2$. Finalmente la desviación típica será 15.497.
+
+
+\textbf{Apartado d)}\\
+
+\begin{enumerate}
+	\item Coeficiente de asimetría de Fisher:
+	\begin{center}
+		$\gamma_1(X) = \dfrac{\mu_3}{\sigma_X^3} = \dfrac{1}{n} \sum_{i=1}^{n}n_i(\dfrac{x_i - \overline{x}}{\sigma_X})^3$
+	\end{center}
+
+
+	\item Coeficientes de asimetría de Pearson:
+	
+	\begin{center}
+		$A_p = \dfrac{\overline{x}- M_O}{\sigma_X}\qquad A_p^* = \dfrac{3(\overline{x}- M_e)}{\sigma_X}$
+	\end{center}
+
+	\item Coeficiente de curtosis de Fisher:
+	
+	\begin{center}
+		$\gamma_2(X) = \dfrac{\mu_4}{\sigma^4} - 3$
+	\end{center}
+	
+	\item Coeficiente de curtosis de Kelley:
+	
+	\begin{center}
+		$K = \dfrac{1}{2} \dfrac{Q_3 - Q_1}{D_9 - D_1}- 0,263$
+	\end{center}
+\end{enumerate}
+
+
+
+\end{document}
