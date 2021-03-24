@@ -1,7 +1,7 @@
 Para hacer todos los cálculos de este ejercicio usaremos la siguiente fórmula:
 
 \begin{gather}\tag{Percentil}
-    P_{r} = e_{i-1}+\frac{\frac{nr}{100}-N_{i-1}}{n_{i}}(e_{i}-e_{i-1})
+    P_{r} = e_{i-1}+\dfrac{\dfrac{nr}{100}-N_{i-1}}{n_{i}}(e_{i}-e_{i-1})
 \end{gather}
 
 Dónde $r$ es el percentil que queremos calcular, $n$ el tamaño de la población, $n_{i}$ la frecuencia absoluta, $N_{i}$ la frecuencia absoluta acumulada y $e_{i}$ es el final del intervalo $i$ donde encontramos a la cantidad de gente dentro del r\% de la población.
@@ -30,7 +30,7 @@ Calculamos $P_{3}$. Para ello primero veamos en qué intervalo se encuentra el 3
 \\
 \begin{center}
     \begin{*gather}
-        P_{3} = 1.55+\frac{\frac{110*3}{100}-0}{18}(1.6-1.55)=1.559m
+        P_{3} = 1.55+\dfrac{\dfrac{110*3}{100}-0}{18}(1.6-1.55)=1.559m
     \end{*gather}
 \end{center}
 
@@ -42,7 +42,7 @@ Nos encontramos en el mismo problema que en el apartado anterior, solo que ahora
 \\
 \begin{center}
     \begin{*gather}
-        P_{82} = 1.80+\frac{\frac{110*82}{100}-73}{20}(1.9-1.8)=1.886m
+        P_{82} = 1.80+\dfrac{\dfrac{110*82}{100}-73}{20}(1.9-1.8)=1.886m
     \end{*gather}
 \end{center}
 
@@ -54,7 +54,7 @@ En este caso nos pregunta qué altura es superada por el 25\% de la población, 
 \\
 \begin{center}
     \begin{*gather}
-        P_{75} = 1.80+\frac{\frac{110*75}{100}-73}{20}(1.9-1.8)=1.847m
+        P_{75} = 1.80+\dfrac{\dfrac{110*75}{100}-73}{20}(1.9-1.8)=1.847m
     \end{*gather}
 \end{center}
 
@@ -62,12 +62,12 @@ Deducimos que la altura superada únicamente por un cuarto de la población es 1
 
 d)Calcular el número de jóvenes cuya altura es superior a 1.75.
 
-En este apartado nos piden, a fin de cuentas, que hagamos el proceso contrario al que hemos estado haciendo en los apartados anteriores. Antes nos daban $r$ y ahora nos pedían $P_{r}$, ahora nos dan $P_{r}$ y debemos calcular $\frac{nr}{100}$. Para ello usamos la expresión del percentil y despejamos:
+En este apartado nos piden, a fin de cuentas, que hagamos el proceso contrario al que hemos estado haciendo en los apartados anteriores. Antes nos daban $r$ y ahora nos pedían $P_{r}$, ahora nos dan $P_{r}$ y debemos calcular $\dfrac{nr}{100}$. Para ello usamos la expresión del percentil y despejamos:
 \\
 \begin{center}
     \begin{*gather}
-        P_{r} = 1.75 = 1.70+\frac{\frac{110*r}{100}-49}{24}(1.80-1.70)\\
-        \frac{nr}{100} = 61\\
+        P_{r} = 1.75 = 1.70+\dfrac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
+        \dfrac{nr}{100} = 61\\
     \end{*gather}
 \end{center}
 
@@ -75,11 +75,11 @@ Como vemos, hay 61 jóvenes que miden 1.75 o menos, por tanto $110-61=49$ jóven
 
 e) Calcular la altura máxima de los 11 jóvenes más bajos.
 
-Primero, esos 11 jóvenes representan el $\frac{11}{110}=0.1$ por ciento de la población, por tanto, debemos calcular $D_{1} = P_{10}$. Sabemos que los 11 jóvenes más bajos están en el primer intervalo, por lo que $i=1$ y sustituimos:
+Primero, esos 11 jóvenes representan el $\dfrac{11}{110}=0.1$ por ciento de la población, por tanto, debemos calcular $D_{1} = P_{10}$. Sabemos que los 11 jóvenes más bajos están en el primer intervalo, por lo que $i=1$ y sustituimos:
 
 \begin{center}
     \begin{*gather}
-        P_{10} = 1.55+\frac{\frac{110*10}{100}-0}{18}(1.60-1.55)=1.581m
+        P_{10} = 1.55+\dfrac{\dfrac{110*10}{100}-0}{18}(1.60-1.55)=1.581m
     \end{*gather}
 \end{center}
 
@@ -91,7 +91,7 @@ En este apartado seguiremos el mismo procedimiento que en el apartado anterior. 
 
 \begin{center}
     \begin{*gather}
-        P_{90} = 1.90+\frac{\frac{110*90}{100}-93}{17}(2.00-1.90)=1.935m
+        P_{90} = 1.90+\dfrac{\dfrac{110*90}{100}-93}{17}(2.00-1.90)=1.935m
     \end{*gather}
 \end{center}
 
