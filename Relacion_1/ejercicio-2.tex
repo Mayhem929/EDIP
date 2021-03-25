@@ -1,17 +1,10 @@
-    Ejercicio 2. La puntuación obtenida por 50 personas que se presentaron a una prueba de selección, sumadas las puntuaciones de los distintos tests fueron: 
-    \\
-    \\
-    174, 185, 166, 176, 145, 166, 191, 175, 158, 156, 156, 187, 162, 172, 197, 181, 151,
-    161, 183, 172, 162, 147, 178, 176, 141, 170, 171, 158, 184, 173, 169, 162, 172, 181,
-    187, 177, 164, 171, 193, 183, 173, 179, 188, 179, 188, 179, 167, 178, 180, 168, 148, 173.
-    \\
-    \\
     POBLACIÓN: Las personas que se presentaron a la prueba de selección\\
     TAMAÑO: 50\\
     MODALIDADES: Los intervalos que contienen las notas que han obtenido las personas en la prueba
     
     \vspace{5mm}
-    a) Agrupar los datos en intervalos de amplitud 5 desde 140 a 200 y dar la tabla de frecuencias.
+    \subproblem
+    Agrupar los datos en intervalos de amplitud 5 desde 140 a 200 y dar la tabla de frecuencias.
     \\
     \begin{center}
     \begin{tabular}{| c | c | c | c | c |}
@@ -37,11 +30,12 @@
     
     Establecemos los intervalos de amplitud 5, empezando con 140 y terminando con 200. Para cada intervalo, contamos cuantas personas han obtenido una puntuación que esté dentro de dicho intervalo. Estas son las frecuencias absolutas ($n_i$). 
     Para la frecuencia absoluta acumulada ($N_i$), sumamos la frecuencia absoluta de la modalidad que estamos analizando a la frecuencia absoluta acumulada de la modalidad anterior. O lo que es lo mismo, sumamos las frecuencias absolutas de todas las modalidades hasta la que estamos analizando: $N_i=n_1 + n_2 + ... + n_i$. 
-    Para frecuencia relativa, dividimos cada $n_i$ entre n, es decir, entre $N_{12}$, la frecuencia absoluta acumulada de la última modalidad. 
+    Para frecuencia relativa, dividimos cada $n_i$ entre n, es decir, entre el número total de individuos de la población, la frecuencia absoluta acumulada de la última modalidad. 
     Para la frecuencia relativa acumulada hacemos lo mismo que para la absoluta acumulada pero con la frecuencia relativa: sumamos las frecuencias relativas de todas las modalidades hasta la que estamos analizando: $F_i=f_1 + f_2 + ... + f_i$. 
     
     \vspace{10mm}
-    b) Representar la distribución mediante un histograma, poligonal de frecuencias y curva de distribución.
+    \subproblem
+    Representar la distribución mediante un histograma, poligonal de frecuencias y curva de distribución.
     
     \begin{center}
     \begin{tikzpicture}
@@ -56,7 +50,7 @@
     \end{tikzpicture}
     \end{center}
     
-    Para el histograma, en el eje x tenemos las modalidades ($x_i$) y en el eje y un múltiplo de hi ($hi=\frac{fi}{a}$). En este caso, las amplitudes de todos los intervalos son iguales: 5. 
+    Para el histograma, en el eje X tenemos las modalidades ($x_i$) y en el eje Y un múltiplo de $h_{i}$ ($h_{i}=\frac{fi}{a}$). En este caso, las amplitudes de todos los intervalos son iguales: 5. 
     
     \vspace{5mm}
     \begin{center}
@@ -89,7 +83,7 @@
     \end{tikzpicture}
     \end{center}
     
-    Para el poligonal de frecuencias, los ejes son los mismos que para el histograma. En este caso, unimos los puntos que corresponden a las marcas de los intervalos en el histograma. Para hallar las marcas de los intervalos: $c_i=\frac{e_{i-1}+e_i}{2}$.
+    Para el poligonal de frecuencias, los ejes son los mismos que para el histograma. En este caso, unimos los puntos que corresponden a las marcas de clase de los intervalos en el histograma. Para hallar dichas marcas de los intervalos, aplicamos la siguiente expresión: $c_i=\frac{e_{i-1}+e_i}{2}$.
     
     \begin{center}
     \begin{tikzpicture}
@@ -115,4 +109,4 @@
     \end{tikzpicture}
     \end{center}
     
-    En la curva de distribución, en el eje x tenemos los extremos superiores de los intervalos $(e_i)$ y en el eje y, $F(e_i)$. Pintamos la curva que une los puntos tal que $F(e_i)=\displaystyle\sum_{j=1}^{i}f_{j}=F_i$. En este caso tenemos que la curva es continua. $F(e_i)$ es 0 para valores menores que $e_1$ y 1 para valores mayores que el último intervalo $e_k$.
+    En la curva de distribución, en el eje X tenemos los extremos superiores de los intervalos $(e_i)$ y en el eje Y, $F(e_i)$. Pintamos la curva que une los puntos tal que $F(e_i)=\displaystyle\sum_{j=1}^{i}f_{j}=F_i$. En este caso tenemos que la curva es continua. $F(e_i)$ es 0 para valores menores que $e_1$ y 1 para valores mayores que el último intervalo $e_k$.
