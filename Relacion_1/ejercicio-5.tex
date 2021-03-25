@@ -23,14 +23,15 @@ Escribamos las tablas con los datos que nos pueden interesar para la resolución
 \end{tabular}\\
 \\ 
 \\
-\textbf{Apartado a)}\\
+\subproblem
+Medias aritm{\'e}tica, arm{\'o}nica y geom{\'e}trica.
 
 La media aritmética de una variable es la suma de sus valores entre en número total de observaciones. Como los datos están organizados en intervalos de clase, para calcular la media aritmética vamos a suponer que todos los datos de un intervalo son idénticos a la marca de clase de cada intervalo. Por tanto, la media la calculamos de la siguiente manera: 
-\begin{center}
-	$\overline{x} = \dfrac{1}{n}\sum_{i=1}^{k}n_i·c_i$
-\end{center}
+	
+	$$\overline{x} = \dfrac{1}{n}\sum_{i=1}^{k}n_i·c_i$$
 
-Para la primera distribución, $n = 50$, luego la media aritmética es 2.082. 
+
+Para la primera distribución, $n = 50$, luego la media aritmética es $2.16$ u. 
 
 Para la segunda, $n = 28$, luego la media aritmética será 5.786. \\
 
@@ -40,9 +41,9 @@ La media armónica se usa para promediar datos de magnitudes relativas. La defin
 	$H = \dfrac{n}{\dfrac{n_1}{c_1}+\dfrac{n_2}{c_2}+ ...+\dfrac{n_k}{c_k}} = \dfrac{n}{\sum_{i=1}^{k}\dfrac{n_i}{c_i}}$
 \end{center}
 
-Para la primera distribución: H = 1.223.
+Para la primera distribución: H = 1.223 u.
 
-Para la segunda distribución: H = 3.399.  \\
+Para la segunda distribución: H = 3.399 u.  \\
 
 
 Finalmente la media geométrica se usa cuando se desea promediar datos de una variable que tiene efectos
@@ -61,16 +62,16 @@ Para no perder precisión en el resultado, la calcularemos sabiendo que el logar
 	$\log G = \log \sqrt[n]{\prod_{i=1}^{k}c_i^{n_i}} = \dfrac{1}{n}\sum_{i=1}^{k}n_i \log c_i$
 \end{center}
 
-Para la primera distribución: G = 1.685.
+Para la primera distribución: G = 1.685 u.
 
-Para la segunda distribución: G = 1.562.  \\
+Para la segunda distribución: G = 4,764 u.  \\
 
 
-\textbf{Apartado b)}\\
+\subproblem
 
 Se nos pide calcular la moda de las distribuciones, es decir, el valor  de mayor frecuencia: \\
 
-En el caso primero, observamos que se encuentra en el intervalo (1,2], luego haremos un promedio teniendo en cuenta los intervalos contiguos. Para ello apliquemos el algoritmo suponiendo que es una distribución continua.
+En el caso primero, observamos que se encuentra en el intervalo (1,2], luego haremos un promedio teniendo en cuenta los intervalos contiguos. Para ello apliquemos la interpolación lineal (pues estamos suponiendo que los datos están distribuidos uniformemente), además de suponer que es una distribución continua.
 
 \begin{center}
 	$M_O = e_{i-1} + \dfrac{h_i - h_{i-1}}{2h_i - h_{i-1} - h_{i+1}} (e_i - e_{i-1})$
@@ -83,21 +84,22 @@ En el segundo caso la moda proviene del intervalo (6, 10] luego apliquemos el mi
 $M_O = 7.\overline{3}$\\
 \\
 
-\textbf{Apartado c)}\\
+\subproblem
 
-Para calcular la mediana hemos de observar las frecuencias absolutas acumuladas; tendremos que encontrar el punto que divida a la población en dos partes iguales, luego buscamos el punto bajo el que se encuentre la mitad de la población, es decir, $n/2$:\\
+Para calcular la mediana hemos de observar las frecuencias absolutas acumuladas; tendremos que encontrar el punto que divida a la población en dos partes iguales, es decir, $n/2$:
 
 Para la primera distribución: $n/2 = 25$ luego el $50\%$ de la población supera el valor 2.
 
 Para la segunda distribución: $n/2 = 14$ luego el $50\%$ de la población supera el valor 6.\\
 \\
 
-\textbf{Apartado d)}\\
+\subproblem
 
 \begin{enumerate}
-	\item Recorrido: Es la amplitud del intervalo en la que se mueven los valores de la variable, por tanto, se calcula restando el valor mas grande posible menos el más pequeño. Como en nuestro caso tenemos intervalos, cojamos los valores de las cotas: \\
+	\item Recorrido: Es la amplitud del intervalo en la que se mueven los valores de la variable, por tanto, se calcula restando el valor mas grande posible menos el más pequeño. Como en nuestro caso tenemos intervalos, cojamos el extremo superior del último intervalo de clase y le restamos el extremo inferior del primer intervalo de clase:
+	
 	Para la primera distribución será 5 y para la segunda será 12.
-	\item Recorrido intercuartílico: Para calcularlo necesitamos los cuartiles 1 y 3:
+	\item Recorrido intercuartílico: Es la magnitud que indica la longitud del intervalo que contiene al $50\%$ central de los datos observados. Para calcularlo necesitamos los cuartiles 1 y 3:
 	
 	\begin{center}
 		$Qk = e_{i-1} + \dfrac{\dfrac{n}{k} - N_{i-1}}{n_i}(e_i-e_{i-1})$
@@ -107,7 +109,7 @@ Para la segunda distribución: $n/2 = 14$ luego el $50\%$ de la población super
 	
 	Para la distribución 2 será $Q_1 = 3, Q_3 = 7.75; R_I = 4.75$\\
 	
-	\item Desviación típica: es una medida de dispersión, una medida de cómo los valores individuales de el conjunto pueden diferir de la media. Es la media de los valores absolutos de las distancias de cada uno de los valores de la variable a la media de la distribución. El valor absoluto se usa para evitar que las desviaciones de signo contrario se cancelan mutuamente. También se puede calcular como la raíz cuadrada positiva de la varianza.
+	\item Desviación típica: es una medida de dispersión, una medida de cómo los valores individuales de el conjunto pueden diferir de la media. Es la raíz cuadrada de la media de las distancias al cuadrado de cada uno de los valores de la variable a la media de la distribución. También se puede calcular como la raíz cuadrada positiva de la varianza.
 	\begin{center}
 		$\sigma^2 = \dfrac{1}{n} \sum_{i=1}^{n}(x_i-\overline{x})^2$
 	\end{center}

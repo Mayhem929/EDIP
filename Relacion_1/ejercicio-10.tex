@@ -12,7 +12,7 @@ Escribamos las tablas con los datos que nos pueden interesar para la resolución
 	
 \end{tabular} \\\\\\
 
-\textbf{Apartado a)}\\
+\subproblem
 
 Se nos pide calcular la edad más común, luego buscamos la moda de la distribución. Dado que los intervalos son de diferente tamaño tenemos que calcular las densidades de frecuencia de cada intervalo. El mayor $h_i$ es 4.8 luego la moda está en el intervalo (40, 50]. Para calcularla tendremos que dibujar el histograma con el intervalo en cuestión y los dos contiguos. Unimos la esquina superior derecha del primer rectángulo con la del segundo, y la esquina superior izquierda del segundo con la del tercero. Ahora, aplicando semejanza de triángulos calculamos la intersección, con lo que obtenemos la moda.
 \begin{center}
@@ -20,7 +20,7 @@ Se nos pide calcular la edad más común, luego buscamos la moda de la distribuc
 \end{center}
 
 
-\textbf{Apartado b)}\\
+\subproblem
 
 Se nos pide calcular el percentil 35 y el 65. Hay que buscar el intervalo asociado al valor inmediatamente superior a $n*p$ en la frecuencia absoluta acumulada. Después, se calcula aplicando semejanza de triángulos : \\
 
@@ -42,7 +42,7 @@ Luego la edad mínima será aproximadamente 43 años.
 Por tanto, la edad máxima será aproximadamente 53 años.\\
 
 
-\textbf{Apartado c)}\\
+\subproblem
 
 Para el recorrido intercuartílico necesitaremos los cuartiles 1 y 3, es decir, los percentiles 25 y 75. Procedemos de la misma manera que en el apartado anterior:\\ \\ 
 
@@ -70,13 +70,13 @@ Por tanto el recorrido intercuartílico será $Q_3-Q_1 = 16.771 \approx 17$ año
 Para la calcular la desviación típica necesitamos calcular la raíz cuadrada positiva de la varianza. Tenemos que calcular la media del área de los cuadrados de lado la diferencia de cada dato a la media. La media es 48.7. Escribamos los $n_i(x_i-\overline{x})^2$ en la tabla. La varianza será 240.144 años$^2$. Finalmente la desviación típica será 15.497.
 
 
-\textbf{Apartado d)}\\
+\subproblem
 
 \begin{enumerate}
 	\item Coeficiente de asimetría de Fisher:
 	$$\gamma_1(X) = \dfrac{\mu_3}{\sigma_X^3};\qquad
-	\mu_3 = m_3 - 3m_2m_1 + 2m_1^3 = \dfrac{1}{n}\sum n_i ci^3 - \dfrac{3}{n}
-	\sum n_i ci^2\overline{x}  + 2\overline{x}^3 = 341.256$$
+	\mu_3 = m_3 - 3m_2m_1 + 2m_1^3 = \dfrac{1}{n}\sum_{i} n_i ci^3 - \dfrac{3}{n}
+	\sum_{i} n_i ci^2\overline{x}  + 2\overline{x}^3 = 341.256$$
     
     $\gamma_1(X) = \dfrac{341.256}{15.4965^3} = 0.0917 > 0 \longrightarrow $ Asimetría moderada por la derecha.
 
@@ -113,6 +113,3 @@ Para la calcular la desviación típica necesitamos calcular la raíz cuadrada p
 Como K < 0, la distribución es platicúrtica.
 \end{enumerate}
 
-
-
-\end{document}

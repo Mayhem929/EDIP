@@ -1,12 +1,3 @@
-    Ejercicio 8. Un profesor califica a sus alumnos según el criterio siguiente: 40\% de suspensos, 30\% de aprobados, 15\% notables, 10\% sobresalientes y 5\% de matrículas. Las notas obtenidas son las siguientes: \\
-    
-    \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
-        \hline
-        (0,1] & (1,2] & (2,3] & (3,4] & (4,5] & (5,6] & (6,7] & (7,8] & (8,9] & (9,10] \\ \hline
-        34 & 74 & 56 & 81 & 94 & 70 & 41 & 28 & 16 & 4 \\ \hline
-    \end{tabular} \\
-    
-    Calcular las notas máximas para obtener cada una de las calificaciones. 
     \\
     \\
     POBLACIÓN: Los alumnos. \\
@@ -53,7 +44,7 @@
     \end{axis}
     \end{tikzpicture}
     \end{center} 
-    Para la curva de distribución, en el eje x tenemos los extremos de los intervalos y en el eje y ponemos $N_i$, la frecuencia absoluta acumulada. \\ \\
+    Para la curva de distribución, en el eje X tenemos los extremos de los intervalos y en el eje Y ponemos $N_i$, la frecuencia absoluta acumulada. \\ \\
     Para hallar las notas máximas para obtener cada una de las calificaciones calculamos los percentiles. La nota que fuese el percentil 30, por ejemplo, significa que el 30\% de la población, tiene una nota igual o menor a ella, es decir, un suspenso en este caso. \\ \\ 
     Empezamos calculando la nota máxima para sacar un suspenso. Como el 40\% son suspendidos, calculamos el percentil 40, o lo que es lo mismo, el decil 4. $P_{40} = D_{4} = \frac{nr}{100} = \frac{498*40}{100} = 199.2$. Vemos en la tabla que en la columna de la frecuencia absoluta acumulada, $N_4$ es la inmediatamente mayor a 199.2. Así sabemos que el percentil 40 va a estar en el intervalo $I_4 = (3,4]$. Vamos a la curva de distribución y hacemos semejanza de triángulos. \\
     

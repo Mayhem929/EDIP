@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.8)  25 MAR 2021 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.8)  25 MAR 2021 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,134 +709,170 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
  []
 
 (./ejercicio-1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
-
- []
-
-
-! LaTeX Error: File `../../Downloads/image' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 ...graphics[scale=1.2]{../../Downloads/image}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `../../Downloads/image (1)' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 ...hics[scale=1.2]{../../Downloads/image (1)}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
-
- []
-
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family put in TS1 encoding.
-            Default family used instead on input line 131.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 122--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--61
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.34 \end{table}
+                	
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.34 \end{table}
+                	
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.34 \end{table}
+                	
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \end{table}
+                	
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.34 \end{table}
+                	
+Things are pretty mixed up, but I think the worst is over.
+
+<grafica-ej-1.jpeg, id=17, 859.21pt x 408.52625pt>
+File: grafica-ej-1.jpeg Graphic file (type jpg)
+<use grafica-ej-1.jpeg>
+Package pdftex.def Info: grafica-ej-1.jpeg  used on input line 42.
+(pdftex.def)             Requested size: 429.60396pt x 204.26262pt.
+
+Overfull \hbox (2.17242pt too wide) in paragraph at lines 42--43
+ [] 
+ []
+
+<curva-distribucion-ej-1.jpeg, id=18, 893.3375pt x 392.46625pt>
+File: curva-distribucion-ej-1.jpeg Graphic file (type jpg)
+<use curva-distribucion-ej-1.jpeg>
+Package pdftex.def Info: curva-distribucion-ej-1.jpeg  used on input line 53.
+(pdftex.def)             Requested size: 446.66765pt x 196.23264pt.
+
+Overfull \hbox (19.23611pt too wide) in paragraph at lines 53--54
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--75
+
+ []
+
+[2 <./grafica-ej-1.jpeg> <./curva-distribucion-ej-1.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+
+ []
+
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family put in TS1 encoding.
+            Default family used instead on input line 88.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 79--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--61
+
+ []
+
+
 Overfull \hbox (1.69249pt too wide) in paragraph at lines 67--69
 []\OT1/put/m/n/10 La pun-tuaci[]on obtenida por 50 per-sonas que se pre-sen-tar
 on a una prueba de se-lecci[]on, sumadas
@@ -852,7 +888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-[2]
+[3]
 Missing character: There is no [ in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -896,17 +932,17 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no ] in font nullfont!
- [3])
+ [4])
 Overfull \hbox (37.0543pt too wide) in paragraph at lines 94--105
 []$[]$  $[]$ 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
 
-(./ejercicio-3.tex [4]
+(./ejercicio-3.tex
 Missing character: There is no [ in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -950,46 +986,46 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no ] in font nullfont!
- [5])
+ [6]) [7]
 Underfull \hbox (badness 10000) in paragraph at lines 141--144
 
  []
 
 (./ejercicio-4.tex
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+[8]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./ejercicio-4-grafica.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<ejercicio-4-grafica.pdf, id=36, 1160.335pt x 690.58pt>
+<ejercicio-4-grafica.pdf, id=45, 1160.335pt x 690.58pt>
 File: ejercicio-4-grafica.pdf Graphic file (type pdf)
 <use ejercicio-4-grafica.pdf>
-Package pdftex.def Info: ejercicio-4-grafica.pdf  used on input line 42.
+Package pdftex.def Info: ejercicio-4-grafica.pdf  used on input line 51.
 (pdftex.def)             Requested size: 406.12334pt x 241.70662pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+put on input line 5
-0.
+LaTeX Font Info:    Trying to load font information for TS1+put on input line 6
+2.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1put.fd
 File: ts1put.fd 2001/06/04 font definitions for TS1/put.
-) [7 <./ejercicio-4-grafica.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+) [9 <./ejercicio-4-grafica.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-) [8]
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+[10])
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
@@ -1030,222 +1066,222 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--27
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 3
-0.
+1.
 
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 3
-0.
+1.
 
 Missing character: There is no � in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 124--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
+Underfull \hbox (badness 10000) in paragraph at lines 124--128
 
  []
 
 ) (./ejercicio-6.tex
-Underfull \hbox (badness 10000) in paragraph at lines 194--2
+Underfull \hbox (badness 10000) in paragraph at lines 195--2
 
  []
 
-[11]) (./ejercicio-7.tex
-Underfull \hbox (badness 10000) in paragraph at lines 218--2
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--2
+[13])
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 	\newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./ejercicio-7.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
 )
-Overfull \hbox (7.95206pt too wide) in paragraph at lines 34--222
+Overfull \hbox (7.95206pt too wide) in paragraph at lines 17--226
 \OT1/put/m/n/10 Como se trata de una vari-able con rendimien-tos acu-mu-la-tivo
 s, cal-cu-lare-mos la me-dia geom[]etrica: 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--222
+Underfull \hbox (badness 10000) in paragraph at lines 17--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--222
+Underfull \hbox (badness 10000) in paragraph at lines 17--226
 
  []
 
 
-Overfull \hbox (0.10207pt too wide) in paragraph at lines 228--231
-\OT1/put/m/n/10 Un pro-fe-sor cal-i-fica a sus alum-nos seg[]un el cri-te-rio s
-igu-iente: 40% de sus-pen-sos, 30% de aproba-
+Overfull \hbox (0.10207pt too wide) in paragraph at lines 232--235
+[]\OT1/put/m/n/10 Un pro-fe-sor cal-i-fica a sus alum-nos seg[]un el cri-te-rio
+ sigu-iente: 40% de sus-pen-sos, 30% de aproba-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
 (./ejercicio-8.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
- []
+! LaTeX Error: There's no line here to end.
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 3--8
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--15
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--15
-
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2     \\
+          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+! LaTeX Error: There's no line here to end.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     P
+         OBLACIÓN: Los alumnos. \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 210--242
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 201--246
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 (./ejercicio-9.tex
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
@@ -1256,7 +1292,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32     \begin{*gather}
+l.33     \begin{*gather}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1265,19 +1301,19 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.33         P_
+l.34         P_
                {3} = 1.55+\dfrac{\dfrac{110*3}{100}-0}{18}(1.6-1.55)=1.559m
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{center} on input line 31 ended by \end{*gather}.
+! LaTeX Error: \begin{center} on input line 32 ended by \end{*gather}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34     \end{*gather}
+l.35     \end{*gather}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1286,7 +1322,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.34     \end{*gather}
+l.35     \end{*gather}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1302,16 +1338,17 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 ...e mayor altura, ¿cuál es su altura mı́
+l.41 ...e mayor altura, ¿cuál es su altura mı́
                                                   nima?
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
 
+[18]
 
 ! LaTeX Error: Environment *gather undefined.
 
@@ -1319,7 +1356,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44     \begin{*gather}
+l.46     \begin{*gather}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1328,19 +1365,19 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.45         P_
+l.47         P_
                {82} = 1.80+\dfrac{\dfrac{110*82}{100}-73}{20}(1.9-1.8)=1.886m
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{center} on input line 43 ended by \end{*gather}.
+! LaTeX Error: \begin{center} on input line 45 ended by \end{*gather}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46     \end{*gather}
+l.48     \end{*gather}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1349,7 +1386,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.46     \end{*gather}
+l.48     \end{*gather}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1358,7 +1395,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
@@ -1369,7 +1406,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56     \begin{*gather}
+l.59     \begin{*gather}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1378,19 +1415,19 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.57         P_
+l.60         P_
                {75} = 1.80+\dfrac{\dfrac{110*75}{100}-73}{20}(1.9-1.8)=1.847m
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{center} on input line 55 ended by \end{*gather}.
+! LaTeX Error: \begin{center} on input line 58 ended by \end{*gather}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58     \end{*gather}
+l.61     \end{*gather}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1399,7 +1436,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.58     \end{*gather}
+l.61     \end{*gather}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1407,8 +1444,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
@@ -1419,7 +1456,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68     \begin{*gather}
+l.72     \begin{*gather}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1428,7 +1465,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.69         P_
+l.73         P_
                {r} = 1.75 = 1.70+\dfrac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1440,7 +1477,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69 ...ac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
+l.73 ...ac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1449,7 +1486,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.69 ...ac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
+l.73 ...ac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1457,7 +1494,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.69 ...ac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
+l.73 ...ac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1468,7 +1505,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.69 ...ac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
+l.73 ...ac{\dfrac{110*r}{100}-49}{24}(1.80-1.70)\\
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1479,7 +1516,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70         \dfrac{nr}{100}
+l.74         \dfrac{nr}{100}
                              = 61\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1487,7 +1524,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
                                                   
-l.70         \dfrac{nr}{100}
+l.74         \dfrac{nr}{100}
                              = 61\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1502,7 +1539,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70         \dfrac{nr}{100} = 61\\
+l.74         \dfrac{nr}{100} = 61\\
                                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1511,7 +1548,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70         \dfrac{nr}{100} = 61\\
+l.74         \dfrac{nr}{100} = 61\\
                                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1519,7 +1556,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.70         \dfrac{nr}{100} = 61\\
+l.74         \dfrac{nr}{100} = 61\\
                                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1528,13 +1565,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{center} on input line 67 ended by \end{*gather}.
+! LaTeX Error: \begin{center} on input line 71 ended by \end{*gather}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71     \end{*gather}
+l.75     \end{*gather}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1547,7 +1584,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81     \begin{*gather}
+l.86     \begin{*gather}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1556,19 +1593,19 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82         P_
+l.87         P_
                {10} = 1.55+\dfrac{\dfrac{110*10}{100}-0}{18}(1.60-1.55)=1.581m
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{center} on input line 80 ended by \end{*gather}.
+! LaTeX Error: \begin{center} on input line 85 ended by \end{*gather}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83     \end{*gather}
+l.88     \end{*gather}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1577,7 +1614,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.83     \end{*gather}
+l.88     \end{*gather}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1585,6 +1622,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+[19]
 
 ! LaTeX Error: Environment *gather undefined.
 
@@ -1592,7 +1630,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93     \begin{*gather}
+l.99     \begin{*gather}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1601,20 +1639,20 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.94         P_
-               {90} = 1.90+\dfrac{\dfrac{110*90}{100}-93}{17}(2.00-1.90)=1.935m
+l.100         P_
+                {90} = 1.90+\dfrac{\dfrac{110*90}{100}-93}{17}(2.00-1.90)=1....
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{center} on input line 92 ended by \end{*gather}.
+! LaTeX Error: \begin{center} on input line 98 ended by \end{*gather}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95     \end{*gather}
-                      
+l.101     \end{*gather}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1622,8 +1660,8 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.95     \end{*gather}
-                      
+l.101     \end{*gather}
+                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1631,7 +1669,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
 
  []
 
@@ -1655,32 +1693,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -1690,43 +1713,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-[18]
+
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-[19] [20] [21] (./ejercicios-main.aux) ) ) 
+[21]) [22] (./ejercicios-main.aux) ) 
 Here is how much of TeX's memory you used:
- 25995 strings out of 483080
- 657792 string characters out of 5963340
- 1050112 words of memory out of 5000000
- 40569 multiletter control sequences out of 15000+600000
+ 25960 strings out of 483080
+ 657165 string characters out of 5963340
+ 1032112 words of memory out of 5000000
+ 40547 multiletter control sequences out of 15000+600000
  550854 words of font info for 43 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  63i,11n,105p,823b,1949s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/sh02/.texlive2019/texmf-var/f
-onts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/usr/share/texlive/texmf-dist/fonts/
-enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/adob
-e/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/put
-r8a.pfb>
-Output written on ejercicios-main.pdf (21 pages, 222485 bytes).
+ </home/sh02/.texlive2019/texmf-var/fonts/p
+k/ljfour/jknappen/ec/tcrm1000.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dv
+ips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utop
+ia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pf
+b>
+Output written on ejercicios-main.pdf (22 pages, 280633 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+ 136 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

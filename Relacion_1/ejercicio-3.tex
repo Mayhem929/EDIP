@@ -16,13 +16,12 @@ Completar la tabla
 		\end{center}
 %	\end{table}
 \end{center}
-\newpage
 \subproblem
 Representar la distribución mediante un histograma, poligonal de frecuencias y curva de
 distribución.
 
 \begin{center}
-En el histograma se representan los $I_{i}$ en el eje X y un múltiplo del $h_{i}$, para poder tener una mejor representación en el eje Y. 
+En el histograma se representan los $I_{i}$ en el eje X y reescalando $h_{i}$ multipliplicándolo por 10.000, para poder tener una mejor representación en el eje Y. 
 \end{center}
 
 \begin{center}
@@ -95,10 +94,10 @@ En la curva de distribución representamos los $I_{i}$ en el eje X y las frecuen
     \begin{tikzpicture}
         \begin{axis}[
         title={Curva de distribución},
-        xmin=7000, xmax=15000,
+        xmin=7000, xmax=15500,
         ymin=-0.1, ymax=1.2,
-        xtick={1/18, 5/18, 10/18, 12/18, 16/18, 1},
-        ytick={0,0.2,0.4,0.6,0.8,1},
+        %xtick={1/18, 5/18, 10/18, 12/18, 16/18, 1},
+        %ytick={0,0.2,0.4,0.6,0.8,1},
         legend pos=north west,
         ymajorgrids=false,
         grid style=dashed,
@@ -116,7 +115,7 @@ En la curva de distribución representamos los $I_{i}$ en el eje X y las frecuen
         (12700,12/18)
         (13500,16/18)
         (14500,1)
-        (15000,1)
+        (15500,1)
         }; 
         \end{axis}
     \end{tikzpicture}

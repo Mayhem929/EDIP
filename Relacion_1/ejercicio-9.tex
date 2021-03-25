@@ -4,7 +4,7 @@ Para hacer todos los cálculos de este ejercicio usaremos la siguiente fórmula:
     P_{r} = e_{i-1}+\dfrac{\dfrac{nr}{100}-N_{i-1}}{n_{i}}(e_{i}-e_{i-1})
 \end{gather}
 
-Dónde $r$ es el percentil que queremos calcular, $n$ el tamaño de la población, $n_{i}$ la frecuencia absoluta, $N_{i}$ la frecuencia absoluta acumulada y $e_{i}$ es el final del intervalo $i$ donde encontramos a la cantidad de gente dentro del r\% de la población.
+Donde $r$ es el percentil que queremos calcular, $n$ el tamaño de la población, $n_{i}$ la frecuencia absoluta, $N_{i}$ la frecuencia absoluta acumulada y $e_{i}$ es el final del intervalo $i$ donde encontramos a la cantidad de gente dentro del r\% de la población.
 
 Como vemos necesitaremos algunos datos, como la frecuencia absoluta acumulada. Los calcularemos previamente. Aquí están esos datos de forma tabulada:
 
@@ -24,9 +24,10 @@ Como vemos necesitaremos algunos datos, como la frecuencia absoluta acumulada. L
 	\end{table}
 \end{center}
 
-a)Si se consideran bajos el 3\% de los individuos de menor altura, ¿cuál es la altura máxima que pueden alcanzar?
+\subproblem
+Si se consideran bajos el 3\% de los individuos de menor altura, ¿cuál es la altura máxima que pueden alcanzar?
 
-Calculamos $P_{3}$. Para ello primero veamos en qué intervalo se encuentra el 3 por ciento de la población. Como $0.03*110=3.3$ sabemos que debemos tomar i como 1. El cálculo quedaría así:
+Calculamos $P_{3}$. Para ello primero veamos en qué intervalo se encuentra el 3 por ciento de la población con menor altura. Como $0.03*110=3.3$ sabemos que debemos tomar i como 1. El cálculo quedaría así:
 \\
 \begin{center}
     \begin{*gather}
@@ -34,9 +35,10 @@ Calculamos $P_{3}$. Para ello primero veamos en qué intervalo se encuentra el 3
     \end{*gather}
 \end{center}
 
-Por tanto, se consideran bajos los jóvenes que midan 1.559 metros o menos.
+Por tanto, deducimos que los jóvenes que midan 1.559 metros o menos son el $3\%$ más bajo de la población.
 
-b)Si se consideran altos el 18\% de los individuos de mayor altura, ¿cuál es su altura mı́nima?
+\subproblem
+Si se consideran altos el $18\%$ de los individuos de mayor altura, ¿cuál es su altura mı́nima?
 
 Nos encontramos en el mismo problema que en el apartado anterior, solo que ahora deberemos calcular $P_{82}$, pues $100-18=82$. Como $0.82*110=90.2$ sabemos que $i=4$ ya que es el intervalo cuya frecuencia absoluta acumulada es inmediatamente superior. Hacemos los calculos:
 \\
@@ -48,7 +50,8 @@ Nos encontramos en el mismo problema que en el apartado anterior, solo que ahora
 
 Finalmente, se consideran altos los jóvenes que miden 1.886 metros o más.
 
-c) ¿Qué altura es superada sólo por 1/4 de los jóvenes?
+\subproblem 
+¿Qué altura es superada sólo por 1/4 de los jóvenes?
 
 En este caso nos pregunta qué altura es superada por el 25\% de la población, o lo que es lo mismo, que altura tiene el 75\% más bajo de la población. Para ello calculamos $Q_{75} = P_{75}$. Como $0.75*110=82.5$, por las razones nombradas anteriormente, sabemos que $i = 4$. Sustituimos en la expresión:
 \\
@@ -60,7 +63,8 @@ En este caso nos pregunta qué altura es superada por el 25\% de la población, 
 
 Deducimos que la altura superada únicamente por un cuarto de la población es 1.847 metros.
 
-d)Calcular el número de jóvenes cuya altura es superior a 1.75.
+\subproblem
+Calcular el número de jóvenes cuya altura es superior a 1.75.
 
 En este apartado nos piden, a fin de cuentas, que hagamos el proceso contrario al que hemos estado haciendo en los apartados anteriores. Antes nos daban $r$ y ahora nos pedían $P_{r}$, ahora nos dan $P_{r}$ y debemos calcular $\dfrac{nr}{100}$. Para ello usamos la expresión del percentil y despejamos:
 \\
@@ -73,7 +77,8 @@ En este apartado nos piden, a fin de cuentas, que hagamos el proceso contrario a
 
 Como vemos, hay 61 jóvenes que miden 1.75 o menos, por tanto $110-61=49$ jóvenes superan la latura de 1.75 metros.
 
-e) Calcular la altura máxima de los 11 jóvenes más bajos.
+\subproblem
+Calcular la altura máxima de los 11 jóvenes más bajos.
 
 Primero, esos 11 jóvenes representan el $\dfrac{11}{110}=0.1$ por ciento de la población, por tanto, debemos calcular $D_{1} = P_{10}$. Sabemos que los 11 jóvenes más bajos están en el primer intervalo, por lo que $i=1$ y sustituimos:
 
@@ -85,7 +90,8 @@ Primero, esos 11 jóvenes representan el $\dfrac{11}{110}=0.1$ por ciento de la 
 
 Luego, la altura máxima de los 11 jóvenes más bajos es 1.581 metros.
 
-f) Calcular la altura mínima de los 11 jóvenes más altos.
+\subproblem 
+Calcular la altura mínima de los 11 jóvenes más altos.
 
 En este apartado seguiremos el mismo procedimiento que en el apartado anterior. Como los 11 jóvenes representan el $0.1$ por ciento de la población, debemos calcular $D_{9} = P_{90}$, pues recordemos que son los 11 más altos. Teniendo en cuenta que $110-11=99$ sabemos que $i=5$. Procedemos a realizar los cálculos:
 
