@@ -1,24 +1,24 @@
 Escribamos las tablas con los datos que nos pueden interesar para la resolución del ejercicio: \\
 
-\begin{tabular}{| c | c | c | c |}
+\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	$I_i^{(1)}$ & $c_i^{(1)}$ & $n_i^{(1)}$ & $N_i^{(1)}$ \\ \hline
-	$(0, 1]$ & $0.5$ & $12$ & $12$ \\
-	$(1, 2]$ & $1.5$ & $13$ & $25$ \\
-	$(2, 3]$ & $2.5$ & $11$ & $36$ \\
-	$(3, 4]$ & $3.5$ & $8$ & $44$ \\
-	$(4, 5]$ & $4.5$ & $6$ & $50$ \\ \hline
+	$I_i^{(1)}$ & $c_i^{(1)}$ & $n_i^{(1)}$ & $N_i^{(1)}$ & $h_{i} = \frac{n_{i}}{a_{i}}$ \\ \hline
+	$(0, 1]$ & $0.5$ & $12$ & $12$ & $12$ \\
+	$(1, 2]$ & $1.5$ & $13$ & $25$ & $13$  \\
+	$(2, 3]$ & $2.5$ & $11$ & $36$ & $11$  \\
+	$(3, 4]$ & $3.5$ & $8$ & $44$  & $8$   \\
+	$(4, 5]$ & $4.5$ & $6$ & $50$  & $6$ \\ \hline
 	
 \end{tabular} \\\\\\
 
-\begin{tabular}{| c | c | c | c |}
+\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	$I_i^{(2)}$ & $c_i^{(2)}$ & $n_i^{(2)}$ & $N_i^{(2)}$ \\ \hline
-	$(0, 1]$ & $0.5$ & $1$ & $1$ \\
-	$(1, 3]$ & $2$ & $6$ & $7$ \\
-	$(3, 6]$ & $4.5$ & $7$ & $14$ \\
-	$(6, 10]$ & $8$ & $12$ & $26$ \\
-	$(10, 12]$ & $11$ & $2$ & $28$ \\ \hline
+	$I_i^{(2)}$ & $c_i^{(2)}$ & $n_i^{(2)}$ & $N_i^{(2)} $ & $h_{i} = \frac{n_{i}}{a_{i}}$ \\ \hline
+	$(0, 1]$ & $0.5$ & $1$ & $1$ & $1$ \\
+	$(1, 3]$ & $2$ & $6$ & $7$ & $3$ \\
+	$(3, 6]$ & $4.5$ & $7$ & $14$ & $2.333$ \\
+	$(6, 10]$ & $8$ & $12$ & $26$ & $3$ \\
+	$(10, 12]$ & $11$ & $2$ & $28$ & $2$ \\ \hline
 	
 \end{tabular}\\
 \\ 
@@ -33,7 +33,7 @@ La media aritmética de una variable es la suma de sus valores entre en número 
 
 Para la primera distribución, $n = 50$, luego la media aritmética es $2.16$ u. 
 
-Para la segunda, $n = 28$, luego la media aritmética será 5.786. \\
+Para la segunda, $n = 28$, luego la media aritmética será 5.786 u. \\
 
 
 La media armónica se usa para promediar datos de magnitudes relativas. La definimos como la inversa de la media aritmética de los valores inversos de la variable (en nuestro caso, usamos las marcas de clase):
@@ -41,7 +41,7 @@ La media armónica se usa para promediar datos de magnitudes relativas. La defin
 	$H = \dfrac{n}{\dfrac{n_1}{c_1}+\dfrac{n_2}{c_2}+ ...+\dfrac{n_k}{c_k}} = \dfrac{n}{\sum_{i=1}^{k}\dfrac{n_i}{c_i}}$
 \end{center}
 
-Para la primera distribución: H = 1.223 u.
+Para la primera distribución: H = 1.229 u.
 
 Para la segunda distribución: H = 3.399 u.  \\
 
@@ -64,7 +64,7 @@ Para no perder precisión en el resultado, la calcularemos sabiendo que el logar
 
 Para la primera distribución: G = 1.685 u.
 
-Para la segunda distribución: G = 4,764 u.  \\
+Para la segunda distribución: G = 4,769 u.  \\
 
 
 \subproblem
@@ -80,9 +80,7 @@ En el caso primero, observamos que se encuentra en el intervalo (1,2], luego har
 Por tanto, la moda será: $M_O = 1.\overline{3}$.\\
 
 
-En el segundo caso la moda proviene del intervalo (6, 10] luego apliquemos el mismo método teniendo en cuenta que $e_{i-1} = 6, e_i=10, h_{i-1} = 7, h_i = 12, h_{i+1} = 2 $ \\ 
-$M_O = 7.\overline{3}$\\
-\\
+En el segundo caso, tenemos dos modas, pues el valor máximo de $h_{i}$ lo toman dos intervalos. De esta forma, deducimos que existen dos modas: la primera en el intervalo (1,3] y otra en el intervalo (6,10]. En el primer caso, la moda se calcula con expresión anterior empleando $e_{i-1} = 1, e_i=3, h_{i-1} = 1, h_i = 3, h_{i+1} = 2.333 $, deducimos que $M_O = 2.5 u$. En el segundo, que proviene del intervalo (6, 10], aplicamos el mismo método teniendo en cuenta que $e_{i-1} = 6, e_i=10, h_{i-1} = 2.333, h_i = 3, h_{i+1} = 2 $, $M_O = 7.6 u$.
 
 \subproblem
 
@@ -105,26 +103,26 @@ Para la segunda distribución: $n/2 = 14$ luego el $50\%$ de la población super
 		$Qk = e_{i-1} + \dfrac{\dfrac{n}{k} - N_{i-1}}{n_i}(e_i-e_{i-1})$
 	\end{center}
 	
-	Para la distribución 1 será $Q_1 = 1.038, Q_3 = 3.187; R_I = 2.1$
+	Para la distribución 1 será $Q_1 = 1.038 u, Q_3 = 3.187 u; R_I = 2.1 u$
 	
-	Para la distribución 2 será $Q_1 = 3, Q_3 = 7.75; R_I = 4.75$\\
+	Para la distribución 2 será $Q_1 = 3 u, Q_3 = 8.333 u; R_I = 5.333 u$\\
 	
 	\item Desviación típica: es una medida de dispersión, una medida de cómo los valores individuales de el conjunto pueden diferir de la media. Es la raíz cuadrada de la media de las distancias al cuadrado de cada uno de los valores de la variable a la media de la distribución. También se puede calcular como la raíz cuadrada positiva de la varianza.
 	\begin{center}
 		$\sigma^2 = \dfrac{1}{n} \sum_{i=1}^{n}(x_i-\overline{x})^2$
 	\end{center}
 	
-	Para la distribución 1 será $\sigma^2 = 1.75; \sigma = 1.323$
+	Para la distribución 1 será $\sigma^2 = 1.744; \sigma = 1.321$
 	
-	Para la distribución 1 será $\sigma^2 = 4.64; \sigma = 2.154$\\
+	Para la distribución 1 será $\sigma^2 = 8.522; \sigma = 2.919$\\
 	
 	
 	Para ver cuál es mas homogénea, calculemos el Coeficiente de variación de Pearson:
 	
-	$C.V._1 = \dfrac{1.323}{2.082}= 0.635$ \\
+	$C.V._1 = \dfrac{1.321}{2.16}= 0.612$ \\
 	\\
 	\\
-	$C.V._2 = \dfrac{2.154}{5.786}= 0.372$
+	$C.V._2 = \dfrac{2.919}{5.786}= 0.504$
 	
 	La segunda distribución es más homogénea.
 	
