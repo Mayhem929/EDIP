@@ -6,22 +6,24 @@ En los lotes de 50 cajas de los productos producidos por una determinada empresa
 				\hline
 				\multicolumn{1}{|l|}{$x_{i}$} & \multicolumn{1}{l|}{$n_{i}$} & \multicolumn{1}{l|}{$N_{i}$} &
 				\multicolumn{1}{l|}{$x_{i}n_{i}$} & \multicolumn{1}{l|}{$n_{i}|x_{i} - \bar x|$} & \multicolumn{1}{l|}{$n_{i}|x_{i} - Me|$} & \multicolumn{1}{l|}{$n_{i}(x_{i} - \bar x)^2$} \\ \hline
-				0 & 6 & 6 & 0 & 26,16 & 27,00 & 114,06 \\ \hline
-				1 & 9 & 15 & 9 & 30,24 & 31,50 & 101,61 \\ \hline
-				2 & 10 & 25 & 20 & 23,60 & 25,00 & 55,70 \\ \hline
-				3 & 11 & 36 & 33 & 14,96 & 16,50 & 20,35 \\ \hline
-				4 & 14 & 50 & 56 & 5,04 & 7,00 & 1,81 \\ \hline
-				5 & 16 & 66 & 80 & 10,24 & 8,00 & 6,55 \\ \hline
-				6 & 16 & 82 & 96 & 26,24 & 24,00 & 43,03 \\ \hline
-				7 & 9 & 91 & 63 & 23,76 & 22,50 & 62,73 \\ \hline
-				8 & 4 & 95 & 32 & 14,56 & 14,00 & 53,00 \\ \hline
-				9 & 3 & 98 & 27 & 13,92 & 13,50 & 64,59 \\ \hline
-				10 & 2 & 100 & 20 & 11,28 & 11,00 & 63,62 \\ \hline
+				0 & 6 & 6 & 0 & 26,16 & 27,00 & 114,058 \\ \hline
+				1 & 9 & 15 & 9 & 30,24 & 31,50 & 101,606 \\ \hline
+				2 & 10 & 25 & 20 & 23,60 & 25,00 & 55,696 \\ \hline
+				3 & 11 & 36 & 33 & 14,96 & 16,50 & 20,346 \\ \hline
+				4 & 14 & 50 & 56 & 5,04 & 7,00 & 1,814 \\ \hline
+				5 & 16 & 66 & 80 & 10,24 & 8,00 & 6,554 \\ \hline
+				6 & 16 & 82 & 96 & 26,24 & 24,00 & 43,034 \\ \hline
+				7 & 9 & 91 & 63 & 23,76 & 22,50 & 62,726 \\ \hline
+				8 & 4 & 95 & 32 & 14,56 & 14,00 & 52,998 \\ \hline
+				9 & 3 & 98 & 27 & 13,92 & 13,50 & 64,589 \\ \hline
+				10 & 2 & 100 & 20 & 11,28 & 11,00 & 63,619 \\ \hline
 			\end{tabular}
 		\end{center}
 	\end{table}	
 	
 \end{center}
+
+Las últimas tres columnas se han obtenido a partir de los cálculos de los apartados 1 y 3. 
 
 \subproblem
 Calcular el n{\'u}mero medio de piezas defectuosas por caja.
@@ -96,7 +98,7 @@ Algunas medidas de dispersión que podemos tomar sobre la variable estadística 
 	
 	\item Desviación absoluta media respecto a la mediana. Es la medida que representa la media de las distancias de los valores presentados durante la muestra respecto al $50\%$. Presenta la ventaja de que tiene un significado preciso, pero no es fácil de calcular. Su valor es $D_{Me} = 2$ piezas, en este caso. Esto significa que los individuos presentan, respecto a la mediana, una diferencia de 2 piezas defectuosas.
 	
-	\item Varianza. Es una medida que representa la variabilidad de una serie de datos respecto a su media. Presenta la ventaja de que en su cálculo intervienen todos las modalidades observadas de la variable estadística, pero su inconveniente es que su valor es sensible a fluctuaciones muestrales. Su valor numérico, en este caso, es $Var(X) = 5,85$ piezas al cuadrado. No aporta información relevante, pero se usará para calcular la desviación típica, que sí proporciona mayor información. 
+	\item Varianza. Es una medida que representa la variabilidad de una serie de datos respecto a su media. Presenta la ventaja de que en su cálculo intervienen todos las modalidades observadas de la variable estadística, pero su inconveniente es que su valor es sensible a fluctuaciones muestrales. Su valor numérico, en este caso, es $Var(X) = 5,85$ piezas al cuadrado. Dado que sabemos que la varianza está acotada por $\min((x_{i} - \bar x)^2) < Var(X) < \max((x_{i} - \bar x)^2)$, y sabemos que $\min((x_{i} - \bar x)^2) = 0.130$ piezas al cuadrado y que $\max((x_{i} - \bar x)^2) = 31,810$ piezas al cuadrado, deducimos que la distribución es moderadamente homogénea.
 	
 	\item Desviación típica. Es una medida que proporciona información sobre el margen óptimo de diferencia entre los valores medidos de la variable respecto de la media aritmética. Su principal ventaja es que fluctúa poco con variaciones extremas de la muestra, pero tiene el inconveniente de que requiere gran capacidad de cómputo para poder calcularse. Su valor es, en este caso, $\sigma_{x} = 2,42$ piezas. Su significado es que, respecto a la media, la diferencia óptima que se debería encontrar en la distribución es de 2,42 piezas.
 	
