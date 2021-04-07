@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.8)  8 APR 2021 00:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.8)  8 APR 2021 00:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,19 +938,30 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into
 your preamble.
  on input line 77.
 
-(./ejercicios-main.prb)
+(./ejercicios-main.prb
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@prb=\write6
 \openout6 = `ejercicios-main.prb'.
 
-<fondo.pdf, id=7, 597.53635pt x 845.04686pt>
+<fondo.pdf, id=8, 597.53635pt x 845.04686pt>
 File: fondo.pdf Graphic file (type pdf)
 <use fondo.pdf>
 Package pdftex.def Info: fondo.pdf  used on input line 82.
 (pdftex.def)             Requested size: 598.18222pt x 845.93451pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fondo.pdf>]
-<logo-fciencias.jpeg, id=26, 329.73187pt x 159.59625pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fondo.pdf>] (./ejercicio
+-1.tex)
+<logo-fciencias.jpeg, id=28, 329.73187pt x 159.59625pt>
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
 Package pdftex.def Info: logo-fciencias.jpeg  used on input line 86.
@@ -979,20 +990,20 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
 ### semi simple group (level 1) entered at line 79 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30881 strings out of 483080
- 726808 string characters out of 5963340
- 1137239 words of memory out of 5000000
- 45385 multiletter control sequences out of 15000+600000
- 534163 words of font info for 30 fonts, out of 8000000 for 9000
+ 30925 strings out of 483080
+ 727440 string characters out of 5963340
+ 1138239 words of memory out of 5000000
+ 45408 multiletter control sequences out of 15000+600000
+ 536170 words of font info for 39 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  68i,17n,98p,732b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb>
-Output written on ejercicios-main.pdf (2 pages, 131292 bytes).
+mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on ejercicios-main.pdf (2 pages, 142479 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 62 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 47 words of extra memory for PDF output out of 10000 (max. 10000000)
 
