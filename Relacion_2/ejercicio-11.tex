@@ -1,0 +1,58 @@
+\subproblem
+Calculamos la media de X con los datos que nos dan:
+
+\begin{equation*}
+    \overline{x} = \dfrac{1}{n} \sum_{i=1}^k n_{i.} x_i = \dfrac{45}{9} = 5
+\end{equation*}
+
+Además, como sabemos que se cumple que $\overline{y} = a \overline{x} + b$, obtenemos que:
+
+\begin{equation*}
+    \overline{y} = \overline{x} \cdot 5 - 20 = 5
+\end{equation*}
+
+Ahora empezamos a calcular la recta de Y sobre X. Para ello debemos tener en cuenta que:
+
+\begin{equation*}
+    x = a'y + b'
+    \hspace{1cm}
+    a' = \dfrac{\sigma_{xy}}{\sigma_y^2}
+    \hspace{1cm}
+    b' = \overline{x} - a' \overline{y}
+    \hspace{1cm}
+\end{equation*}
+
+Ahora haremos los cálculos necesarios:
+
+\begin{center}
+    \begin{equation*}
+            \sigma_{y}^2 = m_{11} - m_{10}^2 = \dfrac{3240}{9} - \overline{y}^2 = 335
+            \hspace{1cm}
+            \sigma_{x}^2 = m_{11} - m_{10}^2 = \dfrac{279}{9} - \overline{y}^2 = 6\\
+            
+            a = \dfrac{\sigma_{xy}}{\sigma_x^2} \Rightarrow \sigma_{xy} = 5 \cdot 6 = 30
+    \end{equation*}
+\end{center}
+
+Terminamos de calcular la recta:
+
+\begin{equation*}
+    a' = \dfrac{\sigma_{xy}}{\sigma_y^2} = 0.0896
+    \hspace{1cm}
+    b' = \overline{x} - a' \overline{y} = 4.552
+    \hspace{1cm}
+\end{equation*}
+
+Luego,
+
+\begin{equation*}
+    x = a'y + b' \Rightarrow x = 0.0896y + 4.552
+\end{equation*}
+
+Ahora veremos la bondad de los ajustes lineales. Para ello calculamos el coeficiente de determinación lineal:
+
+\begin{equation*}
+    r^2 = \dfrac{\sigma_{xy}^2}{\sigma_x^2 \sigma_y^2} = 0.448
+\end{equation*}
+
+Esto significa que la recta que hemos calculado explica el 44.8\% de nuestra distribución, por lo que podemos decir que no es bueno suponer una relación lineal.

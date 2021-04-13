@@ -1,0 +1,75 @@
+\subproblem
+Esta será la tabla que utilicemos en el ejercicio, con todos los datos necesarios ya calculados.
+
+\begin{table}[ht]
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+         $X/Y$ & 1 & 2 & 3 & 4 & $n_{i.}$ & $n_{i.} x_i$ & $n_{i.} x_i^2$ & $\sum_{j=1}^p n_{ij} y_j$ & $x_i \sum_{j=1}^p n_{ij} y_j$ \\ \hline
+         1 & 7 & 0 & 0 & 0 & 7 & 7 & 7 & 7 & 7 \\ \hline 
+         2 & 10 & 2 & 0 & 0 & 12 & 24 & 48 & 14 & 28 \\ \hline 
+         3 & 11 & 5 & 1 & 0 & 17 & 51 & 153 & 24 & 72 \\ \hline 
+         4 & 10 & 6 & 6 & 0 & 22 & 88 & 352 & 40 & 160 \\ \hline 
+         5 & 8 & 6 & 4 & 2 & 20 & 100 & 500 & 40 & 200 \\ \hline 
+         6 & 1 & 2 & 3 & 1 & 7 & 42 & 252 & 18 & 108 \\ \hline 
+         7 & 1 & 0 & 0 & 1 & 2 & 14 & 98 & 5 & 35 \\ \hline
+         8 & 0 & 0 & 1 & 1 & 2 & 16 & 128 & 7 & 56 \\ \hline
+         $n_{.j}$ & 48 & 21 & 15 & 5 & 89 & 342 & 1538 &  & 666 \\ \hline
+         $n_{.j}y_j$ & 48 & 42 & 45 & 20 & 155 &  &  &  &  \\ \hline
+         $n_{.j}y_j^2$ & 48 & 84 & 135 & 80 & 347 &  &  &  &  \\ \hline
+    \end{tabular}
+\end{table}
+
+Para calcular la recta de regresión de Y sobre X tenemos que tener en cuenta lo siguiente:
+
+\begin{equation*}
+    y = ax+b
+    \hspace{1cm}
+    a = \dfrac{\sigma_{xy}}{\sigma_x^2}
+    \hspace{1cm}
+    b = \overline{y} - a \overline{x}
+    \hspace{1cm}
+\end{equation*}
+
+Ahora haremos los cálculos necesarios:
+
+\begin{center}
+    \begin{equation*}
+        \overline{x} = \dfrac{1}{n} \sum_{i=1}^k x_i n_{i.} = \dfrac{342}{89} = 3.8427
+        \hspace{1cm}
+        \overline{y} = \dfrac{1}{n} \sum_{k=1}^p y_j n_{j.} = \dfrac{155}{89} = 1.7415 \\
+        
+        \sigma_{x}^2 = m_{11} - m_{10}^2 = \dfrac{1539}{89} - \overline{x}^2 = 2.5146
+        \hspace{1cm}
+        \sigma_{xy} = m_{11} - m_{10}m_{01} = \dfrac{666}{89} - \overline{x}\overline{y} = 0.791
+    \end{equation*}
+\end{center}
+
+Teniendo en cuenta los resultados obtenidos:
+
+\begin{equation*}
+    a = \dfrac{\sigma_{xy}}{\sigma_x^2} = 0.315
+    \hspace{1cm}
+    b = \overline{y} - a \overline{x} = 0.531
+    \hspace{1cm}
+\end{equation*}
+
+Y, finalmente, nuestra recta de regresión es:
+
+\begin{equation*}
+    y = 0.315x + 0.531
+\end{equation*}
+
+\subproblem
+Para saber si es adecuada o no esta suposición, calcularemos el coeficiente de determinación lineal. Para ello necesitamos calcular lo siguiente:
+
+\begin{equation*}
+    \sigma{y}^2 = m_{02} - m_{01}^2 = \dfrac{347}{89} - \overline{y}^2 = 0.866
+\end{equation*}
+
+Por último, calculamos el coeficiente:
+
+\begin{equation*}
+    r^2 = \dfrac{\sigma_{xy}^2}{\sigma_x^2 \sigma_y^2} = 0.287
+\end{equation*}
+
+Esto significa que la recta que hemos calculado, explica casi el 30\% de nuestra distribución, con lo que deducimos que no es adecuado suponer una relación lineal.
