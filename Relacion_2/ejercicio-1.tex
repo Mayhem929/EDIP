@@ -1,9 +1,11 @@
+Antes de resolver el ejercicio crearemos un nuevo enunciado, pues no tiene sentido calcular las cosas que nos piden, cuando estas dependen de la aleatoriedad. En nuestro nuevo enunciado, la variable X será el número de personas que componen distintas familias de Granada, y la variable Y es el número de habitaciones que tienen en sus casas. Resolvemos ahora el ejercicio.
+
 \subproblem
 Calculamos la tabla de frecuencia y además, los elementos que necesitaremos durante el ejercicio.
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{|c|c|c|c|}
+    \begin{tabular}{|c|c|c|c|c|}
         \hline
          $x_i$ & $n_{i.}$ & $x_{i}n_{i.}$ & $x_i^2 n_{i.}$ \\ \hline
          1 & 4 & 4 & 4 \\ \hline 
@@ -12,7 +14,7 @@ Calculamos la tabla de frecuencia y además, los elementos que necesitaremos dur
          4 & 6 & 24 & 96 \\ \hline 
          5 & 4 & 20 & 100 \\ \hline 
          6 & 2 & 12 & 72 \\ \hline 
-           & 24 & 81 & 329 \\ \hline 
+          & 24 & 81 & 329 \\ \hline 
     \end{tabular}
 \end{table}
 
@@ -35,9 +37,9 @@ Calculamos la tabla de frecuencia y además, los elementos que necesitaremos dur
 Calculamos la media de nuestras variables:
 
 \begin{equation*}
-    \overline{x} = \dfrac{1}{n} \sum_{i=1}^k x_i n_{i.} = \dfrac{81}{24} = 3.375
+    \overline{x} = \dfrac{1}{n} \sum_{i=1}^k x_i n_{i.} = \dfrac{81}{24} = 3.375 \approx 3 hijos
     \hspace{1cm}
-    \overline{y} = \dfrac{1}{n} \sum_{k=1}^p y_j n_{j.} = \dfrac{77}{24} = 3.2083
+    \overline{y} = \dfrac{1}{n} \sum_{k=1}^p y_j n_{j.} = \dfrac{77}{24} = 3.2083 \approx 3 habitaciones
 \end{equation*}
 
 Ahora calculamos la desviación típica de cada variable para poder calcular el coeficiente de variación de Pearson y ver cuál es más homogénea:
@@ -57,10 +59,10 @@ Ahora calculamos la desviación típica de cada variable para poder calcular el 
 Como vemos, los resultados de la primera variable son más homogéneos pues su coeficiente de variación de Pearson es menor.
 
 \subproblem
-Mirando la tabla de resultados, vemos que cuando ha salido un 3 en el segundo dado, el número que más veces ha aparecido es el 4, con 2 veces, luego $M_0=4$.
+Mirando la tabla de resultados, vemos que cuando las familias tenían 3 habitaciones en sus casas, el número de hijos más frecuente es el 4, con 2 veces, luego $M_0=4$.
 
 \subproblem
-Vamos a calcular la media de $X/Y$ cuando en el segundo dado se obtiene un 2 o un 5. Mirando la tabla de resultados obtenemos:
+Vamos a calcular la media de $X/Y$ cuando las familias tienen dos o cinco habitaciones en sus casa. Mirando la tabla de resultados obtenemos:
 
 \begin{table}[ht]
     \begin{tabular}{|c|c|c|}
