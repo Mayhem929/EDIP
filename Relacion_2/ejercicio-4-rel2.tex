@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\begin{document}
+		Ejercicio 4: \\ \\
+	$\bullet$ En una población de tamaño n = 21 medidas se ha observado dos variables
+	estadísticas, $X =$ temperatura en ºC e $Y =$ vapor de agua en ml de Hg, las
+	cuales han presentado k = 3, p = 3 modalidades distintas, con distribución de
+	frecuencia conjunta $(x_{i},y_{j})$, $n_{ij} i = 1,...,3$ $ j=1,...3$\\ \\
+	$\bullet$ Empezamos rellenando nuestra tabla: \\
+	
+		\begin{tabular}{ | c | c | c | c | c | c | c | c| c| }
+		
+		
+		\hline	
+		X \ Y & $(0.5,1.5]$ & $(1.5,2.5]$ & $(2.5,5.5]$ & $n_{i.}$& $c_{i.}$& $n_{i.}c_{i.}$ &  $n_{i.}c_{i.}^{2}$ & $x_{i.}\sum_{j=i}^{p}n_{ij}y_{j}$ \\ \hline
+		(1,15] & 4 & 2  & 0 & 6 & 8 & 48& 384 & 64 \\
+		(15,25] & 1 & 4 & 2 & 7& 20 & 140 & 2800 & 340 \\
+		(25,30] & 0 & 3 & 5 & 8 & 27.5 & 220 & 6050 & 715 \\
+		$n_{.j}$& 5 & 9  & 7 & 21 & & 408 & 9234 & 1119 \\ 
+		$c_{.j}$& 1 & 2  & 4  &  & & & &\\
+		$n_{.j}c_{.j}$ & 5 & 18 & 28 & 51 & & & &  \\
+		$n_{.j}c_{.j}^{2}$& 5 & 36 & 112 & 153 & & & & \\\hline
+		
+		
+	\end{tabular}
+\\ \\
+
+	Calculamos la recta de regresión de Y sobre X:\\
+	\\
+	$\bullet$  Para ello primero calculamos las medias de X e Y: \\
+	
+	$\bar{x} = \frac{48 + 140 + 220}{21} = \frac{408}{21} = 19.428 $ °C
+	\\ 
+	
+		$\bar{y} = \frac{5 + 18 + 28}{21} = \frac{51}{21} = 2.428  $ ml de Hg
+		\\
+	\\
+	
+	$\bullet$ Tenemos que calcular también las varianzas y la covarianza: \\
+	
+	
+	
+		 $v_{x}^{2} =  $$\frac{1}{n}\sum^{k}_{i=1}n_{i.}x_{i}^{2} - \bar{x}^{2} = \frac{9234}{21} - 19.4286^{2} = 62.2438 $ $ °C^{2} $ \\
+	 
+	 $v_{y}^{2} = $ $\frac{1}{n}\sum^{p}_{j=1}n_{.j}y_{j}^{2} - \bar{y}^{2} = \frac{153}{21} - 2.428^{2} = 1.3876 $ $(ml de Hg)^{2}$ \\
+	 
+	  $v_{xy} = $ $\frac{1}{n}\sum^{k}_{i=1}\sum^{p}_{j=1}n_{ij}x_{i}y_{j} - \bar{xy}= \frac{1}{21}.1119 - 47.1843 = 6.1014 $ \\
+	
+	  
+	  $\bullet$Ahora que tenemos todos los datos necesarios podemos ya calcular los coeficientes de la recta de regresión :\\ \\
+	  $y = ax +b $\\ \\
+	  $a = \frac{v_{xy}}{v_{x}^{2}} = \frac{6.1014}{62.2438} = 0,098$\\ \\
+	  $b = \bar{y} - a.\bar{x} = 2,4286 - 0,098 .19,4286 = 0,5241$\\ \\
+	  $y = 0,098x + 0,5241 $\\ 
+	  
+	  $\bullet$ Por ultimo calculamos el coeficiente de correlación lineal:\\ \\
+	  
+	  $r^{2} = \frac{v_{xy}^{2}}{v_{x}^{2}v_{y}^{2}} = \frac{7,1667^{2}}{72,5568 . 1,583} = 0,431055$\\ \\
+	  El resultado que hemos obtenido nos indica que la recta de regresión de Y sobre X nos da una información de menos
+	  del 45 \% de la variabilidad de Y, luego no seria buena idea suponer una relación lineal entre las variables ya que la bondad de la función es baja. 
+	  Pero como podemos ver, el coeficiente de correlación lineal $r = \sqrt{r^{2}} = 0, 6565$ nos indica que hay un significante grado de correlación lineal directa entre las variables.
+\end{document}
