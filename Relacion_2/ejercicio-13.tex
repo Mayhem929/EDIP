@@ -1,0 +1,37 @@
+\problem
+Como tenemos una hipérbola equilátera, comenzamos haciendo un cambio de variable; $$Z = \dfrac{1}{X}$$ \\
+
+
+\begin{tabular}{|c|c c c c|c|c|c|c|}
+    \hline
+    Z/Y  & 50 & 90 & 160 & 180 & $n_i.$ & $n_i.x_i$ & $n_i.x_i^2$ & $x_i\sum_{j=1}^p n_{ij} y_j$ \\ \hline
+    0.1  & 1 & 0 & 0 & 0 & 1 & 0.1 & 0.01 & 5\\ 
+    0.08 & 0 & 1 & 0 & 0 & 1 & 0.08 & 0.0064 & 7.2\\
+    0.05 & 0 & 0 & 1 & 0 & 1 & 0.05 & 0.0025 & 8\\
+    0.05 & 0 & 0 & 0 & 1 & 1 & 0.04 & 0.0016 & 7.2 \\ \hline
+    $n._j$ & 1 & 1 & 1 & 1 & 4 & 0.27 & 0.0205 & 27.4 \\ \hline
+    $n._jyj$ & 50 & 90 & 160 & 180 & 480 & & & \\ \hline
+    $n._jy_j^2$ & 2500 &  8100 & 25600 & 32400 & 68600 & & & \\ \hline
+\end{tabular}
+\\
+
+
+$$\overline{x} = \dfrac{0.27}{4} = 0.0675 \qquad \overline{y} = \dfrac{480}{4} = 120 $$
+
+$$ \sigma_x^2 = m_{20} - m_{10}^2= 0.0005687 \qquad \sigma_y^2 = m_{02} - m_{01}^2= 2750 $$ 
+
+$$\dfrac{1}{n}\sum_{i=1}^k x_i\sum_{j=1}^p n_{ij} y_j = -1.25$$
+
+$$a = \dfrac{\sigma_{xy}}{\sigma_x^2} = -2197.802 \qquad b = \overline{y} - a\overline{x} = 268.352$$
+
+Por tanto tenemos que, deshaciendo el cambio de variable, la recta de regresión de Y sobre X es $$y = -2197.802\cdot\dfrac{1}{x} + 268.352$$ \\
+
+Para calcular la bondad tenemos que obtener la varianza de los residuos
+
+$$\sigma_{ry}^2 = \sum_{i=1}^{k}\sum_{j=1}^p n_{ij}\cdot(y_j-f(x_i))^2 = \dfrac{13.989}{4} = 2.747 $$
+
+Por tanto, 
+$$\eta_{\frac{y}{x}}^2 = 1 - \dfrac{\sigma_{ry}}{\sigma_y^2} = = 0.9990$$
+
+
+Por lo que observamos la distribución está definida en un 99\% por la recta. Esto se debe a que existe una dependencia funcional ya que en cada fila existe un único elemento no nulo. 
