@@ -1,0 +1,294 @@
+\documentclass[11pt]{book}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{fancyhea}
+\usepackage{supertab}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+%\usepackage{float}
+\setlength{\textwidth}{17cm} \setlength{\textheight}{25cm}
+\setlength{\oddsidemargin}{-0.5cm} \setlength{\evensidemargin}{-0.5cm}
+\setlength{\topmargin}{-1.25cm} \pagestyle{empty}
+\begin{document}
+\centerline{\large \bf Relaci{\'o}n de Problemas 2: Variables estad{\'\i}sticas bidimensionales}
+\smallskip \centerline{\large \it Estad{\'\i}stica Descriptiva e Introducci{\'o}n a la
+Probabilidad}
+
+\centerline{Primer curso del Doble Grado en Ingenier\'ia Inform\'atica y Matem{\'a}ticas}
+\hrulefill \vskip 0.5cm
+
+\begin{enumerate}
+\item Se han lanzado dos dados varias veces, obteniendo los resultados que se presentan en la siguiente tabla, donde $X$ designa el resultado del primer dado  e $Y$ el resultado del segundo:
+$$
+   \begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+ X & 1 & 2 & 2 & 3 & 5 & 4 & 1 & 3 & 3 & 4 & 1 & 2 & 5 & 4 & 3 & 4 & 4 & 5 & 3 & 1 & 6 & 5 & 4 & 6 \\ \hline
+ Y & 2 & 3 & 1 & 4 & 3 & 2 & 6 & 4 & 1 & 6 & 6 & 5 & 1 & 2 & 5 & 1 & 1 & 2 & 6 & 6 & 2 & 1 & 2 & 5 \\
+   \end{array}
+$$
+
+  \begin{enumerate}
+     \item Construir la tabla de frecuencias.
+     \item Calcular las puntuaciones medias obtenidas con cada dado y ver cuales son m\'as homog\'eneas.
+     \item ?`Qu\'e
+      resultado del segundo dado es  m\'as frecuente cuando en el primero se obtiene
+        un 3?
+     \item Calcular la puntuaci\'on m\'axima del 50\% de las puntuaciones m\'as bajas obtenidas con el primer dado si con el segundo se ha obtenido un 2 o un 5.
+   \end{enumerate}
+
+ \item Medidos los pesos, X (en Kg), y las alturas, Y (en cm),  a un grupo de individuos, se han obtenido los siguientes resultados:
+$$
+   \begin{array}{c|cccccc}
+     X \backslash Y &  160 & 162 & 164 & 166 & 168 & 170  \\ \hline
+       48  &   3  &  2  &  2  &  1  &  0  &  0   \\
+       51  &   2  &  3  &  4  &  2  &  2  &  1  \\
+       54  &   1  &  3  &  6  &  8  &  5  &  1   \\
+       57  &   0  &  0  &  1  &  2  &  8  &  3   \\
+       60  &   0  &  0  &  0  &  2  &  4  &  4   \\
+    \end{array}
+$$
+
+  \begin{enumerate}
+     \item  Calcular el peso medio y la altura media y decir cu\'al es m\'as representativo.
+     \item Calcular el porcentaje de individuos que pesan menos de 55 Kg y miden m\'as de 165 cm.
+     \item Entre  los que miden m\'as de165 cm, ?`cu\'al es el porcentaje de los que pesan m\'as de 52 Kg?
+     \item ?`Cu\'al es la altura m\'as frecuente entre los individuos cuyo peso oscila entre 51 y 57 Kg?
+     \item ?`Qu\'e peso medio es m\'as representativo, el de los individuos que miden 164 cm o el de los que miden 168 cm?
+  \end{enumerate}
+
+
+\item En una encuesta de  familias sobre el n{\'u}mero  de  individuos
+que  la componen ($X$) y el n{\'u}mero de personas activas en ellas
+($Y$)  se  han obtenido los siguientes resultados:
+$$
+    \begin{array}{c|cccc}
+          X \backslash Y &   1 &  2 &  3  & 4 \\ \hline
+           1    &   7 &  0 &  0  & 0  \\
+           2    &  10 &  2 &  0  & 0  \\
+           3    &  11 &  5 &  1  & 0  \\
+           4    &  10 &  6 &  6  & 0  \\
+           5    &   8 &  6 &  4  & 2  \\
+           6    &   1 &  2 &  3  & 1  \\
+           7    &   1 &  0 &  0  & 1  \\
+           8    &   0 &  0 &  1  & 1  \\
+     \end{array}
+$$
+
+  \begin{enumerate}
+
+     \item Calcular la recta de regresi\'on de $Y$ sobre $X$.
+  \item
+   ?`Es adecuado suponer una relaci\'on lineal para explicar el comportamiento de $Y$ a partir de $X$?
+  \end{enumerate}
+
+
+\item Se realiza un estudio sobre la tensi{\'o}n de vapor de agua
+ ($Y$, en ml. de Hg.) a distintas temperaturas ($X$, en ${}^o$C). Efectuadas 21
+medidas, los resultados son:
+
+$$
+    \begin{array}{c|ccc}
+        X \backslash Y &  (0\mbox{.}5,1\mbox{.}5] & (1\mbox{.}5,2\mbox{.}5] & (2\mbox{.}5,5\mbox{.}5] \\ \hline
+         (1,15] &     4    &   2     &  0      \\
+        (15,25] &     1    &   4     &  2      \\
+        (25,30] &     0    &   3     &  5      \\
+    \end{array}
+$$
+
+ Explicar el comportamiento de la tensi\'on de vapor  en t\'erminos de la temperatura  mediante una funci\'on lineal. ?`Es adecuado asumir este tipo de relaci\'on?
+
+
+\item Estudiar la dependencia o independencia de las variables en cada una de las siguientes distribuciones. Dar, en cada caso, las curvas de regresi\'on y la covarianza de las dos variables.
+
+$$
+    \begin{array}{c|ccccc}
+       X \backslash Y &   1  &  2  &  3  &  4  &  5 \\ \hline
+        10  &   2  &  4  &  6  &  10 &  8  \\
+        20  &   1  &  2  &  3  &  5  &  4  \\
+        30  &   3  &  6  &  9  &  15 &  12  \\
+        40  &   4  &  8  &  12 &  20 &  16  \\
+    \end{array}  \hskip 2cm
+  \begin{array}{c|ccc}
+         X \backslash Y &   1  &  2  &  3 \\ \hline
+           -1  &   0  &  1  &  0  \\
+            0  &   1  &  0  &  1  \\
+            1  &   0  &  1  &  0  \\
+    \end{array}
+$$
+\item Dada la siguiente distribuci{\'o}n bidimensional:
+$$
+    \begin{array}{c|cccc}
+        X \backslash Y &   1  &  2  &  3  &  4 \\ \hline
+          10  &   1  &  3  &  0  &  0  \\
+          12  &   0  &  1  &  4  &  3  \\
+          14  &   2  &  0  &  0  &  2   \\
+          16  &   4  &  0  &  0  &  0   \\
+    \end{array}
+$$
+  \begin{enumerate}
+     \item ?`Son estad{\'\i}sticamente independientes $X$ e $Y$?
+     \item Calcular y representar las curvas de regresi{\'o}n de $X/Y$ e $Y/X$.
+     \item Cuantificar el grado en que cada variable es explicada por la otra mediante la correspon\-dien\-te  curva de regresi\'on.
+     \item ?`Est{\'a}n $X$ e $Y$ correladas linealmente? Dar las expresiones de las
+           rectas de regresi{\'o}n.
+  \end{enumerate}
+
+
+
+
+\item Para cada una de las distribuciones:
+
+\hskip 2cm Distribuci{\'o}n A  \hskip 2cm Distribuci{\'o}n B \hskip 2.2cm Distribuci{\'o}n C
+\vskip -0.5cm $$
+ \left .
+    \begin{array}{c|ccc}
+   X \backslash Y & 10 & 15 & 20 \\ \hline
+           1  &  0 &  2 &  0  \\
+           2  &  1 &  0 &  0  \\
+           3  &  0 &  0 &  3  \\
+           4  &  0 &  1 &  0  \\
+    \end{array}
+\right .
+\hskip 1cm
+\left .
+    \begin{array}{c|ccc}
+        X \backslash Y & 10 & 15 & 20 \\ \hline
+           1  &  0 &  2 &  0  \\
+           2  &  1 &  0 &  0  \\
+           3  &  0 &  0 &  3  \\
+    \end{array}
+\right .
+\hskip 1cm
+ \left .
+    \begin{array}{c|cccc}
+        X \backslash Y & 10 & 15 & 20  & 25 \\ \hline
+           1  &  0 &  3 &  0  & 1 \\
+           2  &  0 &  0 &  1  & 0 \\
+           3  &  2 &  0 &  0  & 0 \\
+    \end{array}
+\right .
+$$
+
+  \begin{enumerate}
+     \item ?`Dependen funcionalmente $X$ de $Y$ o $Y$ de $X$?
+     \item Calcular las curvas de regresi{\'o}n y comentar los resultados.
+
+  \end{enumerate}
+
+
+\item De una muestra de 24 puestos de  venta en  un  mercado  de
+abastos  se ha recogido informaci\'on sobre el n\'umero de balanzas ($X$) y el n\'umero de dependientes ($Y$). Los resultados aparecen en la siguiente tabla:
+$$
+    \begin{array}{c|cccc}
+        X \backslash Y & 1  &  2 &  3 & 4\\ \hline
+           1  &  1 &  2 &  0 & 0 \\
+           2  &  1 &  2 &  3 & 1 \\
+           3  &  0 &  1 &  2 & 6 \\
+           4  &  0 &  0 &  2 & 3 \\
+    \end{array}
+$$
+  \begin{enumerate}
+     \item Determinar las rectas de regresi{\'o}n.
+     \item ?`Es apropiado suponer que existe una relaci{\'o}n  lineal  entre  las
+           variables?
+     \item  Predecir, a partir de los resultados, el n\'umero de balanzas que puede esperarse en un puesto con seis dependientes.  ?`Es fiable esta predicci{\'o}n?
+  \end{enumerate}
+
+\item Se eligen  50 matrimonios al azar  y se les pregunta  la  edad de
+ambos al contraer matrimonio. Los resultados se recogen en la  siguiente tabla, en la que $X$
+denota la edad del hombre e $Y$ la de la mujer:
+$$
+    \begin{array}{c|ccccc}
+         X  \backslash  Y & (10,20] & (20,25] & (25,30] & (30,35] & (35,40] \\ \hline
+          (15,18]  &   3   &   2   &   3   &   0   &   0   \\
+          (18,21]  &   0   &   4   &   2   &   2   &   0   \\
+          (21,24]  &   0   &   7   &   10  &   6   &   1   \\
+          (24,27]  &   0   &   0   &   2   &   5   &   3    \\
+    \end{array}
+$$
+
+   Estudiar la interdependencia lineal entre ambas variables.
+
+
+
+\item Calcular el coeficiente de correlaci\'on lineal de dos variables cuyas rectas de regresi\'on son:
+$$
+x + 4y = 1
+$$
+$$
+x + 5y = 2
+$$
+
+
+
+
+\item Consideremos una distribuci{\'o}n bidimensional en la que la recta de regresi{\'o}n de $Y$ sobre $X$ es
+$y=5x-20$, y $\sum y_{j}^{2} n_{.j} =3240$. Supongamos, adem{\'a}s, que la distribuci{\'o}n marginal de $X$
+es:
+   $$ \begin{array}{c|cccc}
+       x_i   &  3 & 5 & 8 & 9 \\ \hline
+        n_{i.} &  5 & 1 & 2 & 1 \\
+    \end{array}$$
+Determinar la recta de regresi{\'o}n de $X$ sobre $Y$, y la bondad  de los ajustes lineales.
+
+
+\item De las estad{\'\i}sticas de "Tiempos de vuelo y consumos de
+combustible"  de una compa{\~n}{\'\i}a a{\'e}rea, se han  obtenido  datos relativos  a  24  trayectos distintos
+realizados por el avi{\'o}n DC-9. A partir de estos datos se han obtenido las siguientes medidas:
+$$
+\sum y_i =219\mbox{.}719 \ \ \    \sum y_{i}^{2} =2396\mbox{.}504  \ \ \   \sum
+x_i y_i =349\mbox{.}486
+$$
+$$
+\sum x_i =31\mbox{.}470  \ \ \    \sum x_{i}^{2} =51\mbox{.}075   \ \ \    \sum
+x_{i}^{2} y_i =633\mbox{.}993
+$$
+$$
+\sum x_{i}^{4} =182\mbox{.}977 \ \ \    \sum x_{i}^{3} =93\mbox{.}6
+$$
+   La variable $Y$ expresa el consumo  total  de  combustible,  en  miles  de
+   libras, correspondiente a un vuelo de  duraci{\'o}n  $X$ (el tiempo  se
+   expresa en  horas,  y  se  utilizan  como  unidades  de  orden  inferior
+   fracciones decimales de la hora).
+
+  \begin{enumerate}
+     \item Ajustar un modelo del tipo $Y=aX+b$.  ?`Qu{\'e} consumo total se estimar{\'\i}a  para un
+                programa de vuelos compuesto de 100 vuelos de media hora,
+                200 de una hora y 100 de dos horas? ?`Es fiable esta
+                estimaci{\'o}n?
+
+      \item Ajustar un modelo del tipo  $Y=a+bX+cX^{2}$.
+?`Qu{\'e} consumo total se estimar{\'\i}a para el mismo
+                  programa de vuelos del apartado a)?
+\item ?`Cu{\'a}l de los dos modelos se ajusta mejor? Razonar la respuesta. \end{enumerate}
+
+
+\item La curva de Engel, que expresa el gasto en un determinado bien en funci\'on de la renta,
+adopta en ocasiones la forma de una hip\'erbola equil\'atera. Ajustar dicha curva a los siguientes
+datos, en los que $X$ denota la renta en miles de euros e $Y$ el gasto en euros. Cuantificar la
+bondad del ajuste:$$
+    \begin{array}{c|cccc}
+      X &  10  & 12\mbox{.}5 &  20  & 25 \\ \hline
+      Y &  50  &  90  &  160 & 180  \\
+    \end{array}
+$$
+
+\item Se dispone de la siguiente informaci{\'o}n referente al gasto en espect{\'a}culos ($Y$,  en euros) y la renta disponible mensual  ($X$,  en cientos de euros) de  6 familias:
+$$
+    \begin{array}{c|cccccc}
+      Y & 30 & 50 & 70 & 80 & 120  & 140 \\ \hline
+      X &  9  &  10  &  12  & 15  & 22 & 32  \\
+    \end{array}
+$$
+   Explicar el comportamiento de $Y$ por $X$ mediante:
+
+  \begin{enumerate}
+     \item Relaci{\'o}n lineal.
+     \item Hip{\'e}rbola equil{\'a}tera.
+     \item Curva potencial.
+     \item Curva exponencial.
+  \end{enumerate}
+   ?`Qu{\'e} ajuste es m{\'a}s adecuado?
+\end{enumerate}
+
+\end{document}
