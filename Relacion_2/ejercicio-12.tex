@@ -1,12 +1,38 @@
-\documentclass{article}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+\problem
 
-\begin{document}
+De las estad{\'\i}sticas de "Tiempos de vuelo y consumos de
+combustible"  de una compa{\~n}{\'\i}a a{\'e}rea, se han  obtenido  datos relativos  a  24  trayectos distintos
+realizados por el avi{\'o}n DC-9. A partir de estos datos se han obtenido las siguientes medidas:
+$$
+\sum y_i =219\mbox{.}719 \ \ \    \sum y_{i}^{2} =2396\mbox{.}504  \ \ \   \sum
+x_i y_i =349\mbox{.}486
+$$
+$$
+\sum x_i =31\mbox{.}470  \ \ \    \sum x_{i}^{2} =51\mbox{.}075   \ \ \    \sum
+x_{i}^{2} y_i =633\mbox{.}993
+$$
+$$
+\sum x_{i}^{4} =182\mbox{.}977 \ \ \    \sum x_{i}^{3} =93\mbox{.}6
+$$
+La variable $Y$ expresa el consumo  total  de  combustible,  en  miles  de
+libras, correspondiente a un vuelo de  duraci{\'o}n  $X$ (el tiempo  se
+expresa en  horas,  y  se  utilizan  como  unidades  de  orden  inferior
+fracciones decimales de la hora).
+
+\begin{enumerate}
+	\item Ajustar un modelo del tipo $Y=aX+b$.  ?`Qu{\'e} consumo total se estimar{\'\i}a  para un
+	programa de vuelos compuesto de 100 vuelos de media hora,
+	200 de una hora y 100 de dos horas? ?`Es fiable esta
+	estimaci{\'o}n?
+	
+	\item Ajustar un modelo del tipo  $Y=a+bX+cX^{2}$.
+	?`Qu{\'e} consumo total se estimar{\'\i}a para el mismo
+	programa de vuelos del apartado a)?
+	\item ?`Cu{\'a}l de los dos modelos se ajusta mejor? Razonar la respuesta. \end{enumerate}
+
 En el desarrollo de este ejercicio se va a considerar que a cada tiempo de trayecto de vuelo del avión va asociado una única cantidad de combustible asociada a dicho trayecto (se despreciarán las ligeras variaciones que se puedan dar tanto en el despegue como en el descenso de la aeronave). Por tanto, se presupone que $n_i = 1$, $\forall i = 1,2,3,...,n$.
 
-Apartado a
+\subproblem
 
 Los cálculos que se han de hacer serían: 
 
@@ -57,7 +83,7 @@ El itinerario se presenta en la siguiente tabla:
 
 Se emplea un total de 3195,8 miles de libras de combustible para realizar el itinerario.
 
-Apartado b
+\subproblem
 
 Con la filosofía de minimizar el cuadrado de los errores para los parámetros de la curva $y = a +bx+cx^2$, tenemos que para calcularlos se ha de resolver el siguiente sistema de ecuaciones:´
 
@@ -96,8 +122,6 @@ La ecuación de la curva quedaría $y=0,8086+6,53x-0,1006x^2$. La estimación qu
 \normalsize
 
 
+\subproblem
 
-
-No se proporciona suficiente información en el enunciado para determinar cuál de las dos regresiones se ajusta mejor a los datos experimentales. 
-
-\end{document}
+No se proporciona suficiente información en el enunciado para determinar cuál de las dos regresiones se ajusta mejor a los datos experimentales. En principio, la regresión lineal minimiza bien los cuadrados de los errores (ajuste casi perfecto, con dependencia lineal), mientras que de la parábola no se puede determinar su coeficiente de correlación. 
