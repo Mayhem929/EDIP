@@ -1,0 +1,91 @@
+\documentclass{article}
+
+\begin{document}
+	Ejercicio 8: \\ \\
+	
+	En una población de tamaño n = 24 se ha observado dos variables estadísticas,
+	X = número de balanzas e Y = número de dependientes, las cuales han
+	presentado k = 4, p = 4 modalidades distintas, con distribución de frecuencia
+	conjunta $(x_{i},y_{j})$, $n_{ij}$ $ i = 1,...,3$ $ j=1,...3$
+	
+	$\bullet$ Empezamos rellenando nuestra tabla: \\
+	
+	\begin{tabular}{ | c | c | c | c | c | c | c | c| c| }
+		
+		
+		\hline	
+		X \ Y & 1 & 2 & 3 & 4  & $n_{i.}$ & $n_{i.}x_{i.}$ &  $n_{i.}x_{i.}^{2}$ & $x_{i.}\sum_{j=i}^{p}n_{ij}y_{j}$ \\ \hline
+		1 & 1 & 2  & 0 & 0 & 3 & 3 & 3 & 5 \\
+		2 & 1 & 2 & 3 & 1& 7 & 14 & 28 & 36 \\
+		3 & 0 & 1 & 2 & 6 & 9 & 27 & 81 & 96 \\
+		4& 0 & 0  & 2  & 3 & 5 & 20 & 80  & 72 \\
+		$n_{.j}$& 2 & 5  & 7 & 10 & 24 & 64 & 192 & 209 \\ 
+		$n_{.j}y_{.j}$ & 2 & 10 & 21 & 40 & 73 & & &  \\
+		$n_{.j}y_{.j}^{2}$& 2 & 20 & 63 & 160 & 245 & & & \\\hline
+		
+		
+	\end{tabular}
+	\\ \\
+	
+		\begin{flushleft}
+			a) Determinar las rectas de regresión
+	Calculamos la recta de regresión de Y sobre X:
+		\end{flushleft}
+	$\bullet$ Para ello primero calculamos las medias de X e Y: \\
+	
+	$\bar{x} = \frac{3 + 14 + 27 +20}{24} = \frac{64}{24} = 2,6667 $ balanzas
+	\\ 
+	
+	$\bar{y} = \frac{2 + 10+21 +40}{24} = \frac{73}{24} = 3,0417  $ dependientes
+	\\
+	\\
+	
+	$\bullet$ Tenemos que calcular también las varianzas y la covarianza: \\
+	
+	
+	
+	$v_{x}^{2} =  $$\frac{1}{n}\sum^{k}_{i=1}n_{i.}x_{i}^{2} - \bar{x}^{2} = \frac{208}{24} - 2,6667^{2} = 1,5554 $ $ balanzas^{2} $ \\
+	
+	$v_{y}^{2} = $ $\frac{1}{n}\sum^{p}_{j=1}n_{.j}y_{j}^{2} - \bar{y}^{2} = \frac{245}{24} - 3,0417 ^{2} = 0,9564 $ $dependientes^{2}$ \\
+	
+	$v_{xy} = $ $\frac{1}{n}\sum^{k}_{i=1}\sum^{p}_{j=1}n_{ij}x_{i}y_{j} - \bar{xy}= \frac{1}{24}.209 - 8,113 = 0,5970 $ \\
+	
+	
+	$\bullet$Ahora que tenemos todos los datos necesarios podemos ya calcular los coeficientes de las rectas de regresión :\\ \\
+	\textbf{Para Y / X:}\\
+	$y = ax +b $\\ \\
+	$a = \frac{v_{xy}}{v_{x}^{2}} = \frac{0,5970}{1,5554} = 0,3838$\\ \\
+	$b = \bar{y} - a.\bar{x} = 3,0417 - \frac{0,5970}{1,5554}. 2,6667 = 2,018$\\ \\
+	La recta de regresión de Y sobre X es
+	$y = 0,3838x + 2,018 $\\ \\
+	\textbf{Para X / Y:}\\
+	$x = \frac{1}{a}( y- b) $\\ \\
+	$a = \frac{v_{xy}}{v_{y}^{2}} = \frac{0,5970}{ 0,9564 } = 0,6242$\\ \\
+	$b = \bar{x} - a.\bar{y} = 2,6667 -  \frac{0,5970}{ 0,9564 }.3,0417 = 0,786$\\ \\La recta de regresión de X sobre Y es
+	$x = 0,6242y +  0,786 $\\ 
+	
+	\begin{flushleft}
+		b) ¿Es apropiado suponer que existe una relación lineal entre las variables?
+	\end{flushleft}
+	
+	
+	$\bullet$ Para ello tenemos que calcular el coeficiente de correlación lineal:\\ \\
+	
+	$r^{2} = \frac{v_{xy}^{2}}{v_{x}^{2}v_{y}^{2}} = \frac{0,5970^{2}}{1,5554 . 0,9564} = 0,2396$\\ \\
+ 
+		$\bullet$El resultado que hemos obtenido nos indica que la recta de regresión de Y sobre X nos da una información de menos
+	del 24 \% de la variabilidad de Y, luego no seria buena idea suponer una relación lineal entre las variables ya que la bondad de la función es baja. 
+	Tampoco, el coeficiente de correlación lineal $r =\sqrt{r^{2}} = 0,489$ nos indica que existe una buena correlación lineal directa entre las variables. \\ \\
+	
+	\begin{flushleft}
+		c) Predecir, a partir de los resultados, el numero de balanzas que puede esperarse en un puesto
+	con seis dependientes. ¿Es fiable esta predicción?
+	\end{flushleft}
+	$x = 0,6242y +  0,786 = 0,6242 . 6 +  0,786 = 4,5312 \approx 5 balanzas $
+	
+	
+	
+	
+	
+	
+\end{document}
