@@ -1,0 +1,111 @@
+%PREAMBULO
+\documentclass{article}
+\usepackage{pgfplots}
+
+%CUERPO
+\begin{document}
+    a) Calcular el peso medio y la altura media y decir cuál es más representativo. \\ \\
+    \begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+        \hline
+        $X / Y$ & 160 & 162 & 164 & 166 & 168 & 170 & $n_{i.}$ & $n_{i.}x_i$ & $n_{ij}x_i^2- \bar{x}$\\ \hline
+        48 & 3 & 2 & 2 & 1 & 0 & 0 & 8 & 384 & 304,689 \\
+        51 & 2 & 3 & 4 & 2 & 2 & 1 & 14 & 714 & 140,773 \\
+        54 & 1 & 3 & 6 & 8 & 5 & 1 & 24 & 1296 & 0,702 \\
+        57 & 0 & 0 & 1 & 2 & 8 & 3 & 14 & 798 & 412,045 \\
+        60 & 0 & 0 & 0 & 2 & 4 & 4 & 10 & 600 & 339,772 \\
+        $n_{.j}$ & 6 & 8 & 13 & 15 & 19 & 9 & 70 & 3792 & \\
+        $n_{.j}y_j$ & 960 & 1296 & 2132 & 2490 & 3192 & 1530 & 11600 & & \\
+        $n_{.j}y_j^2-\bar{y}^2$ & 195.899 & 110.35 & 38.191 & 1.227 & 99.29 & 165.328 & & & \\
+        \hline
+    \end{tabular} \\ \\
+    Para hallar el peso medio, calculamos la media de X, $\bar{x}$. \\
+    \[ \bar{x} = \frac{1}{n} \sum_{i=1}^{k}n_{i.}x_i = \frac{3792}{70} = 54,171 kg.\] \\ \\
+    Hacemos lo mismo con la variable Y para hallar la altura media, $\bar{y}$. \\
+    \[ \bar{y} = \frac{1}{n} \sum_{j=1}^{p}n_{.j}y_j = \frac{11600}{70} = 165,714 kg.\] \\ \\
+    Para ver cual de las dos es mas representativas, utilizamos el coeficiente de variación de Pearson. \\
+    $C.V(X)=\frac{\sigma_x}{\bar{x}}$ \\
+    $C.V(Y) = \frac{\sigma_y}{\bar{y}}$ \\
+    \[ \sigma_x^2 = \frac{1}{n}\sum_{i=1}^{k}n_{i.}x_i^2-\bar{x}^2 = m_{20}-m_{10}^2 = 12,874 kg^2.\] \\
+    $\sigma_x = 3,588$ kg. \\
+    \[ \sigma_y^2 = \frac{1}{n}\sum_{j=1}^{p}n_{.j}y_j^2-\bar{y}^2 = m_{02}-m_{01}^2 = 8,813cm^2.\]
+    $\sigma_y = 2,969$ cm. \\ \\
+    $C.V(X) = \frac{3,588}{54,171} = 0,066$ \\
+    $C.V(Y) = \frac{2,969}{165,714} = 0,018$ \\  \\
+    Como vemos el coeficiente de variación de Pearson de la X es mayor, por tanto, es más representativa la altura media. \\ \\
+    
+    b) Calcular el porcentaje de individuos que pesan menos de 55kg y miden más de 165cm. \\
+    \begin{center}
+    \begin{tabular}{| c | c | c | c | c |}
+        \hline
+        $X / Y$ & 166 & 168 & 170 & $n_{i.}$ \\ \hline
+        48 & 1 & 0 & 0 & 1 \\
+        51 & 2 & 2 & 1 & 5 \\
+        54 & 8 & 5 & 1 & 14 \\
+        $n_{.j}$ & 11 & 7 & 2 & 20 \\
+        \hline
+    \end{tabular} \\ 
+    \end{center}
+    Para hallar el porcentaje, dividimos el número total de individuos que cumplen las dos condiciones entre el número total de individuos estudiados. \\
+    $\frac{20}{70}*100 = 28,571\%$ \\ \\
+    
+    c) Entre los que miden más de 165cm, ¿cuál es el porcentaje de los que pesan más de 52kg? \\
+    \begin{center}
+    \begin{tabular}{| c | c | c | c | c |}
+        \hline
+        $X / Y$ & 166 & 168 & 170 & $n_{i.}$ \\ \hline
+        48 & 1 & 0 & 0 & 1 \\
+        51 & 2 & 2 & 1 & 5 \\
+        54 & 8 & 5 & 1 & 14 \\
+        57 & 2 & 8 & 3 & 13 \\
+        60 & 2 & 4 & 4 & 10 \\
+        $n_{.j}$ & 15 & 19 & 9 & 43 \\
+        \hline
+    \end{tabular} \\
+    \end{center}
+    Para hallar este porcentaje, tomamos el total de individuos que miden más de 165cm y miramos cuantos de ellos pesan más de 52kg. Hacemos $n_{i3}+n_{i4}+n_{i5} = 14+13+10 = 37$ personas que pesan más de 52kg de las 43 que miden más de 165cm. Hacemos $\frac{37}{43}*100 = 86,047\%$. \\ \\
+    
+    d) ¿Cuál es la altura más frecuente  entre los individuos cuyo peso oscila entre 51 y 57 kg? \\ \\
+    En la tabla del apartado a, buscamos el mayor $n_{ij}$ dentro de los que pesan entre 51 y 57kg. En este caso vemos que el mayor es $n_{34}=8$. Esta es la moda, la altura más frecuente entre los individuos que pesan entre 51 y 57kg. \\ \\
+    
+    e) ¿Qué peso medio es más representativo, el de los individuos que miden 164cm o el de los que miden 168cm? \\ \\
+    Este apartado se resuelve de manera análoga al apartado a. Esta vez calculamos las medias y las varianzas de las x correspondientes a 164 y 168cm. \\ \\
+    Para las medias, hacemos 
+    \begin{center}
+    \begin{tabular}{| c | c | c | c |}
+        \hline
+        $X / Y$ & 164 & $n_{i3}$ & $n_{i3}x_i$\\ \hline
+        48 & 2 & 2 & 38,456 \\
+        51 & 4 & 4 & 7,673 \\
+        54 & 6 & 6 & 15,649 \\
+        57 & 1 & 1 & 21,298 \\
+        60 & 0 & 0 & 0 \\
+        & & 13 & 83.076 \\
+        \hline
+    \end{tabular} \\
+    \end{center}
+    
+    \[ \bar{x}_{164} = \frac{1}{n_{.3}}\sum_{i=1}^{k}n_{i3}x_i = \frac{48*2+51*2+54*6+57}{2+4+6+1} = \frac{681}{13} = 52,385 kg. \] \\
+    \[ \sigma_{x_{164}}^2 = \frac{1}{n_{.3}}\sum_{i=1}^{k}n_{i3}x_i^2-\bar{x_{164}}^2 = m_{20}-m_{10}^2 = \frac{83,076}{13} = 6,39 kg^2.\] \\
+    $\sigma_{x_{164}} = 2,528$ kg. \\ \\
+    $C.V(X)=\frac{\sigma_{x_{164}}}{\bar{x_{164}}} = \frac{2,528}{52,385} = 0,0483$ \\ \\
+    \begin{center}
+    \begin{tabular}{| c | c | c | c |}
+        \hline
+        $X / Y$ & 168 & $n_{i5}$ & $n_{i5}x_i^2-\bar{x_i}^2$\\ \hline
+        48 & 0 & 0 & 0 \\
+        51 & 2 & 2 & 54,309 \\
+        54 & 5 & 5 & 24,443 \\
+        57 & 8 & 8 & 4,98 \\
+        60 & 4 & 4 & 57,426 \\
+        & & 19 & 141,158 \\
+        \hline
+    \end{tabular} \\
+    \end{center}
+    \[\bar{x}_{168} = \frac{1}{n_{.5}}\sum_{i=1}^{k}n_{i5}x_i =  \frac{2*51+5*54+8*57+4*60}{2+5+8+4} = \frac{1068}{19} = 56,211 kg. \] \\ 
+    \[ \sigma_{x_{168}}^2 = \frac{1}{n_{.5}}\sum_{i=1}^{k}n_{i5}x_i^2-\bar{x_{168}}^2 = m_{20}-m_{10}^2 = \frac{141,158}{19} = 7,429 kg^2.\] \\
+    $\sigma_{x_{168}} = 2,726$ kg. \\ \\
+    $C.V(Y) = \frac{\sigma_{x_{168}}}{\bar{x_{168}}} = \frac{2,726}{56,211} = 0,0485$ \\ \\
+    Es más representativo el peso de los individuos que miden 164 cm.
+    
+\end{document}
+
