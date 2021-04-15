@@ -1,0 +1,222 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+Entre 6 familias que asisten a espectáculos se han observados, de cada familia, la renta familiar (la variable X, en cientos de euros) y el gasto general a los espectáculos (la variable Y, en euros). Ambas variables han presentado 6 modalidades, recogidos en la siguiente tabla bidimensional: 
+
+\begin{center}
+	
+\begin{tabular}{c|c}
+	
+	X & Y \\ \hline
+	9 & 30 \\ 
+	10 & 50 \\ 
+	12 & 70 \\ 
+	15 & 80 \\ 
+	22 & 120 \\ 
+	32 & 140 \\ 
+\end{tabular}
+\end{center}
+
+Respecto a cada ajuste, se han de realizar las siguientes operaciones:
+
+$$\overline{x} = \frac{1}{n}\sum_{i=1}^{k}·x_i$$
+$$\overline{y} = \frac{1}{n}\sum_{j=1}^{p}·y_j$$
+$$m_{20} = \frac{1}{n}\sum_{i=1}^{k}·x_i^2$$
+$$m_{02} = \frac{1}{n}\sum_{j=1}^{p}·y_j^2$$
+$$m_{11} = \frac{1}{n}\sum_{i=1}^{k}x_i·y_i$$
+$$ \sigma_x^2 = m_{20} - \overline{x}^2$$
+$$ \sigma_y^2 = m_{02} - \overline{y}^2$$
+$$ \sigma_{xy} = m_{11} - \overline{x}·\overline{y}$$
+
+Para el cálculo de la razón de correlación de $Y\backslash X$, como sabemos que a cada modalidad $y_i$ le corresponde un único $x_i$ (y viceversa), deducimos que, en este caso:
+
+$$\sigma_{exp}^2 = \sum_{i}\sum_{i}f_{ij}(y^*-\overline{y})^2 = \frac{1}{n}\sum_{i}y_i^2 + \overline y^2 - 2·\overline y^2·\sum_{i}y_i$$
+
+$$\sigma_{res}^2 = \sum_{i}\sum_{i}f_{ij}(y_i^*-y_i)^2$$
+
+De forma general, tenemos:
+
+$$\eta_{Y\backslash X}^2 = \frac{\sigma_{exp}^2}{\sigma_{y}^2} = 1 - \frac{\sigma_{des}^2}{\sigma{y}^2}$$
+
+Apartado a
+
+La tabla obtenida sería la siguiente: 
+
+\begin{center}
+	\begin{tabular}{ c|c|c|c|c }
+	
+	$x_i$ & $y_i$ & $x_i^2$ & $y_i^2$ & $x_i·y_i$ \\ \hline
+	9 & 30 & 81 & 900 & 270 \\ 
+	10 & 50 & 100 & 2500 & 500 \\ 
+	12 & 70 & 144 & 4900 & 840 \\ 
+	15 & 80 & 225 & 6400 & 1200 \\ 
+	22 & 120 & 484 & 14400 & 2640 \\ 
+	32 & 140 & 1024 & 19600 & 4480 \\ \hline
+	100 & 490 & 2058 & 48700 & 9930 \\ 
+\end{tabular}
+\end{center}
+
+Se pretende buscar la recta $y = ax + b$ que minimice los cuadrados de los errores observados (y, por tanto, mejor se ajuste a los datos observados). Derivando parcialmente respecto a a y b, obtenemos: 
+
+$$a = \frac{\sigma_{xy}}{\sigma_x^2}$$
+$$b = \overline{y} - a·\overline{x}$$
+
+Sustituyendo por los valores obtenidos, tenemos que:
+
+$$y=4,5060x+6,5673$$
+
+Nótese $\eta_{Y\backslash X}^2 = R^2 = \dfrac{\sigma_{xy}^2}{\sigma_x^2\sigma_y^2}=0,915$.
+
+Apartado b
+
+Linealizamos empleando el cambio de variable $z=\frac{1}{x}$ y obtenemos la siguiente tabla: 
+
+\begin{center}
+	\begin{tabular}{ c|c|c|c|c }
+	
+	$z_i$ & $y_i$ & $z_i^2$ & $y_i^2$ & $z_i·y_i$ \\ \hline
+	0,1111 & 30 & 0,0123 & 900 & 3,3333 \\ 
+	0,1000 & 50 & 0,0100 & 2.500 & 5,0000 \\ 
+	0,0833 & 70 & 0,0069 & 4.900 & 5,8333 \\ 
+	0,0667 & 80 & 0,0044 & 6.400 & 5,3333 \\ 
+	0,0455 & 120 & 0,0021 & 14.400 & 5,4545 \\ 
+	0,0313 & 140 & 0,0010 & 19.600 & 4,3750 \\ \hline
+	0,4378 & 490,0000 & 0,0368 & 48.700,0000 & 29,3295 \\ 
+\end{tabular}
+\end{center}
+
+Se pretende buscar la curva $y = \frac{a}{x} + b$ que minimice los cuadrados de los errores observados (y, por tanto, mejor se ajuste a los datos observados). De la tabla podemos obtener: $\overline{z}= 0,07297$ cientos de euros, $\overline{y}= 81,6667$ euros, $m_{20} = 0,0061$ cientos de euros$^2$, $m_{02} = 8116,6667$ euros$^2$, $\sigma_z^2= 0,0008$ cientos de euros$^2$, $\sigma_y^2= 1447,2168$ euros$^2$, $m_{11} = 4,8883$, $\sigma_{xy} =  -1,0709$. Derivamos parcialmente respecto a a y b y obtenemos:
+
+$$y=\frac{-1338,625}{x}+179,3462$$
+
+Para obtener la razón de correlación de $Y\backslash X$, realizamos la siguiente tabla:
+
+\begin{center}
+	\begin{tabular}{ c c|c c }
+	
+	$x_i$ & $y_i$ & $y_i*$ & $y_i*^2$ \\ \hline
+	9 & 30 & 30,6101 & 936,9775 \\ 
+	10 & 50 & 45,4837 & 2.068,7670 \\ 
+	12 & 70 & 67,7941 & 4.596,0423 \\ 
+	15 & 80 & 90,1045 & 8.118,8269 \\ 
+	22 & 120 & 118,4996 & 14.042,1574 \\ 
+	32 & 140 & 137,5142 & 18.910,1466 \\ \hline
+	16,6667 & 81,6667 & 490,0062 & 48.672,9177 \\ 
+\end{tabular}
+\end{center}
+
+Notemos que se verifica que $\sigma_{exp}^2 = 1442,5398$. Por tanto, tenemos que $\eta_{Y\backslash X}^2 = 0,9968$ (se trata de un buen ajuste).
+
+Apartado c
+
+Se pretende buscar la curva $y =  ax^b$ que minimice los cuadrados de los errores observados (y, por tanto, mejor se ajuste a los datos observados). Linealizamos tomando logaritmos en ambos miembros, de donde $\log{y} = \log{a} + b·\log{x}$. La tabla sobre el que hemos de operar es la siguiente:
+
+\begin{center}
+	\begin{tabular}{ c|c|c c c }
+	
+	$\log{x_i}$ & $\log{y_i}$ & $\log{x_i}^2$ & $\log{y_i}^2$ & $\log{x_i}·\log{y_i}$ \\ \hline
+	0,9542 & 1,4771 & 0,9106 & 2,1819 & 1,4095 \\ 
+	1,0000 & 1,6990 & 1,0000 & 2,8865 & 1,6990 \\ 
+	1,0792 & 1,8451 & 1,1646 & 3,4044 & 1,9912 \\ 
+	1,1761 & 1,9031 & 1,3832 & 3,6218 & 2,2382 \\ 
+	1,3424 & 2,0792 & 1,8021 & 4,3230 & 2,7911 \\ 
+	1,5051 & 2,1461 & 2,2655 & 4,6059 & 3,2302 \\ \hline
+	7,0571 & 11,1496 & 8,5260 & 21,0234 & 13,3593 \\ 
+\end{tabular}
+\end{center}
+
+Datos que se pueden obtener de esta tabla:
+
+\vspace{1em}
+
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+	\hline
+	$\overline{x}$ & $\overline{y}$ & $m_{20}$ & $m_{02}$ & $m_{11}$ & $\sigma{x}^2$ & $\sigma{y}^2$ & $\sigma{xy}$ &  $b$ & $\log{a}$  \\ \hline
+	1,1762 & 1,8583 & 1,4210 & 3,5039 & 2,2265 & 0,0376 & 0,0507 & 0,0409 & 1,0877 & 0,5789 \\ \hline
+\end{tabular}
+\normalsize
+
+\vspace{1em}
+
+Minimizando por mínimos cuadrados, tenemos que: $\log{a} = 0,5789$ y $b=1,0877$. Por tanto, la curva potencial que mejor se ajusta a los datos experimentales es:
+
+$$y=3,7923·x^{1,0877}$$
+
+Para obtener la razón de correlación de $Y\backslash X$, realizamos la siguiente tabla:
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+$x_i$ & $y_i$ & $y_i*$ & $(y_i*^2-y_i)^2$ \\ \hline
+9 & 30 & 41,3861 & 129,6428 \\ 
+10 & 50 & 46,4116 & 12,8768 \\ 
+12 & 70 & 56,5919 & 179,7766 \\ 
+15 & 80 & 72,1384 & 61,8040 \\ 
+22 & 120 & 109,4186 & 111,9656 \\ 
+32 & 140 & 164,4733 & 598,9410 \\ \hline
+ & & 490,4199 & 182,5011 \\ \hline
+\end{tabular}
+\end{center}
+
+Deducimos que se verifica $\sigma_{res}^2 = 182,5011$. Por tanto, tenemos que $\eta_{Y\backslash X}^2 = 1 - 0,1261 = 0,8739$.
+
+Apartado d
+
+Se pretende buscar la curva $y =  ab^x$ que minimice los cuadrados de los errores observados (y, por tanto, mejor se ajuste a los datos observados). Linealizamos aplicando tomando logaritmos en ambos miembros, de donde $\log{y} = \log{a} + x·\log{b}$. La tabla sobre el que hemos de operar es la siguiente:
+
+\begin{center}
+	\begin{tabular}{ c|c|c c c }
+	
+	$x_i$ & $\log{y_i}$ & $x_i^2$ & $\log{y_i}^2$ & $x_i·\log{y_i}$ \\ \hline
+	9,0000 & 1,4771 & 81,0000 & 2,1819 & 13,2941 \\ 
+	10,0000 & 1,6990 & 100,0000 & 2,8865 & 16,9897 \\ 
+	12,0000 & 1,8451 & 144,0000 & 3,4044 & 22,1412 \\ 
+	15,0000 & 1,9031 & 225,0000 & 3,6218 & 28,5463 \\ 
+	22,0000 & 2,0792 & 484,0000 & 4,3230 & 45,7420 \\ 
+	32,0000 & 2,1461 & 1.024,0000 & 4,6059 & 68,6761 \\ \hline
+	100,0000 & 11,1496 & 2.058,0000 & 21,0234 & 195,3894 \\ 
+\end{tabular}
+\end{center}
+
+
+\vspace{1em}
+
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+	\hline
+	$\overline{x}$ & $\overline{y}$ & $m_{20}$ & $m_{02}$ & $m_{11}$ & $\sigma{x}^2$ & $\sigma{y}^2$ & $\sigma{xy}$ & $\log{b}$ & $\log{a}$  \\ \hline
+16,6667 & 1,8583 & 343,0000 & 3,5039 & 32,5649 & 65,2222 & 0,0507 & 1,5938 & 0,0244 & 1,4510 \\ \hline
+\end{tabular}
+\normalsize
+
+\vspace{1em}
+
+Tras aplicar mínimos cuadrados, obtenemos que $\log{a} = 1,4510$ y $\log{b}=0,0244$. La curva que buscamos es:
+
+$$y=28,2488\cdot1,0578^{x}$$
+
+Calculemos la bondad del ajuste. Nos atenemos a la siguiente tabla:
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	$x_i$ & $y_i$ & $y_i*$ & $(y_i*^2-y_i)^2$ \\ \hline
+	9 & 30 & 46,8723 & 284,673912469069 \\ 
+	10 & 50 & 49,5853 & 0,171982508254753 \\ 
+	12 & 70 & 55,4915 & 210,49670214935 \\ 
+	15 & 80 & 65,6957 & 204,613807613501 \\ 
+	22 & 120 & 97,4079 & 510,402889459716 \\ 
+	32 & 140 & 170,9866 & 960,16629128634 \\ \hline
+	\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & 486,0392 & 2170,52558548623 \\ \hline
+\end{tabular}
+\end{center}
+
+Deducimos que $\sigma_{res}^2 = 361,753$. Por tanto, tenemos que $\eta_{Y\backslash X}^2 = 1 - 0,2499 = 0,7501$.
+
+De las cuatro regresiones presentada, aquella que presenta mejor ajuste sería la hipérbola equilátera, pues un mayor porcentaje de datos observados son explicados a partir de la curva de regresión.
+
+\end{document}

@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+En una población de n familias se han observado la edad de marido (variable X) y la edad de la mujer (variable Y), presentando 4 modalidades para la variable X y 5 modalidades para la variable Y. La distribución conjunta bidimensional aparece en la siguiente tabla:
+
+\tiny
+	\begin{center}
+		\begin{tabular}{ c|c|c c c c c|c c c c c|}
+			
+			& $c_j$  & 15 & 22,5 & 27,5 & 32,5 & 37,5 &  &  &  &  &  \\ \hline
+			$c_i$ & $X \backslash Y$ & (10,20] & (20,25] & (25,30] & (30,35] & (35,40] & $n_{i.}$  & $n_{i.}·c_i$  &  $n_{i.}·c_i^2$ & $\sum n_{ij}·c_j$  & $c_i·\sum n_{ij}·c_j$ \\ \hline
+			16,5 & (15,18] & 3 & 2 & 3 & 0 & 0 & 8 & 132 & 2178 & 172,5 & 2846,25 \\ 
+			19,5 & (18,21] & 0 & 4 & 2 & 2 & 0 & 8 & 156 & 3042 & 210 & 4095 \\ 
+			22,5 & (21,24] & 0 & 7 & 10 & 6 & 1 & 24 & 540 & 12150 & 665 & 14962,5 \\ 
+			25,5 & (24,27] & 0 & 0 & 2 & 5 & 3 & 10 & 255 & 6502,5 & 330 & 8415 \\ \hline
+			& $n_{.j}$ & 3 & 13 & 17 & 13 & 4 & 50 & 1083 & 23872,5 &  & 30318,75 \\ 
+			& $n_{.j}·c_j$ & 45 & 292,5 & 467,5 & 422,5 & 150 & 1377,5 &  &  &  &  \\ 
+			& $n_{.j}·c_j^2$ & 675 & 6581,25 & 12856,25 & 13731,25 & 5625 & 39468,75 &  &  &  &  
+		\end{tabular}
+	\end{center}
+
+\normalsize
+
+Puesto que cada modalidad se presenta en forma de intervalo, conviene calcular la marca de clase para realizar cálculos. Para determinar la recta de regresión X = f(Y), hemos de realizar los siguientes cálculos:
+	
+	$$\overline{x} = \frac{1}{n}\sum_{i=1}^{k}n_{i.}·x_i$$
+	$$\overline{y} = \frac{1}{n}\sum_{j=1}^{p}n_{.j}·y_j$$
+	$$m_{20} = \frac{1}{n}\sum_{i=1}^{k}n_{i.}·x_i^2$$
+	$$m_{02} = \frac{1}{n}\sum_{j=1}^{p}n_{.j}·y_j^2$$
+	$$m_{11} = \frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}·x_i·y_j$$
+	$$ \sigma_x^2 = m_{20} - \overline{x}^2$$
+	$$ \sigma_y^2 = m_{02} - \overline{y}^2$$
+	$$ \sigma_{xy} = m_{11} - \overline{x}·\overline{y}$$
+	
+Teniendo en cuenta los datos de la tabla presentada, tenemos los siguientes resultados: $\overline{x} = 21,66$ años, $\overline{y} = 27,55$ años, $m_{20} = 477,45$ años$^2$, $m_{02} = 789,375$ años$^2$, $m_{11} = 606,375$ años$^2$ $ \sigma_x^2 = 8,2944$ años$^2$, $ \sigma_y^2 = 30,3725$ años$^2$, $ \sigma_{xy} =9,642$ años$^2$.
+	
+Para la recta $x = ay + b$ que minimice los cuadrados de los errores, hemos de calcular los siguientes valores:
+
+$$a = \frac{\sigma_{xy}}{\sigma_y^2}$$
+$$b = \overline{x} - a·\overline{y}$$
+
+Sustituyendo en los datos obtenidos, obtenemos: $a=0,3174$ y $b=12,9146$ años. Por tanto, la recta de regresión es:
+
+$$ x = 0,3174y + 12,9146 $$
+
+La interdependencia de ambas variables viene determinada por el coeficiente $R^2 = \dfrac{\sigma_{xy}^2}{\sigma_x^2\sigma_y^2}$. En este caso, su valor es $R^2 = 0,369$. Ello representa que el $36,9 \%$ de la variabilidad de la edad en los varones viene explicado por la recta de regresión, mientras que el $63,1 \%$ restante viene determinado por otras causas. 
+
+\end{document}

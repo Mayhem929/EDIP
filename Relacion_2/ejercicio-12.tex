@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+En el desarrollo de este ejercicio se va a considerar que a cada tiempo de trayecto de vuelo del avión va asociado una única cantidad de combustible asociada a dicho trayecto (se despreciarán las ligeras variaciones que se puedan dar tanto en el despegue como en el descenso de la aeronave). Por tanto, se presupone que $n_i = 1$, $\forall i = 1,2,3,...,n$.
+
+Apartado a
+
+Los cálculos que se han de hacer serían: 
+
+$$\overline{x} = \frac{1}{n}\sum_{i=1}^{k}n_{i.}·x_i$$
+$$\overline{y} = \frac{1}{n}\sum_{j=1}^{p}n_{.j}·y_j$$
+$$m_{20} = \frac{1}{n}\sum_{i=1}^{k}n_{i.}·x_i^2$$
+$$m_{02} = \frac{1}{n}\sum_{j=1}^{p}n_{.j}·y_j^2$$
+$$m_{11} = \frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}·x_i·y_j$$
+$$ \sigma_x^2 = m_{20} - \overline{x}^2$$
+$$ \sigma_y^2 = m_{02} - \overline{y}^2$$
+$$ \sigma_{xy} = m_{11} - \overline{x}·\overline{y}$$
+
+Pero como se verifica que $n_i = 1$, $\forall i = 1,2,3,...,n$, bastaría con calcular: 
+
+$$\overline{x} = \frac{1}{n}\sum_{i=1}^{k}·x_i$$
+$$\overline{y} = \frac{1}{n}\sum_{j=1}^{p}·y_j$$
+$$m_{20} = \frac{1}{n}\sum_{i=1}^{k}·x_i^2$$
+$$m_{02} = \frac{1}{n}\sum_{j=1}^{p}·y_j^2$$
+$$m_{11} = \frac{1}{n}\sum_{i=1}^{k}x_i·y_i$$
+
+Así llegamos a las siguientes conclusiones: $\overline{x} = 1,31125$ h, $\overline{y} = 9,15496$ miles de libras, $m_{20} = 2,128125$ h$^2$, $m_{02} = 99,8543$ miles de libras$^2$, $m_{11} = 14,5619$, $ \sigma_x^2 = 0,4087$ h$^2$, $ \sigma_y^2 = 16,041$ miles de libras$^2$, $ \sigma_{xy} =2,5575$ años$^2$.
+
+Para la recta $x = ay + b$ que minimice los cuadrados de los errores, hemos de calcular los siguientes valores:
+
+$$a = \frac{\sigma_{xy}}{\sigma_x^2}$$
+$$b = \overline{y} - a·\overline{x}$$
+
+Sustituyendo en los datos obtenidos, obtenemos: $a=6,2576$ miles de libras/h y $b=0,9497$ miles de libras. Por tanto, la recta de regresión es:
+
+$$ y(x) = 6,2576x + 0,9497 $$ donde x se expresa en horas e y se expresa en miles de libras de combustible. 
+
+Para determinar si el ajuste realizado es fiable, hemos de calcular $R^2 = \dfrac{\sigma_{xy}^2}{\sigma_x^2\sigma_y^2}$. En este caso, su valor es $R^2 = 0,997689$. Ello representa que la estimación es muy fiable, siendo correcta en más de un $99 \%$ de las situaciones. 
+
+El itinerario se presenta en la siguiente tabla: 
+
+\tiny
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\multicolumn{1}{|l|}{Tiempo (en h)} & \multicolumn{1}{l|}{Combustible / trayecto ( miles de libras)} & \multicolumn{1}{l|}{n.º trayectos} & \multicolumn{1}{l|}{Combustible (miles de libras)} \\ \hline
+			0,5 & 4,0785 & 100 & 407,85 \\ 
+			1 & 7,2073 & 200 & 1441,46 \\ 
+			2 & 13,4649 & 100 & 1346,49 \\ \hline
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} &  & 3195,8 \\ \hline
+		\end{tabular}
+	\end{center}
+\normalsize
+
+Se emplea un total de 3195,8 miles de libras de combustible para realizar el itinerario.
+
+Apartado b
+
+Con la filosofía de minimizar el cuadrado de los errores para los parámetros de la curva $y = a +bx+cx^2$, tenemos que para calcularlos se ha de resolver el siguiente sistema de ecuaciones:´
+
+\begin{eqnarray}
+\nonumber
+a+ m_{10}b + m_{20}c = m_{01} \\
+\nonumber
+m_{10}a +m_{20}b + m_{30}c = m_{11} \\
+\nonumber`
+m_{20}a +m_{30}b + m_{40}c = m_{21}
+\end{eqnarray}
+
+Teniendo en cuenta $m_{30} = 3,9$, $m_{40}=7,624$, $m_{21} = 26,4164$, además de los resultados ya calculados previamente, obtenemos: 
+
+\begin{eqnarray}
+\nonumber
+a=0,8086 \\
+\nonumber
+b=6,53 \\
+\nonumber`
+c=-0,1006
+\end{eqnarray}
+
+La ecuación de la curva quedaría $y=0,8086+6,53x-0,1006x^2$. La estimación que realizaría esta regresión al itinerario sería:
+\tiny
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\multicolumn{1}{|l|}{Tiempo (en h)} & \multicolumn{1}{l|}{Combustible / trayecto (miles de libras)} & \multicolumn{1}{l|}{n.º de trayectos} & \multicolumn{1}{l|}{Combustible (miles de libras)} \\ \hline
+			0,5 & 4,04845 & 100 & 404,845 \\ 
+			1 & 7,238 & 200 & 1447,6 \\ 
+			2 & 13,4662 & 100 & 1346,62 \\ \hline
+			\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} &  & 3199,065 \\ \hline
+		\end{tabular}
+	\end{center}
+\normalsize
+
+
+
+
+No se proporciona suficiente información en el enunciado para determinar cuál de las dos regresiones se ajusta mejor a los datos experimentales. 
+
+\end{document}
