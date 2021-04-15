@@ -1,3 +1,21 @@
+\problem
+Se han lanzado dos dados varias veces, obteniendo los resultados que se presentan en la siguiente tabla, donde $X$ designa el resultado del primer dado  e $Y$ el resultado del segundo:
+$$
+   \begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+ X & 1 & 2 & 2 & 3 & 5 & 4 & 1 & 3 & 3 & 4 & 1 & 2 & 5 & 4 & 3 & 4 & 4 & 5 & 3 & 1 & 6 & 5 & 4 & 6 \\ \hline
+ Y & 2 & 3 & 1 & 4 & 3 & 2 & 6 & 4 & 1 & 6 & 6 & 5 & 1 & 2 & 5 & 1 & 1 & 2 & 6 & 6 & 2 & 1 & 2 & 5 \\
+   \end{array}
+$$
+
+  \begin{enumerate}
+     \item Construir la tabla de frecuencias.
+     \item Calcular las puntuaciones medias obtenidas con cada dado y ver cuales son m\'as homog\'eneas.
+     \item ?`Qu\'e
+      resultado del segundo dado es  m\'as frecuente cuando en el primero se obtiene
+        un 3?
+     \item Calcular la puntuaci\'on m\'axima del 50\% de las puntuaciones m\'as bajas obtenidas con el primer dado si con el segundo se ha obtenido un 2 o un 5.
+   \end{enumerate}
+
 Antes de resolver el ejercicio crearemos un nuevo enunciado, pues no tiene sentido calcular las cosas que nos piden, cuando estas dependen de la aleatoriedad. En nuestro nuevo enunciado, la variable X será el número de personas que componen distintas familias de Granada, y la variable Y es el número de habitaciones que tienen en sus casas. Resolvemos ahora el ejercicio.
 
 \subproblem
@@ -45,9 +63,9 @@ Calculamos la media de nuestras variables:
 Ahora calculamos la desviación típica de cada variable para poder calcular el coeficiente de variación de Pearson y ver cuál es más homogénea:
 
 \begin{equation*}
-    \sigma_{x} = \sqrt{\dfrac{328}{24}-3.375^2} = 1.5224
+    \sigma_{x}^2 = \sqrt{\dfrac{328}{24}-3.375^2} = 1.5224 hijos
     \hspace{1cm}
-    \sigma_{y} = \sqrt{\dfrac{335}{24}-3.2083^2} = 1.9144
+    \sigma_{y} = \sqrt{\dfrac{335}{24}-3.2083^2} = 1.9144 habitaciones
 \end{equation*}
 
 \begin{equation*}
