@@ -5,10 +5,10 @@ Estudiar la dependencia o independencia de las variables en cada una de las sigu
     \begin{tabular}{| c | c | c | c | c | c | c |}
         \hline
         $X / Y$ & 1 & 2 & 3 & 4 & 5 & $n_i.$\\ \hline
-        10 & 2 & 4 & 6 & 10 & 8 & 30 \\
-        20 & 1 & 2 & 3 & 5 & 4 & 15 \\
-        30 & 3 & 6 & 9 & 15 & 12 & 45 \\
-        40 & 4 & 8 & 12 & 20 & 16 & 60 \\
+        10 & 2 & 4 & 6 & 10 & 8 & 30 \\ \hline
+        20 & 1 & 2 & 3 & 5 & 4 & 15 \\ \hline
+        30 & 3 & 6 & 9 & 15 & 12 & 45 \\ \hline
+        40 & 4 & 8 & 12 & 20 & 16 & 60 \\ \hline
         $n_.j$ & 10 & 20 & 30 & 50 & 40 & 150 \\       \hline
     \end{tabular} \\ 
     \end{center}
@@ -19,11 +19,11 @@ Estudiar la dependencia o independencia de las variables en cada una de las sigu
     \begin{tabular}{| c | c | c | c | c | c | c |}
         \hline
         $X / Y$ & 1 & 2 & 3 & $n_i.$ & $n_{i.}x_i$ & $n_{i.}x_i^2$\\ \hline
-        -1 & 0 & 1 & 0 & 1 & -1 & 1 \\
-        0 & 1 & 0 & 1 & 2 & 0 & 0 \\
-        1 & 0 & 1 & 0 & 1 & 1 & 1 \\
-        $n_.j$ & 1 & 2 & 1 & 4 & 0 & 2 \\
-        $n_{.j}y_j$ & 1 & 4 & 3 & 8 & & \\
+        -1 & 0 & 1 & 0 & 1 & -1 & 1 \\ \hline
+        0 & 1 & 0 & 1 & 2 & 0 & 0 \\ \hline
+        1 & 0 & 1 & 0 & 1 & 1 & 1 \\ \hline
+        $n_.j$ & 1 & 2 & 1 & 4 & 0 & 2 \\ \hline
+        $n_{.j}y_j$ & 1 & 4 & 3 & 8 & & \\ \hline
         $n_{.j}y_j^2 - \bar{y}^2$ & 1 & 8 & 9 & 18 & & \\
         \hline
     \end{tabular} \\ 
@@ -36,12 +36,14 @@ Estudiar la dependencia o independencia de las variables en cada una de las sigu
     $\sigma_x^2 = m_{20}-m_{10}^2 = m_{20} = \frac{2}{4} = 0,5$. \\
     $\sigma_y^2 = m_{02}-m_{01}^2 = \frac{18}{4} -2^2=4,5 - 4 = 0,5$. \\
     \[\sigma_{xy} = m_{11} - m_{10}m_{01} = m_{11} = \frac{1}{n} \sum_{i=1}^{k}\sum_{j=1}^{p} x_iy_jn_{ij} = \frac{1*2*-1 + 1*2*1}{4} = \frac{-2+2}{4} = 0 \]
-    Calculamos la curva de regresión de X/Y: x=ay+b \\
-    $a= \frac{\sigma_{xy}}{\sigma_{y}^2} = 0$ \\
-    $b = \bar{x}-a\bar{y} = \bar{x} = 0$ \\ 
-    $x=0$ es la curva de regresión de X/Y. \\ \\
-    Calculamos ahora la de Y/X: $x=a'y+b'$ \\
-    $a' = \frac{\sigma_{xy}}{\sigma_x^2} = 0$ \\
-    $b' = \bar{x}-a'\bar{y} = \bar{y} = 2$ \\
-    $y=2$ es la curva de regresión de Y/X. \\ \\
+    Calculamos los puntos por los que pasa la curva de regresión de X/Y: $(\bar{x_j},y_j)$ \\
+    $\bar{x_1} = \frac{0}{1} = 0$ \\
+    $ \bar{x_2} = \frac{1*-1 + 1*1}{2} = 0$ \\
+    $\bar{x_3} = \frac{0}{1} = 0$ \\
+    Por lo tanto, los puntos son: (0,1)    (0,2)    (0,3) \\
+    Calculamos ahora los puntos por los que pasa la curva de regresión de Y/X: $(x_i,\bar{y_i})$ \\
+    $\bar{y_1} = \frac{1*2}{1} = 2$ \\
+    $\bar{y_2} = \frac{1*1+1*3}{2} = 2$ \\
+    $\bar{y_3} = \frac{1*2}{1} = 2$ \\
+    Por lo tanto, los puntos son: (-1,2)    (0,2)    (1,2)
     
