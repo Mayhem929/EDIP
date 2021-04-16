@@ -6,12 +6,12 @@ Para cada una de las distribuciones: ¿Dependen funcionalmente X de Y o Y de X? 
     \begin{tabular}{| c | c | c | c | c | c | c |}
         \hline
         $X / Y$ & 10 & 15 & 20 & $n_{i.}$ & $n_{i.}x_i$ & $n_{i.}x_i^2 - \bar{x}^2$ \\ \hline
-        1 & 0 & 2 & 0 & 2 & 2 & 4,084 \\
-        2 & 1 & 0 & 0 & 1 & 2 & 0,184 \\
-        3 & 0 & 0 & 3 & 3 & 9 & 0,978 \\
-        4 & 0 & 1 & 0 & 1 & 4 & 2,468 \\
-        $n_.j$ & 1 & 3 & 3 & 7 & 17 & 7,714\\  
-        $n_{.j}y_j$ & 10 & 45 & 60 & 115 & & \\
+        1 & 0 & 2 & 0 & 2 & 2 & 4,084 \\ \hline
+        2 & 1 & 0 & 0 & 1 & 2 & 0,184 \\ \hline
+        3 & 0 & 0 & 3 & 3 & 9 & 0,978 \\ \hline
+        4 & 0 & 1 & 0 & 1 & 4 & 2,468 \\ \hline
+        $n_.j$ & 1 & 3 & 3 & 7 & 17 & 7,714\\   \hline
+        $n_{.j}y_j$ & 10 & 45 & 60 & 115 & & \\ \hline
         $n_{.j}y_j^2 - \bar{y}^2$ & 41,332 & 6,126 & 38,256 & 85,714 & & \\
         \hline
     \end{tabular} \\ 
@@ -22,7 +22,7 @@ Para cada una de las distribuciones: ¿Dependen funcionalmente X de Y o Y de X? 
     \[\bar{y} = \frac{1}{n}\sum_{j=1}^{p}n_{.j}y_j = \frac{115}{7} = 16,429 \]
     \[\sigma_y^2 = m_{02}-m_{01}^2 = \frac{1}{n}\sum_{j=1}^{p}n_{.j}y_j^2-\bar{y}^2 = \frac{85,714}{7} = 12,245\]
     $\sigma_{xy} = m_{11}-m_{10}m_{01} = \frac{2*1*15+1*2*10+3*20*3+1*15*4}{7} - 2,429*16,429 = 1,523$ \\ \\
-    Hallamos la curva de regresión de X/Y: =ay+b. \\
+    Hallamos la curva de regresión de X/Y: x=ay+b. \\
     $a = \frac{\sigma_{xy}}{\sigma_y^2} = \frac{1,523}{12,245} = 0,124$ \\
     $b = \bar{x}-a\bar{y} = 2,429 - 0,124*16,429 = 0,392$ \\
     $x=0,125y + 0,375$ \\ \\ 
@@ -32,9 +32,9 @@ Para cada una de las distribuciones: ¿Dependen funcionalmente X de Y o Y de X? 
     \begin{tabular}{| c | c | c | c |}
         \hline
         $X / Y$ & 10 & 15 & 20 \\ \hline
-        1 & 0 & 2 & 0 \\
-        2 & 1 & 0 & 0 \\
-        3 & 0 & 0 & 3 \\
+        1 & 0 & 2 & 0 \\ \hline
+        2 & 1 & 0 & 0 \\ \hline
+        3 & 0 & 0 & 3 \\ 
         \hline
     \end{tabular} \\ 
     \end{center}
@@ -45,11 +45,11 @@ Para cada una de las distribuciones: ¿Dependen funcionalmente X de Y o Y de X? 
     \begin{tabular}{| c | c | c | c | c | c | c | c |}
         \hline
         $X / Y$ & 10 & 15 & 20 & 25 & $n_{i.}$ & $n_{i.}x_i$ & $n_{i.}x_i^2-\bar{x}^2$\\ \hline
-        1 & 0 & 3 & 0 & 1 & 4 & 4 & 2,039 \\
-        2 & 0 & 0 & 1 & 0 & 1 & 2 & 0,082 \\
-        3 & 2 & 0 & 0 & 0 & 2 & 6 & 3,308 \\
-        $n_{.j}$ & 2 & 3 & 1 & 1 & 7 & 12 & 5,429 \\
-        $n_{.j}y_j$ & 20 & 45 & 20 & 25 & 110 & & \\
+        1 & 0 & 3 & 0 & 1 & 4 & 4 & 2,039 \\ \hline
+        2 & 0 & 0 & 1 & 0 & 1 & 2 & 0,082 \\ \hline
+        3 & 2 & 0 & 0 & 0 & 2 & 6 & 3,308 \\ \hline
+        $n_{.j}$ & 2 & 3 & 1 & 1 & 7 & 12 & 5,429 \\ \hline
+        $n_{.j}y_j$ & 20 & 45 & 20 & 25 & 110 & & \\ 
         \hline
     \end{tabular} \\ 
     \end{center}
