@@ -55,7 +55,7 @@
 	
 	
 	
-	$\sigma_{x}^{2} =  $$\frac{1}{n}\sum^{k}_{i=1}n_{i.}x_{i}^{2} - \bar{x}^{2} = \frac{208}{24} - 2,6667^{2} = 1,5554 $ $ balanzas^{2} $ \\
+	$\sigma_{x}^{2} =  $$\frac{1}{n}\sum^{k}_{i=1}n_{i.}x_{i}^{2} - \bar{x}^{2} = \frac{192}{24} - 2,6667^{2} = 0,8887 $ $ balanzas^{2} $ \\
 	
 	$\sigma_{y}^{2} = $ $\frac{1}{n}\sum^{p}_{j=1}n_{.j}y_{j}^{2} - \bar{y}^{2} = \frac{245}{24} - 3,0417 ^{2} = 0,9564 $ $dependientes^{2}$ \\
 	
@@ -65,25 +65,25 @@
 	$\bullet$Ahora que tenemos todos los datos necesarios podemos ya calcular los coeficientes de las rectas de regresión :\\ \\
 	\textbf{Para Y / X:}\\
 	$y = ax +b $\\ \\
-	$a = \frac{\sigma_{xy}}{\sigma_{x}^{2}} = \frac{0,5970}{1,5554} = 0,3838$\\ \\
-	$b = \bar{y} - a.\bar{x} = 3,0417 - \frac{0,5970}{1,5554}. 2,6667 = 2,018$\\ \\
+	$a = \frac{\sigma_{xy}}{\sigma_{x}^{2}} = \frac{0,5970}{0,8887} = 0,6718$\\ \\
+	$b = \bar{y} - a.\bar{x} = 3,0417 - \frac{0,5970}{0,8887}. 2,6667 = 1,2502$\\ \\
 	La recta de regresión de Y sobre X es
-	$y = 0,3838x + 2,018 $\\ \\
+	$y = 0,6718 + 1,2502 $\\ \\
 	\textbf{Para X / Y:}\\
-	$x = \frac{1}{a}( y- b) $\\ \\
+	$x = ay + b $\\ \\
 	$a = \frac{\sigma_{xy}}{\sigma_{y}^{2}} = \frac{0,5970}{ 0,9564 } = 0,6242$\\ \\
-	$b = \bar{x} - a.\bar{y} = 2,6667 -  \frac{0,5970}{ 0,9564 }.3,0417 = 0,786$\\ \\La recta de regresión de X sobre Y es
-	$x = 0,6242y +  0,786 $\\ 
+	$b = \bar{x} - a.\bar{y} = 2,6667 -  \frac{0,5970}{ 0,9564 }.3,0417 = 0,768$\\ \\La recta de regresión de X sobre Y es
+	$x = 0,6242y +  0,768 $\\ 
 \subproblem	
 	
 	
 	$\bullet$ Para ello tenemos que calcular el coeficiente de correlación lineal:\\ \\
 	
-	$r^{2} = \frac{\sigma_{xy}^{2}}{\sigma_{x}^{2}\sigma_{y}^{2}} = \frac{0,5970^{2}}{1,5554 . 0,9564} = 0,2396$\\ \\
+	$r^{2} = \frac{\sigma_{xy}^{2}}{\sigma_{x}^{2}\sigma_{y}^{2}} = \frac{0,5970^{2}}{0,8887 . 0,9564} = 0,4193$\\ \\
  
 		$\bullet$El resultado que hemos obtenido nos indica que la recta de regresión de Y sobre X nos da una información de menos
-	del 24 \% de la variabilidad de Y, luego no seria buena idea suponer una relación lineal entre las variables ya que la bondad de la función es baja. 
-	Tampoco, el coeficiente de correlación lineal $r =\sqrt{r^{2}} = 0,489$ nos indica que existe una buena correlación lineal directa entre las variables. \\ \\
+	del 42 \% de la variabilidad de Y, luego no seria buena idea suponer una relación lineal entre las variables ya que la bondad de la función es relativamente baja. 
+	Tampoco, el coeficiente de correlación lineal $r =\sqrt{r^{2}} = 0,6475$ nos indica que existe una buena correlación lineal directa entre las variables. \\ \\
 	
 \subproblem	
-	$x = 0,6242y +  0,786 = 0,6242 . 6 +  0,786 = 4,5312 \approx 5 balanzas $
+	$x = 0,6242y +  0,786 = 0,6242 . 6 +  0,786 = 4,5312 \approx 5 $ balanzas. Si bien la recta de regresión proporcionaría una estimación de la cantidad de balanzas que cabría esperar para 6 dependiente, el resultado no sería fiable, puesto que la recta de regresión tendría únicamente validez para el intervalo muestral estudiado (en este caso, de 1 a 4 dependientes). Más allá de estos límites, no se sabe si la nube de puntos seguiría comportándose como los datos estudiados. 
