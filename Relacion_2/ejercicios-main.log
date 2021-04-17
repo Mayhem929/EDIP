@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.8)  15 APR 2021 12:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.8)  17 APR 2021 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,24 +974,12 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [2 <./logo-fciencias.jpeg>]) (./ejercicio-2.tex
-! Undefined control sequence.
-<recently read> \sumproblem 
-                            
-l.19 \sumproblem
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--21
+Underfull \hbox (badness 10000) in paragraph at lines 6--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--21
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
@@ -1123,37 +1111,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--108
  []
 
 ) (./ejercicio-3.tex
-File: logo-fciencias.jpeg Graphic file (type jpg)
-<use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 61.
-(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
- [6]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65 ...rac{155}{89} = 1.7415 \approx 2 personas\\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.65 ...rac{155}{89} = 1.7415 \approx 2 personas\\
-                                                  
+l.66 
+     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.65 ...rac{155}{89} = 1.7415 \approx 2 personas\\
-                                                  
+l.66 
+     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1163,16 +1133,21 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \@@par 
-l.65 ...rac{155}{89} = 1.7415 \approx 2 personas\\
-                                                  
+l.66 
+     
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
+File: logo-fciencias.jpeg Graphic file (type jpg)
+<use logo-fciencias.jpeg>
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 66.
+(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
+[6]
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.65 ...rac{155}{89} = 1.7415 \approx 2 personas\\
-                                                  
+l.66 
+     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -1187,11 +1162,21 @@ l.67         \sigma
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+! You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.70     \end{equation}
+                       
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70     \end{equation*}
-                        
+l.70     \end{equation}
+                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1213,16 +1198,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--22
 
  []
 
-File: logo-fciencias.jpeg Graphic file (type jpg)
-<use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 22.
-(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 23--39
 
  []
 
-
+File: logo-fciencias.jpeg Graphic file (type jpg)
+<use logo-fciencias.jpeg>
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 39.
+(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 40--43
 
  []
@@ -1310,15 +1295,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 70--123
+Underfull \hbox (badness 10000) in paragraph at lines 70--122
 
  []
 
+(./ejercicio-5.tex
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 123.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 1.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
-[8] (./ejercicio-5.tex
+ [8]
 ! Missing { inserted.
 <to be read again> 
                    \let 
@@ -1359,7 +1345,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 <to be read again> 
                    \let 
 l.25         $n_.
-                 j$ & 1 & 2 & 1 & 4 & 0 & 2 \\
+                 j$ & 1 & 2 & 1 & 4 & 0 & 2 \\ \hline
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
@@ -1369,7 +1355,7 @@ so that I will find a matching right brace soon.
 <inserted text> 
                 }
 l.25         $n_.j$
-                    & 1 & 2 & 1 & 4 & 0 & 2 \\
+                    & 1 & 2 & 1 & 4 & 0 & 2 \\ \hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1393,28 +1379,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 38.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 49.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 38--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--47
-
- []
-
-) (./ejercicio-6.tex
+[9]) (./ejercicio-6.tex
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.45 ...& $n_i.$ & $n_i.\cdot x_i $ & $n_i.$ \cdot
+l.23 ...& $n_i.$ & $n_i.\cdot x_i $ & $n_i.$ \cdot
                                                    $x_i^2$ & $x_i\sum_{j=1}^...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1422,7 +1393,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.45 ..._i.$ & $n_i.\cdot x_i $ & $n_i.$ \cdot $x_
+l.23 ..._i.$ & $n_i.\cdot x_i $ & $n_i.$ \cdot $x_
                                                   i^2$ & $x_i\sum_{j=1}^p n_...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1434,72 +1405,67 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \subproblem
+l.35 \subproblem
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 63.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 46.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 99.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 81.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
@@ -1508,7 +1474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 <to be read again> 
                    \let 
 l.13         $n_.
-                 j$ & 1 & 3 & 3 & 7 & 17 & 7,714\\
+                 j$ & 1 & 3 & 3 & 7 & 17 & 7,714\\   \hline
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
@@ -1518,7 +1484,7 @@ so that I will find a matching right brace soon.
 <inserted text> 
                 }
 l.13         $n_.j$
-                    & 1 & 3 & 3 & 7 & 17 & 7,714\\
+                    & 1 & 3 & 3 & 7 & 17 & 7,714\\   \hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1532,7 +1498,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 21.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 23.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
 [12]
 Underfull \hbox (badness 10000) in paragraph at lines 23--29
@@ -1560,25 +1526,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 60--150
+Underfull \hbox (badness 10000) in paragraph at lines 60--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--150
+Underfull \hbox (badness 10000) in paragraph at lines 60--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--150
+Underfull \hbox (badness 10000) in paragraph at lines 60--149
 
  []
 
+(./ejercicio-8.tex
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 150.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 4.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
-[13] (./ejercicio-8.tex
+ [13]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
@@ -1618,11 +1585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-File: logo-fciencias.jpeg Graphic file (type jpg)
-<use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 55.
-(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
@@ -1677,7 +1640,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--77
 
  []
 
-
+File: logo-fciencias.jpeg Graphic file (type jpg)
+<use logo-fciencias.jpeg>
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 77.
+(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
@@ -1710,7 +1677,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--87
 ) (./ejercicio-9.tex
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 1.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 18.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
  [15]
 
@@ -1839,11 +1806,6 @@ LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
 9.
 
 Missing character: There is no · in font cmr10!
-File: logo-fciencias.jpeg Graphic file (type jpg)
-<use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 55.
-(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
-[16]
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
 6.
@@ -1853,7 +1815,12 @@ LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
 6.
 
 Missing character: There is no · in font cmr10!
-) (./ejercicio-10.tex
+)
+File: logo-fciencias.jpeg Graphic file (type jpg)
+<use logo-fciencias.jpeg>
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 167.
+(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
+ [16] (./ejercicio-10.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
  []
@@ -1896,7 +1863,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--22
 ) (./ejercicio-11.tex
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 6.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 27.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
  [17]
 
@@ -1994,7 +1961,7 @@ my insertion and my current dilemma will both disappear.
 ) (./ejercicio-12.tex
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 3.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 34.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
  [18]
 
@@ -2069,48 +2036,48 @@ LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
 0.
 
 Missing character: There is no · in font cmr10!
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
+1.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
+1.
+
+Missing character: There is no · in font cmr10!
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
+2.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
+2.
+
+Missing character: There is no · in font cmr10!
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
+3.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
+3.
+
+Missing character: There is no · in font cmr10!
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
+4.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
+4.
+
+Missing character: There is no · in font cmr10!
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 50.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 60.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
 [19]
 
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
-1.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
-1.
-
-Missing character: There is no · in font cmr10!
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
-2.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
-2.
-
-Missing character: There is no · in font cmr10!
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
-3.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
-3.
-
-Missing character: There is no · in font cmr10!
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
-4.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
-4.
-
-Missing character: There is no · in font cmr10!
-
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 6
 1.
 
@@ -2119,31 +2086,18 @@ LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 6
 1.
 
 Missing character: There is no · in font cmr10!
+) (./ejercicio-13.tex
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 100.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 1.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
-[20]pdfTeX warning (ext4): destination with the same identifier (name{equation.
-0.12.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.101 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.12.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.101 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.12.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.101 \begin{eqnarray}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.0.12.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.101 \begin{eqnarray}
-                      ) (./ejercicio-13.tex
+ [20pdfTeX warning (ext4): destination with the same identifier (name{equation.
+0.0.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \problem
+            ]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -2158,16 +2112,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--29
 
  []
 
-File: logo-fciencias.jpeg Graphic file (type jpg)
-<use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 31.
-(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
-[21]
+
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-) (./ejercicio-14.tex
+File: logo-fciencias.jpeg Graphic file (type jpg)
+<use logo-fciencias.jpeg>
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 43.
+(pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
+[21]) (./ejercicio-14.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.19 ^
+      \end{enumerate}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   \global 
+l.19 ^\end{enumerate}
+                     
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+! LaTeX Error: Command \end{document} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ^\end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ^\end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ^\end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! LaTeX Error: \begin{document} ended by \end{enumerate}.
 
@@ -2175,37 +2183,59 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 \end{enumerate}
-                    
+l.19 ^\end{enumerate}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+! Missing } inserted.
+<inserted text> 
+                }
+l.19 ^\end{enumerate}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.19 ^\end{enumerate}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
+1.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
+1.
+
+Missing character: There is no · in font cmr10!
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
+2.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
+2.
+
+Missing character: There is no · in font cmr10!
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 23.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 42.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
 [22]
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
-1.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
-1.
-
-Missing character: There is no · in font cmr10!
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
-2.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
-2.
-
-Missing character: There is no · in font cmr10!
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 4
 3.
 
 
@@ -2257,22 +2287,22 @@ LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 5
 2.
 
 Missing character: There is no · in font cmr10!
+Missing character: There is no · in font cmr10!
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 6
+7.
+
+
+LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 6
+7.
+
 Missing character: There is no · in font cmr10!
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 58.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 79.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
 [23]
 
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 6
-7.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 6
-7.
-
-Missing character: There is no · in font cmr10!
-
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 8
 1.
 
@@ -2292,7 +2322,7 @@ LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 9
 Missing character: There is no · in font cmr10!
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 108.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 125.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
 [24]
 
@@ -2324,7 +2354,7 @@ LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
 Missing character: There is no · in font cmr10!
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 163.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 179.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
 [25]
 
@@ -2352,28 +2382,28 @@ Package pdftex.def Info: logo-fciencias.jpeg  used on input line 232.
 [26])
 File: logo-fciencias.jpeg Graphic file (type jpg)
 <use logo-fciencias.jpeg>
-Package pdftex.def Info: logo-fciencias.jpeg  used on input line 214.
+Package pdftex.def Info: logo-fciencias.jpeg  used on input line 213.
 (pdftex.def)             Requested size: 58.78062pt x 28.45274pt.
  [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
  (./ejercicios-main.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 214.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 213.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 85 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31169 strings out of 483080
- 729890 string characters out of 5963340
- 1152241 words of memory out of 5000000
- 45504 multiletter control sequences out of 15000+600000
+ 31152 strings out of 483080
+ 729705 string characters out of 5963340
+ 1153241 words of memory out of 5000000
+ 45493 multiletter control sequences out of 15000+600000
  536844 words of font info for 41 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  68i,18n,98p,732b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2392,10 +2422,10 @@ pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb>
-Output written on ejercicios-main.pdf (27 pages, 342328 bytes).
+Output written on ejercicios-main.pdf (27 pages, 342099 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 432 compressed objects within 5 object streams
- 114 named destinations out of 1000 (max. 500000)
- 447 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 452 PDF objects out of 1000 (max. 8388607)
+ 397 compressed objects within 4 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 375 words of extra memory for PDF output out of 10000 (max. 10000000)
 
