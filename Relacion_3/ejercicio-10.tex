@@ -1,0 +1,45 @@
+Pongamos que tenemos K sobres, y pongamos que el suceso $A_i$ ocurre si el sobre i está en su sitio correspondiente.
+
+Usaré el principio de inclusión-exclusión, para ello, calcularé $P(A_i), P(A_i\cap A_j) \dots$ \\
+
+Primero, tenemos que el número de casos posibles son permutaciones sin repetición de k elementos: $\textbf{k!}$ \\
+
+Para $A_i$ los casos favorables serían las permutaciones de k-1 elementos porque hemos fijado el elemento i: $\textbf{(k-1)!}$
+
+Por tanto $P(A_i) = \dfrac{(k-1)!}{k!}$ 
+
+Además, podemos elegir $A_i$ de k formas.\\
+
+Para $A_i \cap A_j$, los casos favorables son las permutaciones de k-2 elementos ya que hemos fijado i y j: $\textbf{(k-2)!}$
+
+Por tanto $P(A_i \cap A_j) = \dfrac{(k-2)!}{k!}$
+
+Además, podemos elegir $A_i$ y $A_j$ de $k \choose 2$ formas, es decir  $\dfrac{k!}{2!(k-2)!}$ \\
+
+Y así sucesivamente.\\
+
+De esta forma tenemos:
+
+\begin{equation}
+\begin{aligned}[c]
+    P(\bigcup_{i=1}^k A_i) & = \sum_{i=1}^k P(A_i) - \sum_{i<j}^k P(A_i \cap A_j) + \dots + (-1)^{k-1}P(\bigcap_{i=1}^k A_i) \\
+    & = {k \choose 1} \dfrac{(k-1)!}{k!} - {k \choose 2} \dfrac{(k-2)!}{k!} + \dots (-1)^{k-1} {k \choose k}\dfrac{(k-1)!}{k!}\\
+    & = \dfrac{k!(k-1)!}{(k-1)!k!} - \dfrac{k!(k-2)!}{2!(k-2)!k!} + \dfrac{k!(k-3)!}{3!(k-3)!k!} - \dots \\
+    & = 1- \dfrac{1}{2!} + \dfrac{1}{3!} - \dfrac{1}{4!} + \dots - \dfrac{(-1)^{k}}{k!}
+\end{aligned}
+\end{equation}
+
+Si evaluamos el polinomio de Taylor de grado k de la función exponencial en -1 obtenemos:
+$$ P_{k,0}^{e^x} (-1)= 1 - 1 + \dfrac{1}{2} - \dfrac{1}{3!}+ \dfrac{1}{4!} - \dots + \dfrac{(-1)^{k}}{k!}$$
+$$ P(\bigcup_{i=1}^k A_i) + P_{k,0}^{e^x} (-1) = 1$$
+
+Por tanto, 
+$$ P(\bigcup_{i=1}^k A_i) = 1 - P_{k,0}^{e^x} (-1)$$
+
+Y aproximando, o a medida que k se acerca a infinito:
+
+$$ P(\bigcup_{i=1}^k A_i) = 1 - e^{-1} = 1 - \dfrac{1}{e}$$
+
+
+Para el caso de 3 cartas que es lo que realmente nos pide el ejercicio tenemos que 
+$$ P(\bigcup_{i=1}^3 A_i) = 1 - P_{3,0}^{e^x} (-1) = 1 - 1 + 1 - \dfrac{1}{2} + \dfrac{1}{6} = \dfrac{2}{3} = 0.6667$$

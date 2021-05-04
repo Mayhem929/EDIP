@@ -1,0 +1,54 @@
+\problem
+A := 1º es cuadrado perfecto
+
+B := 2º es cuadrado perfecto 
+
+C := 3º es cuadrado perfecto 
+
+D := Ninguno es perfecto \\
+
+
+\subproblem 
+Calcular la probabilidad de que en los 3 números obtenidos no exista ningún cuadrado perfecto. \\
+
+% subconjuntos de 3 elementos de entre los 100 posibles; combinaciones sin repetición
+
+Buscamos $P(D) = P(\overline{A\cup B \cup C}) = P(\overline{A}\cap \overline{B} \cap \overline{C}) =  P(\overline{A})\cdot P(\overline{B}) \cdot P(\overline{C})$
+
+Hay 10 cuadrados perfectos entre los 100 primeros números naturales, luego
+
+$$P(D) = \dfrac{10}{100}\cdot \dfrac{9}{99}\cdot\dfrac{8}{98} = \dfrac{117480}{161700} = 0.7265$$
+
+
+Luego la probabilidad de que entre 3 números que escojamos entre los 100 primeros naturales no haya ningún cuadrado perfecto es de: $$ P(D) = P(\overline{A\cup B \cup C}) = \dfrac{117480}{161700} = 0.7265$$
+
+\subproblem 
+Calcular la probabilidad de que exista al menos un cuadrado perfecto.\\
+Se nos pide $P(\overline D)$, que es simplemente 
+$$1 - P(D) = 0.2735$$
+
+\subproblem
+Calcular la probabilidad de que exista un sólo cuadrado perfecto, de que existan dos, y la de que los tres lo sean.
+\begin{itemize}
+    \item P(1 perfecto) = \\
+    P(1º perfecto $\cap$ 2º no perfecto $\cap$ 3º no perfecto) + \\
+    P(1º no perfecto $\cap$ 2º perfecto $\cap$ 3º no perfecto) + \\ 
+    P(1º no perfecto $\cap$ 2º no perfecto $\cap$ 3º perfecto); \\
+    $P(A\cap \overline{B} \cap \overline{C}) + 
+     P(\overline{A}\cap B \cap \overline{C}) + 
+     P(\overline{A}\cap \overline{B} \cap C)  = \\
+     P(A)\cdot P(\overline{B}) \cdot P(\overline{C}) + 
+     P(\overline{A})\cdot P(B) \cdot P(\overline{C}) +
+     P(\overline{A})\cdot P(\overline{B}) \cdot P(C) = \\
+    \dfrac{10}{100}\cdot \dfrac{90}{99} \cdot \dfrac{89}{98} + 
+    \dfrac{90}{100}\cdot \dfrac{10}{99} \cdot \dfrac{89}{98} + 
+    \dfrac{90}{100}\cdot \dfrac{89}{99} \cdot \dfrac{10}{98}= 0.2477$ \\
+    
+    \item P(3 perfectos) = P(1º perfecto $\cap$ 2º perfecto $\cap$ 3º perfecto) = \\ 
+    $P(A) \cdot P(B) \cdot P(C) =  \dfrac{10}{100} \cdot\dfrac{9}{99} 
+    \cdot\dfrac{8}{98} = \dfrac{2}{2695} = 0.0007421$ \\
+    
+    \item P(2 perfectos); Se podría hacer de forma similar que para 1 perfecto pero como sabemos que los conjuntos son disjuntos (no se pueden dar a la vez dos a dos) y que la probabilidad de que se haya al menos un cuadrado es $P(\overline D) = \\ 
+    P(A\cup B \cup C) = 0.2735$, entonces tenemos que $P(\overline D) = P(A) + P(B) + P(C) \\ 
+    P(B) = P(\overline D) - P(A) - P(C) = 0.02505$
+\end{itemize}
