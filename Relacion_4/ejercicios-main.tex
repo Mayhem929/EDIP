@@ -1,3 +1,84 @@
+\documentclass{homework}
+\usepackage[spanish]{babel}
+
+%Paquetes AMS
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%Letra
+%\usepackage{sans}
+\usepackage{setspace}
+%\spacing{1.15}
+
+% Fondo
+\usepackage[firstpage=true]{background}
+% configuración
+\backgroundsetup{
+	scale=1.1, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
+	color=black, %fondo a usar para transparencia
+	opacity=1.0, %nivel de transparencia
+	angle=0, %en caso de querer una rotación
+	contents={%
+		\includegraphics[width=\paperwidth,height=\paperheight]{fondo.pdf} %nombre de la imagen a utilizar como fondo
+	}%
+}
+
+%Márgenes y demás
+\usepackage{vmargin}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+
+\setmargins{2.5cm}       % margen izquierdo
+{2.0cm}                        % margen superior
+{16.5cm}                      % anchura del texto
+{24.0cm}                    % altura del texto
+{5pt}                           % altura de los encabezados
+{0.5cm}                           % espacio entre el texto y los encabezados
+{0pt}                             % altura del pie de página
+{1.5cm}                           % espacio entre el texto y el pie de página
+
+%Encabezado y pie de página
+\usepackage{fancyhdr}
+
+%\lhead{
+%	\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logo-ugr.png}} \end{picture}
+%}
+
+\lhead{
+	\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logo-fciencias.jpeg}} \end{picture}
+}
+
+%\renewcommand{\headrulewidth}{0.25pt}
+\rhead{Respuestas}
+
+\renewcommand{\footrulewidth}{0.25pt}
+
+
+\pagestyle{fancy}
+
+% Gráficas y demás
+\usepackage{pgfplots}
+\usepackage{graphicx}
+
+%\renewcommand{\baselinestretch}{1.08}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	bookmarks=true,
+}
+
+\homeworksetup{
+	username={Autores, por orden alfabético: \\ Shao Jie Hu Chen \\ Adrián Jaén Fuentes \\ Aarón Jerónimo Fernández \\ Noura Lachhab Bouhmadi \\ Laura Lázaro Soraluce \\ \vspace{1em} Doble Grado en Ingeniería Informática y Matemáticas},
+	course={\huge{Estadística Descriptiva e Introducción a la Probabilidad \\ \vspace{1.5em} Relación de Ejercicios 2\vspace{1.5em}}}
+}
+
 %CUERPO
 \begin{document}
 
