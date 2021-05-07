@@ -1,0 +1,79 @@
+\problem
+
+Sean $A, B$ y $C$ tres sucesos de un espacio probabil{\'\i}stico ($\Omega , \cal{A} ,\mbox{P}$),  tales que $P(A)=0.4, \  P(B)=0.2, \  P(C)=0.3, \  P(A\cap B)=0.1$  y $(A\cup B)\cap C= \emptyset$.
+Calcular las probabilidades de los siguientes sucesos:
+\begin{enumerate}
+	\item s{\'o}lo ocurre $A$,
+	\item ocurren los tres sucesos,
+	\item ocurren $A$ y $B$ pero no $C$,
+	\item por lo menos dos ocurren,
+	\item ocurren dos y no m{\'a}s,
+	\item no ocurren m{\'a}s de dos,
+	\item ocurre por lo menos uno,
+	\item ocurre s{\'o}lo uno,
+	\item no ocurre ninguno.
+\end{enumerate}
+
+\subproblem
+Debemos calcular la probabilidad de que ocurra A y no ocurra ni B ni C. Para hacer los cálculos tenemos en cuenta que $B \cap C = \emptyset$:
+
+\begin{equation*}
+    P(A \cap \overline{B} \cap \overline{C}) = P(A - B - C) = P(A) - P(A \cap B) = 0.4 - 0.1 = 0.3
+\end{equation*}
+
+\subproblem
+Como nos dicen que $(A \cup B) \cap C = \emptyset$ es claro que:
+
+\begin{equation*}
+    P(A \cap B \cap C) = P(\emptyset) = 0
+\end{equation*}
+
+\subproblem
+Como en el apartado anterior, tenemos en cuenta que $(A \cup B) \cap C = \emptyset$ y entonces:
+
+\begin{equation*}
+    P(A \cap B \cap \overline{C}) = P(A \cap B) = 0.1
+\end{equation*}
+
+\subproblem
+Ahora debemos considerar todos los casos en los que ocurren 2 o más, teniendo de nuevo en cuenta que  $(A \cup B) \cap C = \emptyset$:
+
+\begin{equation*}
+    P((A \cap B \cap \overline{C}) \cup (A \cap \overline{B} \cap C) \cup (\overline{A} \cap B \cap C)) = P(A \cap B \cap \overline{C}) = 0.1
+\end{equation*}
+
+\subproblem
+Aquí debemos considerar todos los casos en los que ocurren 2 sucesos:
+
+\begin{equation*}
+    P((A \cap B) \cup (A \cap C) \cup ( B \cap C)) = P(A \cap B) = 0.1
+\end{equation*}
+
+\subproblem
+Aquí debemos considerar todos los casos en los que ocurren 2 o menos sucesos:
+
+\begin{equation*}
+    P(A \cup B \cup C \cup (A \cap B) \cup (A \cap C) \cup ( B \cap C)) =\\ \overline{P(A \cap B \cap C)} = 1 - P(A \cap B \cap C) = 1
+\end{equation*}
+
+\subproblem
+En este apartado solo tenemos que calcular la unión entre A, B y C:
+
+\begin{equation*}
+    P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) = 0.4 + 0.2 + 0.3 - 0.1 = 0.8
+\end{equation*}
+
+\subproblem
+Ahora debemos considerar los casos en los que solo ocurre A o B o C:
+
+\begin{equation*}
+    P((A \cap \overline{B} \cap \overline{C}) \cup (\overline{A} \cap B \cap \overline{C}) \cup (\overline{A} \cap \overline{B} \cap C)) = \\
+    P(A \cap \overline{B} \cap \overline{C}) + P(B) - P(A \cap B) + P(C) = 0.3 + 0.2 - 0.1 + 0.3 = 0.7
+\end{equation*}
+
+\subproblem
+Para este apartado podemos tomar la probabilidad complementaria del suceso calculado en el apartado g:
+
+\begin{equation*}
+    P(\overline{A} \cap \overline{B} \cap \overline{C}) = \overline{P(A \cup B \cup C)} = 1 - P(A \cup B \cup C) = 1 - 0.8 = 0.2
+\end{equation*}

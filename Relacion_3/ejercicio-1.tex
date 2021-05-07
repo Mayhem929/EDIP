@@ -1,0 +1,52 @@
+\problem
+
+Durante un a{\~n}o,  las  personas  de  una  ciudad  utilizan  3  tipos  de
+transportes: metro (M),  autob{\'u}s  (A),  y  coche  particular  (C).  Las
+probabilidades  de  que  durante  el  a{\~n}o  hayan  usado  unos  u  otros
+transportes son:
+
+M:\ 0.3; \ \ A:\ 0.2; \ \ C: \ 0.15; \ \ M y A: \ 0.1; \ \ M y C:\ 0.05; \ \ A y C:\ 0.06; \ \ M,\ A y C: \ 0.01
+
+Calcular las probabilidades siguientes:
+\begin{enumerate}
+	\item que una persona viaje en metro y no en autob{\'u}s;
+	\item que una persona tome al menos dos medios de transporte;
+	\item que una persona viaje en metro o en coche, pero no en autob{\'u}s;
+	\item que viaje en metro,  o bien en autob{\'u}s y en coche;
+	\item que una persona vaya a pie.
+\end{enumerate}
+
+\subproblem
+En este apartado debemos calcular la probabilidad de la intersección entre M y \overline{A}:
+
+\begin{equation*}
+    P(M \cap \overline{A}) = P(M-A) = P(M) - P(M \cap A) = 0.3 - 0.1 = 0.2
+\end{equation*}
+
+\subproblem
+Aquí debemos considerar todas las formas posibles de tomar dos medios de transporte. Calculamos:
+
+\begin{gather*}
+    P((A \cap M) \cup (A \cap C) \cup (M \cup C) \cup (A \cup M \cup C)) =\\ P(A \cap M) + P(A \cap C) + P(M \cup C) - 2P(A \cup M \cup C) = 0.2 + 0.05 + 0.06 - 2 \cdot 0.01 = 0.19
+\end{gather*}
+
+\subproblem
+Ahora debemos calcular la probabilidad de la unión entre las intersecciones de \overline{A} con M y C:
+
+\begin{gather*}
+    P((M \cap \overline{A}) \cup (C \cap \overline{A})) = P(M \cap \overline{A}) + P(C \cap \overline{A}) - P(C \cap M \cap \overline{A}) = \\P(M \cap \overline{A}) + P(C) - P(C \cap A) - P(M \cap C) + P(C \cap M \cap A) = 0.2 + 0.15 - 0.06 - 0.05 + 0.01 = 0.25
+\end{gather*}
+
+\subproblem
+En este apartado debemos calcular la unión entre M y la intersección de A y C:
+
+\begin{equation*}
+    P(M \cup (A \cap C)) = P(M) + P(A \cap C) - P(M \cap A \cap C) = 0.3 + 0.06 - 0.01 = 0.35
+\end{equation*}
+
+\subproblem
+En este último apartado, para calcular lo que nos piden debemos considerar que no hay otro transporte además de los dados en el ejercicio. Si hubiera otro medio, como barco o patinete, no tendríamos los datos suficientes para hacer los cálculos. Hecha esta suposición, calculamos la probabilidad que nos piden:
+
+\begin{gather*}
+    P(\overline{A} \cap \overline{M} \cap \overline{C}) = \overline{P(A \cup M \cup C)} = 1 - P(A \cup M \cup C) = \\ P(A) + P(M) + P(C) - P(A \cap M) - P(A \cap C) - P(M \cap C) + P(A \cap M \cap C) =\\ 1 - (0.2 + 0.3 + 0.15 - 0.1 - 0.06 - 0.05 + 0.01) = 0.55
+\end{gather*}

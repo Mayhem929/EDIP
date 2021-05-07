@@ -1,0 +1,14 @@
+\problem
+
+Se consideran dos urnas: la primera con 20 bolas, de las cuales  18 son blancas, y  la segunda con 10 bolas, de las cuales  9  son  blancas.  Se extrae una bola de la segunda urna y  se  deposita  en  la  primera; si a continuaci{\'o}n, se extrae una bola de {\'e}sta,  calcular  la  probabilidad  de que sea blanca.
+
+Para abordar este problema, antes de hacer nada, le daremos nombre a los sucesos que queremos estudiar:
+
+$B_{i}$ = Sacar bola blanca en la caja i.\\
+$N_{i}$ = Sacar bola negra en la caja i.\\
+
+Lo que queremos calcular es la probabilidad de $B_{1}$ teniendo en cuenta que añadimos una bola a la urna 1 de la  urna 2. Procedemos con los cálculos:
+
+\begin{equation*}
+    P(B_{1}) = P(B_{2}) \cdot P(B_{1}/B_{2}) + (N_{2}) \cdot P(B_{1}/N_{2}) = \dfrac{9}{10} \cdot \dfrac{19}{21} + \dfrac{1}{10} \cdot \dfrac{18}{21} = 0.9
+\end{equation*}
