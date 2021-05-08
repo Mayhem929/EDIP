@@ -4,11 +4,25 @@ Una urna contiene 5 bolas blancas y 3 rojas. Se extraen 2 bolas simultáneamente
 \subproblem
 a) dos bolas rojas \\
 A1 = primera roja, A2 = segunda roja \\
-$P(A1 \cap A2) = \frac{3}{8} * \frac{2}{7} = 0'375*0'286 = 0'107$ \\ \\
+$P(A1 \cap A2) = \frac{3}{8} * \frac{2}{7} = 0'375*0'286 = 0'107$ \\
+
+También se podría haber hecho por combinatoria. Llamemos A al suceso de extraer dos bolas rojas. Bastaría aplicar la regla de Laplace:
+
+$$P(A) = \frac{{3 \choose 2}}{{8 \choose 2}} = 0'107$$
+
 \subproblem
 b) dos bolas blancas \\ 
 B1 = primera blanca, B2 = segunda roja \\
-$P(B1 \cap B2) =  \frac{5}{8} * \frac{4}{7} = 0'625 * 0'571 = 0'357$ \\ \\
+$P(B1 \cap B2) =  \frac{5}{8} * \frac{4}{7} = 0'625 * 0'571 = 0'357$ \\
+
+También se podría haber hecho por combinatoria. Llamemos B al suceso de extraer dos bolas blancas. Bastaría aplicar la regla de Laplace:
+
+$$P(B) = \frac{{5 \choose 2}}{{8 \choose 2}} = 0'357$$
+
 \subproblem
 c) una blanca y otra roja \\
 $P((A1 \cap B2)\cup (A2 \cap B1)) = \frac{3}{8}*\frac{5}{7} + \frac{5}{8}*\frac{3}{7} = 0'536$ \\
+
+También se podría haber hecho por combinatoria. Llamemos C al suceso de extraer una bola blanca y una roja. Bastaría aplicar la regla de Laplace:
+
+$$P(C) = \frac{{3 \choose 1}·{5 \choose 1}}{{8 \choose 2}} = 0'536$$
