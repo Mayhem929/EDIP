@@ -1,0 +1,20 @@
+\problem
+Sean $A_n$ el suceso de localizar exactamente n productos defectuosos en el control de calidad y $A$ el suceso de pasar dicho control de calidad. Se verifica que $P(A)=P(A_0)+P(A_1)+P(A_2)+P(A_3)+P(A_4)+P(A_5)$ (por ser $A$ la unión de los $A_n$ y ser cada suceso independientes dos a dos). 
+	
+	Aplicando la regla de Laplace, tenemos que:
+	
+	$$P(A_0)=\frac{{290 \choose 60}} {{300 \choose 60}} = 0,1033$$
+	
+	$$P(A_1)=\frac{{10 \choose 1}{290 \choose 59}} {{300 \choose 60}} = 0,2684$$
+	
+	$$P(A_2)=\frac{{10 \choose 1}{290 \choose 59}} {{300 \choose 60}} = 0,3071$$
+	
+	$$P(A_3)=\frac{{10 \choose 2}{290 \choose 58}} {{300 \choose 60}} = 0,2039$$
+	
+	$$P(A_4)=\frac{{10 \choose 3}{290 \choose 57}} {{300 \choose 60}} = 0,0869$$
+	
+	$$P(A_5)=\frac{{10 \choose 5}{290 \choose 56}} {{300 \choose 60}} = 0,1033$$
+	
+	Deducimos que:
+	
+	$$P(A) = 0,9944$$
