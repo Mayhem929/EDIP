@@ -11,7 +11,7 @@
 \usepackage{setspace}
 %\spacing{1.15}
 
-% Fondo
+%Fondo
 \usepackage[firstpage=true]{background}
 % configuración
 \backgroundsetup{
@@ -24,7 +24,7 @@
 	}%
 }
 
-%Márgenes y demás
+%Márgenes, espacio y color
 \usepackage{vmargin}
 \usepackage{parskip}
 \usepackage{setspace}
@@ -43,19 +43,12 @@
 %Encabezado y pie de página
 \usepackage{fancyhdr}
 
-%\lhead{
-%	\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logo-ugr.png}} \end{picture}
-%}
-
 \lhead{
 	\begin{picture}(0,0) \put(0,0){\includegraphics[height=10mm]{logo-fciencias.jpeg}} \end{picture}
 }
 
-%\renewcommand{\headrulewidth}{0.25pt}
 \rhead{Respuestas}
-
 \renewcommand{\footrulewidth}{0.25pt}
-
 
 \pagestyle{fancy}
 
@@ -65,6 +58,7 @@
 
 %\renewcommand{\baselinestretch}{1.08}
 
+% Marcadores PDF
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true,
@@ -75,101 +69,64 @@
 }
 
 \homeworksetup{
-	username={Autores, por orden alfabético: \\ Shao Jie Hu Chen \\ Adrián Jaén Fuentes \\ Aarón Jerónimo Fernández \\ Noura Lachhab Bouhmadi \\ Laura Lázaro Soraluce \\ \vspace{1em} Doble Grado en Ingeniería Informática y Matemáticas},
-	course={\huge{Estadística Descriptiva e Introducción a la Probabilidad \\ \vspace{1.5em} Relación de Ejercicios 2\vspace{1.5em}}}
+     username={Autores, por orden alfabético: \\ Shao Jie Hu Chen \\ Adrián Jaén Fuentes \\ Aarón Jerónimo Fernández \\ Noura Lachhab Bouhmadi \\ Laura Lázaro Soraluce \\ \vspace{1em} Doble Grado en Ingeniería Informática y Matemáticas},
+     course={\huge{Estadística Descriptiva e Introducción a la Probabilidad \\ \vspace{1.5em} Relación de Ejercicios 3\vspace{1.5em}}}
 }
 
 %CUERPO
 \begin{document}
+	
+	\spacing{1.5}
+	\listofproblem
+	\spacing{1.1}
+	\newpage
+	
+%%%%%%%%%%%%%% EJERCICIO 1 %%%%%%%%%%%%%%
+\input{ejercicio-1.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 1 %%%%%%%%%%%%%%%%
-	\section{Problema 1}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-1.tex}
+%%%%%%%%%%%%%% EJERCICIO 2 %%%%%%%%%%%%%%
+\input{ejercicio-2.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 2 %%%%%%%%%%%%%%%%
-	\section{Problema 2}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-2.tex}
+%%%%%%%%%%%%%% EJERCICIO 3 %%%%%%%%%%%%%%
+\input{ejercicio-3.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 3 %%%%%%%%%%%%%%%%
-	\section{Problema 3}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-3.tex}
+%%%%%%%%%%%%%% EJERCICIO 4 %%%%%%%%%%%%%%
+\input{ejercicio-4.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 4 %%%%%%%%%%%%%%%%
-	\section{Problema 4}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-4.tex}
+%%%%%%%%%%%%%% EJERCICIO 5 %%%%%%%%%%%%%%
+\input{ejercicio-5.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 5 %%%%%%%%%%%%%%%%
-	\section{Problema 5}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-5.tex}
+%%%%%%%%%%%%%% EJERCICIO 6 %%%%%%%%%%%%%%
+\input{ejercicio-6.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 6 %%%%%%%%%%%%%%%%
-	\section{Problema 6}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-6.tex}
+%%%%%%%%%%%%%% EJERCICIO 7 %%%%%%%%%%%%%%
+\input{ejercicio-7.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 7 %%%%%%%%%%%%%%%%
-	\section{Problema 7}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-7.tex}
+%%%%%%%%%%%%%% EJERCICIO 8 %%%%%%%%%%%%%%
+\input{ejercicio-8.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 8 %%%%%%%%%%%%%%%%
-	\section{Problema 8}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-8.tex}
+%%%%%%%%%%%%%% EJERCICIO 9 %%%%%%%%%%%%%%
+\input{ejercicio-9.tex}
 
 
 
-%%%%%%%%%%%%%%%% EJERCICIO 9 %%%%%%%%%%%%%%%%
-	\section{Problema 9}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-9.tex}
-
-
-
-%%%%%%%%%%%%%%%% EJERCICIO 10 %%%%%%%%%%%%%%%%
-	\section{Problema 10}
-\color{blue}
-
-\color{black}
-	\input{ejercicio-10.tex}
-
+%%%%%%%%%%%%%% EJERCICIO 10 %%%%%%%%%%%%%%
+\input{ejercicio-10.tex}
+	
 \end{document}

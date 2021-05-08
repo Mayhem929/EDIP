@@ -1,0 +1,27 @@
+\problem
+Se seleccionan $n$ dados con probabilidad $p_{n} =1/2^{n}, \ n\in \Bbb N$.
+Si se lanzan estos $n$
+dados y se obtiene una suma de 4 puntos, ?`cu{\'a}l es la probabilidad de  haber  seleccionado
+4 dados?
+
+Sean $A$ el suceso de sumar las caras de los dados lanzados (supuesto no trucado), obteniéndose una suma igual a 4 y $D_n$ el suceso de lanzar n dados. Se nos pide encontrar $P(D_4 | A)$. Basta darse cuenta de que $n \leq 4$ (pues, en caso contrario, ninguna combinación suma exactamente 4) y aplicar la regla de Bayes:
+
+$$P(D_4 | A) = \frac{P(A | D_4) · P(D_4)}{P(A | D_1)·P(D_1) + P(A | D_2)·P(D_2) + P(A | D_3)·P(D_3) + P(A | D_4)·P(D_4)}$$
+
+Para hallar cada uno de los sumandos de la expresión anterior, aplicamos la regla de Laplace (casos favorables entre casos posibles):
+
+$$P(A | D_1) = \frac{1}{VR_{6,1}} = \frac{1}{6}$$
+
+$$P(A | D_2) = \frac{3}{VR_{6,2}} = \frac{3}{36}$$
+
+$$P(A | D_3) = \frac{3}{VR_{6,3}} = \frac{3}{216}$$
+
+$$P(A | D_4) = \frac{1}{VR_{6,4}} = \frac{1}{1296}$$
+
+$$P(D_n) = (\frac{1}{2})^n$$
+
+Sustituyendo en la expresión anterior, tenemos que: 
+
+$$P(D_4 | A) = 0,00046$$
+
+Esto quiere decir que es muy poco probable que se hayan lanzado 4 dados en el experimento descrito. 

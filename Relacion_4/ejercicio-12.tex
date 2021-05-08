@@ -1,0 +1,33 @@
+\problem
+Se lanza una moneda; si sale cara, se introducen  $k$ bolas blancas en una urna
+y si sale cruz, se introducen  $2k$ bolas blancas. Se hace una  segunda  tirada,
+poniendo en la urna $h$ bolas negras si sale cara y $2h$ si sale cruz. De la urna  as{\'\i}
+compuesta se toma una bola al azar. ?`Cu{\'a}l es la probabilidad de que sea
+negra?
+
+\textbf{Aclaraciones a añadir al enunciado:} La urna se considera en un principio vacía y se supone que la moneda está trucada. 
+
+Sean $N$ el suceso de sacar una bola negra de la urna resultante del ejercicio y $A_{x}$ el suceso de obtener tras el lanzamiento de la moneda cara si  $x=C$ o cruz si $x=X$. Dado que la moneda está trucada, podemos suponer que $P(A_C) = p$ y $P(A_X) = 1 - p$. Se nos pide determinar $P(N)$. Para ello, aplicamos el teorema de la probabilidad total: 
+
+
+\begin{equation} \label{ej-12}
+\begin{split}
+P(N) & =  P(N|A_C \cap A_C) · P(A_C \cap A_C) + P(N|A_C \cap A_X) · P(A_C \cap A_X) \\
+& + P(N|A_X \cap A_C) · P(A_X \cap A_C) + P(N|A_X \cap A_X) · P(A_X \cap A_X)
+\end{split}
+\end{equation}
+
+Para hallar cada probabilidad condicionada, aplicamos la regla de Bayes (casos favorables entre casos posibles):
+
+\begin{equation*}
+\begin{split}
+P(N|A_C \cap A_C) & = \frac{h}{k+h} \\
+P(N|A_C \cap A_X) & = \frac{2h}{k+2h} \\
+P(N|A_X \cap A_C) & = \frac{h}{2k+h} \\
+P(N|A_X \cap A_X) & = \frac{2h}{2k+2h} = \frac{h}{k+h}
+\end{split}
+\end{equation*}
+
+Como cada lanzamiento de moneda es independiente, deducimos que $P(A_x \cap A_y) = P(A_x) · P(A_y)$. Basta ahora sustituir en la expresión \ref{ej-12} y operar, dando como resultado:
+
+$$P(N) = p^2·\frac{h}{k+h} + p·(1-p)·(\dfrac{2h}{k+2h} + \frac{h}{2k+h}) + (1-p)^2·\frac{h}{k+h}$$

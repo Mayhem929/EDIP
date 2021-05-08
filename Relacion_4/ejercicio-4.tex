@@ -1,9 +1,12 @@
+\problem
+
 O := Mutación en los ojos
 
 A := Mutación en las alas
 
 Datos que nos dan: $P(O) = 0.25 \quad P(A) = 0.50 \quad P_r(A/O) = 0.40$\\
 
+\subproblem
 a) ¿Cuál es la probabilidad de que una mosca elegida al azar presente al menos una de las mutaciones?
 
 Se nos pide calcular $P(O \cup A)$, que como no son conjuntos disjuntos tenemos que calcularlos de esta manera: Dado que $O \cup A = O + A - O \cap A$ \\
@@ -12,6 +15,7 @@ $$P_r(A/O) = \dfrac{P(O \cap A)}{P(O)}$$
 $$P(O \cap A) = 0.4 \cdot 0.25 = 0.1$$
 $$P(O \cup A) = 0.25 + 0.5 - 0.1 = 0.65$$
 
+\subproblem
 b) ¿Cuál es la probabilidad de que presente mutación en los ojos pero no en las alas?
 
 Se nos pide calcular $P(O \cap \overline{A})$. Ya que $O \cap \overline{A} = O - O \cap A$ tenemos que:
