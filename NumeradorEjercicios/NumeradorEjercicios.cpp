@@ -22,13 +22,13 @@ int main() {
 
 		fichero << "\n\n%%%%%%%%%%%%%% EJERCICIO " << i+1 << " %%%%%%%%%%%%%%\n";
 
-		fichero << "\\problem" << endl;
+//	fichero << "\\problem" << endl;
 
-		fichero << "\\color{blue}" << endl;
-		fichero << "\t\\input{" << nombre_ejercicio << "-enunciado.tex}";
-		fichero << endl;
+//	fichero << "\\color{blue}" << endl;
+//	fichero << "\t\\input{" << nombre_ejercicio << "-enunciado.tex}";
+//	fichero << endl;
 
-		fichero << "\\color{black}" << endl;
+//	fichero << "\\color{black}" << endl;
 		fichero << "\t\\input{" << nombre_ejercicio << ".tex}";
 		fichero << endl << endl;
 	}
