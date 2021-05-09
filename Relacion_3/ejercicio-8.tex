@@ -1,0 +1,24 @@
+\problem
+\ item   En una carrera de relevos cada equipo se compone de 4 atletas. La
+sociedad deportiva de un colegio cuenta con 10 corredores y su
+entrenador debe formar un equipo de relevos que disputar { \ ' a} el campeonato,
+y el orden en que participar { \ ' a} n los seleccionados.
+\ begin { enumerate }
+\ item ? `Entre cu { \ ' a} ntos equipos distintos habr { \' a} de elegir el entrenador si los
+10 corredores son de igual val { \ ' \ i } a? (Dos equipos con los mismos atletas en
+orden distinto se consideran diferentes)
+\ item Calcular la probabilidad de que un alumno cualquiera sea
+seleccionado.
+\ end { enumerate }	
+\subproblem
+Siguiendo el esquema de combinatoria llegamos a que : \\ \\
+$ \star No intervienen todos los corredores ya que intervienen solo 4 atletas  $ \\
+$ \star Importa el orden  $ \\
+$ \star No se pueden repetir personas  $ \\ \\
+Entonces nos encontramos ante una variación sin repeticiones, entonces: \\ \\
+$V^{p}_{n} = \frac{n!}{(n-p)!}$\\ 
+$V^{4}_{10} = \frac{10!}{(10-4)!} = 7\cdot8\cdot9\cdot10 = 5040$ equipos posibles\\ \\
+	
+\subproblem
+La probabilidad de que un alumno sea seleccionado es: \\ \\
+$P = \frac{4}{10} = 0,4$

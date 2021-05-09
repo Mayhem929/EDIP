@@ -1,0 +1,20 @@
+\problem
+\ item  $ N $ urnas contienen cada una 4 bolas blancas y 6 negras, mientras otra
+urna contiene 5 blancas y 5 negras. De las $ N + 1 $ urnas se elige una al
+azar y se extraen dos bolas sucesivamente, sin reemplazamiento,
+resultando ser ambas negras. Sabiendo que la probabilidad de que
+queden 5 blancas y 3 negras en la urna elegida es 1/7, encontrar $ N $ .
+	
+	\begin{flushleft}
+		A = "Elegir la urna N+1" \\
+		B = "Extraer 2 bolas negras sucesivamente sin remplazamiento" \\
+		Luego tenemos que calcular la probabilidad de A condicionada a B:\\ \\
+	\end{flushleft}
+	
+\begin{flushleft}
+	
+		$P(A|B) = \frac{P(B|A)P(A)}{P(B|A)P(A)+P(B|\bar{A})P(\bar{A})} $\\ \\
+\end{flushleft}
+Remplazamos las probabilidades con los datos que tenemos y obtenemos que: \\ \\
+$P(A|B) = \frac{0,5 \cdot \frac{4}{5} \cdot \frac{1}{N+1}}{N\cdot0,6\cdot\frac{5}{9}\frac{1}{N+1} + 0,5\cdot\frac{4}{9}\cdot\frac{1}{N+1}} $\\\\
+Despejando N obtenemos que $N=4$

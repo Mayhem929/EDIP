@@ -1,0 +1,18 @@
+\problem
+\ item   Una urna contiene $ a $ bolas blancas y $ b $ bolas negras. ? `Cu { \ ' a} l es la
+probabilidad de que al extraer dos bolas simultáneamente { \ ' a} neamente sean de
+color distinto?
+
+\begin{flushleft}
+	A = "Extraer bola blanca" \\
+B = "Extraer bola negra" \\
+C = "Extraer bolas de distinto color"
+\end{flushleft}
+
+\begin{flushleft}
+	$P(C) = P(A) + P(B)-P(A\cap \bar{B}) -P( \bar{A} \cap B ) =$\\$= P(A) + P(B) + P(A - B) + P(B - A) = $\\
+$	= P(A) + P(B) - P(A) - P(B) + P(A\cap B) + P(B\cap A)=$\\
+$ 	=P(A) \cdot P(B) + P(B) \cdot P(A) = $
+$ \frac{a}{a+b} \cdot \frac{b}{a+b-1} + \frac{b}{a+b} \cdot \frac{a}{a+b-1}= $
+$\frac{2ab}{(a+b)(a+b-1)}$
+\end{flushleft}
