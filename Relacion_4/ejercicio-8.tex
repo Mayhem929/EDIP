@@ -1,39 +1,10 @@
-\problem
-La probabilidad de que se olvide inyectar el suero a un enfermo durante la ausencia del doctor es 2/3. Si se le inyecta el suero, el enfermo tiene igual probabilidad de mejorar que de empeorar, pero si no se le inyecta, la probabilidad de mejorar se reduce a 0'25. Al regreso, el doctor encuentra que el enfermo ha empeorado. ¿Cuál es la probabilidad de que no se le haya inyectado el suero? \\ \\
+\documentclass{article}
+
+\begin{document}
+Ejercicio 8. La probabilidad de que se olvide inyectar el suero a un enfermo durante la ausencia del doctor es 2/3. Si se le inyecta el suero, el enfermo tiene igual probabilidad de mejorar que de empeorar, pero si no se le inyecta, la probabilidad de mejorar se reduce a 0'25. Al regreso, el doctor encuentra que el enfermo ha empeorado. ¿Cuál es la probabilidad de que no se le haya inyectado el suero? \\ \\
+M: enfermo ha mejorado \\
+S: se le ha inyectado suero \\
+Utilizamos la regla de Bayes: $P(A|B) = \frac{P(B|A)*P(A)}{\sum P(B|A)*P(A)}$ \\ \\
 $P(\overline{S}) = \frac{2}{3}$, $P(M|S) = 0'5$, $P(\overline{M}|S) = 0'5$, $P(M|\overline{S}) = 0'25$ \\ 
 $P(\overline{S}|\overline{M}) = \frac{P(\overline{S})*P(\overline{M}|\overline{S})}{P(\overline{M})} = \frac{\frac{2}{3}*0'75}{0'5*\frac{1}{3}+0'75*\frac{2}{3}}= \frac{3}{4} = 0'75$
-
-
-\subproblem \\
-
-A = Sacar blanca en la primera urna
-
-B = Sacar blanca en la segunda urna
-
-C = Sacar blanca en la tercera urna \\
-
-
-$P(Sacar\ 4 \ blancas) = P(U_1)P(A|U_1) + P(U_2)P(B|U_2) + P(U_3)P(C|U_3) = \\
-
-
-\dfrac{1}{3}(\dfrac{5}{10}\cdot\dfrac{4}{9}\cdot\dfrac{3}{8}\cdot\dfrac{2}{7}) + 
-  \dfrac{1}{3}(\dfrac{6}{10}\cdot\dfrac{5}{9}\cdot\dfrac{4}{8}\cdot\dfrac{3}{7}) + 
-  \dfrac{1}{3}(\dfrac{7}{10}\cdot\dfrac{6}{9}\cdot\dfrac{5}{8}\cdot\dfrac{4}{7}) = 0.0873$ \\
-
-\subproblem \\
-
-$A_i$ = Coger una urna i
-$B$ = Sacar 4 y que solo una sea negra
-
-$P(A_i) = \dfrac{1}{3}$
-
-$P(B|A_1) = \dfrac{5}{10} \cdot \dfrac{4}{9} \cdot \dfrac{3}{8} \cdot \dfrac{5}{7} = \dfrac{5}{84} = 0.0595$ \\
-
-$P(B|A_2) = \dfrac{6}{10} \cdot \dfrac{5}{9} \cdot \dfrac{4}{8} \cdot \dfrac{4}{7} = \dfrac{2}{21} = 0.0952$ \\
-
-$P(B|A_3) = \dfrac{7}{10} \cdot \dfrac{6}{9} \cdot \dfrac{5}{8} \cdot \dfrac{3}{7} = \dfrac{1}{8} = 0.125$ \\
-
-
-Para calcular $P(A_2|B)$ usamos la regla de Bayes:
-
-$$ P(A_2|B) = \dfrac{P(B|A_2)P(A_2)}{P(B|A_1)P(A_1)+P(B|A_2)P(A_2)+P(B|A_3)P(A_2)} = \dfrac{\frac{2}{21 \cdot 3}}{\frac{1}{3}(\frac{5}{84} + \frac{2}{21} + \frac{1}{8})} = \dfrac{16}{47}$$
+\end{document}
