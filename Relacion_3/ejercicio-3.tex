@@ -1,17 +1,22 @@
-\problem
-Se sacan dos bolas sucesivamente sin devolución de una urna que contiene 3 bolas rojas distinguibles y 2 blancas distinguibles. \\ \\
+\documentclass{article}
 
-\subproblem
-Describir el espacio de probabilidad asociado a este experimento. \\
-$\omega = ${(R1,R2), (R1,R3), (R1,B1), (R1,B2), (R2,R1), (R2,R3), (R2,B1), (R2,B2), (R3,R1), (R3,R2), (R3,B1), (R3,B2), (B1,R1), (B1,R2), (B1,R3), (B1,B2), (B2,R1), (B2,R2), (B2,R3), (B2,B1)} \\ \\
-
-\subproblem
-Descomponer en sucesos elementales los sucesos: "la primera bola es roja", "la segunda bola es blanca" y calcular la probabilidad de cada uno de ellos. \\
-A = La primera bola es roja: {(R1,R2), (R1,R3), (R1,B1), (R1,B2), (R2,R1), (R2,R3), (R2,B1), (R2,B2), (R3,R1), (R3,R2), (R3,B1), (R3,B2)} \\
+\begin{document}
+Ejercicio 3. Se sacan dos bolas sucesivamente sin devolución de una urna que contiene 3 bolas rojas distinguibles y 2 blancas distinguibles. \\ \\
+a) Describir el espacio de probabilidad asociado a este experimento. \\
+Sabemos que no intervienen todos los elementos, porque sólo se sacan dos bolas de las cinco que hay en la urna; y sí influye el orden, pues no es lo mismo sacar primero una blanca y luego otra roja, que al contrario. Por tanto, se trata de una variación sin repetición, ya que no se vuelven a meter las bolas sacadas. \\
+$V^{2}_{5} = \frac{n!}{(n-p)!}= \frac{120}{6} = 20$ elementos. \\ \\
+Ri: sale la bola roja i \\
+Bi: sale la bola blanca i \\
+$\omega = $\{(R1,R2), (R1,R3), (R1,B1), (R1,B2), (R2,R1), (R2,R3), (R2,B1), (R2,B2), (R3,R1), (R3,R2), (R3,B1), (R3,B2), (B1,R1), (B1,R2), (B1,R3), (B1,B2), (B2,R1), (B2,R2), (B2,R3), (B2,B1)\} \\ \\
+b) Descomponer en sucesos elementales los sucesos: "la primera bola es roja", "la segunda bola es blanca" y calcular la probabilidad de cada uno de ellos. \\
+A = La primera bola es roja: \{(R1,R2), (R1,R3), (R1,B1), (R1,B2), (R2,R1), (R2,R3), (R2,B1), (R2,B2), (R3,R1), (R3,R2), (R3,B1), (R3,B2)\} \\
 $P(A) = \frac{12}{20} = 0'6$ \\
-B = La segunda bola es blanca: {(R1,B1), (R1,B2), (R2,B1), (R2,B2), (R3,B1), (R3,B2), (B1,B2), (B2,B1)} \\
+B = La segunda bola es blanca: \{(R1,B1), (R1,B2), (R2,B1), (R2,B2), (R3,B1), (R3,B2), (B1,B2), (B2,B1)\} \\
 $P(B) = \frac{8}{20} = 0,4$ \\ \\
-
-\subproblem
-¿Cuál es la probabilidad de que ocurra alguno de los sucesos considerados en el apartado anterior? \\
+c) ¿Cuál es la probabilidad de que ocurra alguno de los sucesos considerados en el apartado anterior? \\
 $P(A\cup B) = P(A)+P(B)-P(A\cap B) = 0'6 + 0'4 - 0'3 = 0'7$ \\ \\
+
+
+
+
+\end{document}
