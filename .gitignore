@@ -2,3 +2,7 @@ RelacionesCalculo.aux
 RelacionesCalculo.log
 RelacionesCalculo.synctex.gz
 RelacionesCalculo.toc
+*.aux
+*.log
+*.gz
+*.toc
