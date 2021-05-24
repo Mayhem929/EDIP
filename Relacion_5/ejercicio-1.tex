@@ -1,0 +1,66 @@
+\problem
+
+
+\subproblem
+
+Para determinar el valor de k usaremos la siguiente característica de la función masa de probabilidad:
+\begin{equation*}
+    \sum_{i=1}^{20} P(X=i) = 1
+\end{equation*}
+
+Teniendo esto en cuenta:
+\begin{equation*}
+    \sum_{i=1}^{20} P(X=i) = \sum_{i=1}^{20} ki = k \sum_{i=1}^{20} i = k \cdot \dfrac{20(20+1)}{2} = 210k \Rightarrow k = \dfrac{1}{210}
+\end{equation*}
+
+Luego, la función de distribución de la variable aleatoria X sería la siguiente:
+\begin{equation*}
+    F(x)= \left\{ \begin{array}{lcc}
+             0 &   si  & x < 1 \\
+             \\ \sum_{i=1}^x \dfrac{i}{210} &  si & 1 \leq x \leq 19 \\
+             \\ 1 &  si  & x \geq 20
+             \end{array}
+   \right.
+\end{equation*}
+   
+Ahora calculamos las probabilidades que nos piden con la función de distribución calculada:
+\begin{gather*}
+    P(X = 4) = F(4) - F(4^-) = F(4) - F(3) = \dfrac{10}{210} - \dfrac{6}{210} = \dfrac{4}{210}\\
+    P(X < 4) = P(X \leq 4) - p(X = 4) = F(4^-) = f(3) = \dfrac{6}{210}\\
+    P(3 \leq X \leq 10) = P(X \leq 10) - P(X < 3) = F(10) - F(3^-) = F(10) - F(2) = \\ = \dfrac{55}{210} - \dfrac{3}{210} = \dfrac{52}{210}\\
+    P(3 < X \leq 10) = P(X \leq 10) - P(X \leq 3) = F(10) - F(3) = \dfrac{55}{210} - \dfrac{6}{210} = \dfrac{49}{210}\\
+    P(3 < X < 10) = P(X < 10) - P(X \leq 3) = F(10^-) - F(3) = \\ = F(9) - F(3) = \dfrac{45}{210} - \dfrac{6}{210} = \dfrac{39}{210}\\
+\end{gather*}
+
+\subproblem
+
+La ganancia viene dada de la siguiente forma:
+\begin{equation*}
+    Ganancia = \left\{ \begin{array}{lcc}
+             20 &   si  & x < 4 \\
+             \\ 24 &  si & x = 4 \\
+             \\ -1 &  si  & x > 4
+             \end{array}
+   \right.
+\end{equation*}
+
+Calculemos las probabilidades de cada situación:
+\begin{gather*}
+    P(x<4) = \dfrac{6}{210}\\
+    P(X=4) = \dfrac{4}{210}\\
+    P(X>4) = 1 - P(X \leq 4) = 1 - F(4) = 1 - \dfrac{10}{210} = \dfrac{20}{21}
+\end{gather*}
+
+Para ver si este juego le es favorable al jugador calculemos la esperanza matemática (media) de una nueva variable $Y$ que tome estos valores. Si la esperanza matemática es positiva, el juego será favorable, si es negativa, no.Definimos la variable Y con sus valores y probabilidades:
+\begin{equation*}
+    P(Y = 20) = P(x<4) = \dfrac{6}{210}\\
+    P(Y = 24) = P(X=4) = \dfrac{4}{210}\\
+    P(Y = -1) = P(X>4) = \dfrac{20}{21}
+\end{equation*}
+
+Ahora calculamos su esperanza matemática:
+\begin{equation*}
+    E[Y] = \sum_i y_i \cdot P(Y=y_i) = \dfrac{120}{210} + \dfrac{96}{210} - \dfrac{20}{21} = \dfrac{8}{105} \approx 0.076
+\end{equation*}
+
+Al ser $E[Y] > 0$ vemos que el juego es favorable, aunque la ganancia será muy pequeña.

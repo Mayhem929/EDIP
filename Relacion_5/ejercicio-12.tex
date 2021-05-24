@@ -1,0 +1,44 @@
+\problem
+
+Antes de empezar, tomaremos los datos que nos dan para deducir la desviación típica y la esperanza matemática. Para empezar nos dicen que el coeficiente de variación es 1, lo que implica que:
+\begin{equation*}
+    C.V_X = 1 \Rightarrow \dfrac{\sigma_X}{E[X]} = 1 \Rightarrow \sigma_X = E[X]
+\end{equation*}
+
+Además, nos dicen que la variable aleatoria es simétrica con respecto al punto 2. Esto implica que el punto que deja a la misma cantidad de valores a su derecha que a su izquierda es dos, por lo que $E[X] = 2$ y además:
+\begin{equation*}
+    E[X] = 2 \Rightarrow \sigma_X = E[X] = 2
+\end{equation*}
+
+Ahora, para abordar el ejercicio, usaremos la desigualdad de Chebychev de la siguiente forma:
+\begin{equation*}
+    P(|X-E[X]| \geq k \sigma_X) = P(E[X] - k\sigma_X < k < E[X] + k\sigma_X) \geq 1 - \dfrac{1}{k^2}
+\end{equation*}
+
+\subproblem
+
+Vamos a calcular $k$ para adaptar la desigualdad de Chebychev a esta probabilidad:
+\begin{equation*}
+    E[X] + 2k = 12 \Rightarrow k = \dfrac{12-2}{2} = 5
+\end{equation*}
+
+Finalmente sustituimos $k=5$ en la expresión anterior:
+\begin{equation*}
+    P(E[X] - k\sigma_X < k < E[X] + k\sigma_X) = P(-8 < x < 12) \geq 1 - \dfrac{1}{5^2} = 0.96
+\end{equation*}
+
+Luego, con los datos que tenemos, podemos decir que $P(-8 < x < 12) \geq 0.96$.
+
+\subproblem
+
+Vamos a calcular $k$ para adaptar la desigualdad de Chebychev a esta probabilidad:
+\begin{equation*}
+    E[X] + 2k = 10 \Rightarrow k = \dfrac{10-2}{2} = 4
+\end{equation*}
+
+Finalmente sustituimos $k=4$ en la expresión anterior:
+\begin{equation*}
+    P(E[X] - k\sigma_X < k < E[X] + k\sigma_X) = P(-6 < x < 10) \geq 1 - \dfrac{1}{4^2} = 0.9375
+\end{equation*}
+
+Luego, con los datos que tenemos, podemos decir que $P(-6 < x < 10) \geq 0.9375$.
