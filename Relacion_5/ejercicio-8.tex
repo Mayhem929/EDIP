@@ -1,0 +1,84 @@
+\problem
+Calcular las funciones masa de probabilidad de las
+variables $Y = X + 2$ y $Z = X^{2}$, siendo $X$ una variable aleatoria  con
+distribuci{\'o}n:
+$$
+P(X=-2)= \displaystyle\frac{1}{5}, \hskip 0.5cm P(X=-1)=
+\displaystyle\frac{1}{10}, \hskip 0.5cm P(X=0)= \displaystyle\frac{1}{5},
+\hskip 0.5cm P(X=1)= \displaystyle\frac{2}{5}, \hskip 0.5cm P(X=2)=
+\displaystyle\frac{1}{10}\cdot
+$$
+?`C{\'o}mo afecta el cambio de $X$ a $Y$ en el coeficiente de variaci{\'o}n?
+
+En primer lugar, notemos que la variable aleatoria X es discreta. Basta aplicar el teorema de cambio de variable:
+
+\begin{equation*}
+P(y_i) = \left\{ \begin{array}{lcc}
+1/5   & y_i = 0 \\
+1/10  & y_i = 1 \\
+1/5   & y_i = 2 \\
+2/5   & y_i = 3 \\
+1/10  & y_i = 4 \\
+\end{array}
+\right.
+\end{equation*}
+
+\begin{equation*}
+P(z_i) = \left\{ \begin{array}{lcc}
+1/5   & z_i = 0 \\
+1/2   & z_i = 1 \\
+3/10  & z_i = 4 \\
+\end{array}
+\right.
+\end{equation*}
+
+Notemos que:
+
+\begin{equation*}
+\begin{split}
+EY & = \sum_i P(Y=y_i)·y_i = \sum_i P(Y=y_i)·(x_i - a) = \sum_i P(X=x_i)·(x_i - a) \\
+& = \sum_i P(X=x_i)·x_i - a\sum_i P(X=x_i) = \sum_i P(X=x_i)·x_i - a \\
+& = EX - a
+\end{split}
+\end{equation*}
+
+Por tanto, se verifica que: 
+
+\begin{equation*}
+\begin{split}
+E[(Y-EY)^2] & = \sum_i P(Y=y_i)(y_i - EY)^2 = \sum_i P(X=x_i)(x_i - a - EX + a)^2 \\
+& = \sum_i P(X=x_i)(x_i - EX)^2 = E[(X-EX)^2]
+\end{split}
+\end{equation*}
+
+Deducimos que el coeficiente de variación no ha de variar. 
+
+Por otra parte, sabemos que $C.V.(X) = \frac{E[(X-EX)^2]}{EX}$ y $C.V.(Y) = \frac{E[(Y-EY)^2]}{EY}$. Dividiendo ambas expresiones, tenemos que $C.V.(X) = \frac{EY}{EX}·C.V.(Y)$. Operamos:
+
+\begin{center}
+	\begin{tabular}{|r|r|r|r|r|}
+		\hline
+		\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{$p(x_i)$} & \multicolumn{1}{c|}{$p(x_i)·x_i$} & \multicolumn{1}{c|}{$(x_i-EX)^2$} & \multicolumn{1}{c|}{$p(x_i)(x_i-EX)^2$} \\ \hline
+		-2 & 0,2 & -0,4 & 4,41 & 0,882 \\ \hline
+		-1 & 0,1 & -0,1 & 1,21 & 0,121 \\ \hline
+		0 & 0,2 & 0 & 0,01 & 0,002 \\ \hline
+		1 & 0,4 & 0,4 & 0,81 & 0,324 \\ \hline
+		2 & 0,1 & 0,2 & 3,61 & 0,361 \\ \hline
+		\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & EX = 0,1 & \multicolumn{1}{l|}{} & $E[(X-EX)^2]$=1,69 \\ \hline
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|r|r|r|r|r|}
+		\hline
+		\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{$p(y_i)$} & \multicolumn{1}{c|}{$p(y_i)·y_i$} & \multicolumn{1}{c|}{$(y_i-EY)^2$} & \multicolumn{1}{c|}{$p(y_i)(y_i-EY)^2$} \\ \hline
+		0 & 0,2 & 0 & 4,41 & 0,882 \\ \hline
+		1 & 0,1 & 0,1 & 1,21 & 0,121 \\ \hline
+		2 & 0,2 & 0,4 & 0,01 & 0,002 \\ \hline
+		3 & 0,4 & 1,2 & 0,81 & 0,324 \\ \hline
+		4 & 0,1 & 0,4 & 3,61 & 0,361 \\ \hline
+		\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & $EY = 2,1$ & \multicolumn{1}{l|}{} & $E[(Y-EY)^2]$ = 1,69 \\ \hline
+	\end{tabular}
+\end{center}
+
+Deducimos que $C.V.(X) = 21·C.V.(Y)$. 
