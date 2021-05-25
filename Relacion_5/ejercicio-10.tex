@@ -1,0 +1,50 @@
+\problem
+
+Si $X$ es una variable aleatoria con funci{\'o}n de densidad
+	$$f(x)=\frac{e^{-|x|}}{2}, \ \ -\infty < x < \infty,$$ hallar su funci{\'o}n de distribuci{\'o}n
+	y  las probabilidad de cada uno de los
+	siguientes sucesos:
+	\begin{enumerate}
+		\item [$a)$]$\{|X|\leq 2\}$.
+		\item [$b)$]$\{|X|\leq 2\ \ \ \mbox{{\'o}} \ \ X \geq 0\}.$
+		\item [$c)$] $\{|X|\leq 2\ \ \ \mbox{y} \ \ X \leq -1\}.$
+		% \item [d)] $\{|X|+|X-3|\leq 3\}.$
+		\item [$d)$] $\{X^3-X^2-X-2 \leq 0 \}.$
+		%\item $\{\exp(\sin \pi X)\geq 1\}.$
+		\item [$e)$] $\{ X \mbox{ es irracional}\}.$
+	\end{enumerate}
+	
+	En el desarrollo de este ejercicio se presupondrá que la función de masa de probabilidad proporcionada es correcta y está bien definida (nótese que X es una variable aleatoria continua). Calculamos a partir de ella la función de distribución. 
+	
+	Si $ x < 0 $, tenemos que: 
+	
+	$$F(x) = \int_{-\infty}^x f(t) dt = \int_{-\infty}^x \frac{e^t}{2} dt = \frac{e^x}{2}$$ 
+	
+	Si $ 0 \leq x$, tenemos que: 
+	
+	$$F(x) = \int_{-\infty}^x f(t) dt = \int_{-\infty}^0 \frac{e^t}{2} dt + \int_0^x \frac{e^{-t}}{2}dt = \frac{1}{2} + \Big[ \frac{-e^-t}{2} \Big]^x_0 = 1 - \frac{1}{2·e^x}$$ 
+	
+	De esta forma, tenemos que la función de distribución viene dado por la siguiente expresión: 
+	
+	\begin{equation*}
+	F(x) = \left \{
+	\begin{array}{lcc}
+	\frac{e^x}{2}        & x < 0 \\
+	1 - \frac{1}{2e^x}   & x \geq 0 \\
+	\end{array}
+	\right.
+	\end{equation*}
+	
+	De esta forma, obtenemos las siguientes probabilidades (considerando en todo momento que la variable aleatoria es continua):
+	
+	\begin{enumerate}
+		\item $P(|X| \leq 2) = P(2) - P(-2^-) = P(2) - P(-2) = 1 - \frac{1}{2·e^2} - \frac{1}{2·e^2} = 1 - \frac{1}{e^2} \approx 0,8647$
+		
+		\item $P(|X| \leq 2) \cup X \geq 0) = P(X \geq -2) = 1 - \frac{1}{2e^2} \approx 0,9323$
+		
+		\item $P(|X| \leq 2 \cap X \leq -1) = P(-2 \leq X \leq -1) = \frac{1}{2·e} - \frac{1}{2·e^2} \approx 0,1163$
+		
+		\item $P(X^3-X^2-X-2 \leq 0) = P(X \leq 2)$ (donde para aplicar esta igualdad hemos factorizado mediante el método de Ruffini, dando como resultado que $x^3-x^2-x-2 = (x-2)(x^2+x+1)$, siendo este segundo término siempre positivo y $x^3-x^2-x-2 \leq 0 \iff x-2 \leq 0 \iff x \leq 0)$. Por tanto, $P(X^3-X^2-X-2 \leq 0) = P(X \leq 2) = 1 - \frac{1}{2·e^2} \approx 0,9323$. 
+		
+		\item $P(X \in \mathbb{R} \backslash \mathbb{Q}) = 1 - P(X \in \mathbb{Q}) = 1$ (pues el conjunto $\mathbb{Q}$ es numerable, por lo que la suma de todas las probabilidades es 0). 
+	\end{enumerate}
