@@ -24,7 +24,7 @@ Si $4 < x \leq 6$, tenemos que:
 \begin{equation*}
 \begin{split}
 F(x) & = \int_{-\infty}^x f(t) dt = \int_{-\infty}^0 0 dt + \int_0^4 k_1(t+1)dt + \int_4^x k_2·t^2 dt \\
-& = k_1(\frac{4^2}{2} + 4) + k_2\frac{x^3}{3} 
+& = k_1(\frac{4^2}{2} + 4) + k_2(\frac{x^3}{3} - \frac{4^3}{3}) 
 \end{split}
 \end{equation*}
 
@@ -34,7 +34,7 @@ $$P(0 \leq X \leq 4) = F(4) - F(0^-) = F(4) - F(0) = k_1(\frac{4^2}{2} + 4) = 2/
 
 Por otra parte, para que se verifique que se trate, en efecto, de una función de distribución, se ha de verificar que: 
 
-$$F(+\infty) = k_2\frac{6^3}{3} + \frac{2}{3} = 1 \Rightarrow k_2 = \frac{1}{216}$$
+$$F(+\infty) = k_2(\frac{6^3}{3} - \frac{4^3}{3}) + \frac{2}{3} = 1 \Rightarrow k_2 = \frac{1}{152}$$
 
 Por tanto, la función de distribución viene dado por la siguiente expresión: 
 
@@ -43,7 +43,7 @@ Por tanto, la función de distribución viene dado por la siguiente expresión:
 	\begin{array}{lcc}
 	0 & x < 0 \\
 	\frac{1}{18}(\frac{x^2}{2} + x) & 0 \leq x \leq 4 \\
-	\frac{x^3}{648} + \frac{2}{3} & 4 <x \leq 6 \\
+	\frac{x^3}{456} + \frac{10}{19} & 4 <x \leq 6 \\
 	1 & x > 6
 	\end{array}
 	\right.
