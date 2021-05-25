@@ -1,0 +1,41 @@
+\problem \\
+\subproblem \\
+Tenemos que la variable X puede tomar 3 valores: 0, 1, 2 (No sale ninguna bola blanca, sale una o salen dos). Por tanto: \\
+
+$P[X = 0] = \dfrac{2}{10}\cdot\dfrac{1}{9} = \dfrac{1}{45} \quad
+P[X = 1] = \dfrac{8}{10}\cdot\dfrac{2}{9} = \dfrac{16}{45} \quad 
+P[X = 2] = \dfrac{8}{10}\cdot\dfrac{7}{9} = \dfrac{28}{45}$ \\
+
+Ahora podemos definir la función de distribución: \\
+
+$$
+F(X) = \left\{
+     \begin{array}{lr}
+       0 & \mbox{si }  x < 0 \\
+       \\
+       \dfrac{1}{45} & \mbox{si }0 <= x < 1 \\
+       \\
+       \dfrac{17}{45}& \mbox{si }  1 <= x < 2 \\
+       \\
+       1 & \mbox{si } x >= 1 
+     \end{array}
+   \right.
+$$
+\\
+
+\subproblem \\
+\begin{itemize}
+\item Media: Es la esperanza matemática, es decir, el centro de gravedad de la distribución de probabilidad y se calcula como $$E[X] = \sum_i x_i \cdot P[X = x_i] = \dfrac{16}{45} + 2\cdot \dfrac{28}{45} = \dfrac{8}{5}$$
+
+\item Mediana: Es el valor de la variable que deja por debajo la el 50\% de la probabilidad. En nuestro caso, mirando a la función de distribución tenemos que $$ \mbox{Me} = 2 $$
+
+\item Moda: Es el valor de $x_i$ con mayor probabilidad, por lo que se calculará como el máximo de los $P[X = x_i]$. Por tanto $$ \mbox{Mo} = 2$$
+\end{itemize} \\
+
+\subproblem \\
+Para el recorrido intercuartílico calculemos los percentiles 75 y 25: \\
+
+$$ P_{75} = \mbox{min}\{\ x_i\ /\ P[X < x_i] = F[x_i] > 0.75\} = x_2 = 2 $$
+$$ P_{25} = \mbox{min}\{\ x_i\ /\ P[X < x_i] = F[x_i] > 0.25\} = x_1 = 1 $$
+
+Por tanto el recorrido intercuartílico será $Q_3 - Q_1 = 2-1 = 1$, que indica la longitud del intervalo en el que se encuentra el 50\% de los datos.
