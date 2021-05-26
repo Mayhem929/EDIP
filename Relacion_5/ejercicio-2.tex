@@ -1,4 +1,11 @@
 \problem
+
+Sea $X$ el n{\'u}mero de bolas blancas obtenidas al sacar dos de una urna con 10 bolas de las que 8 son blancas.
+Calcular: \begin{itemize} \item [a)] Funci{\'o}n masa de probabilidad y  funci{\'o}n de
+	distribuci{\'o}n. \item [b)] Media, mediana y moda, dando la interpretaci{\'o}n de cada
+	una de estas medidas.\item [c)]Intervalo intercuart{\'\i}lico,  especificando  su
+	interpretaci{\'o}n.\end{itemize}
+
 \subproblem
 Tenemos que la variable X puede tomar 3 valores: 0, 1, 2 (No sale ninguna bola blanca, sale una o salen dos). Por tanto: \\
 
@@ -13,11 +20,11 @@ F(X) = \left\{
      \begin{array}{lr}
        0 & \mbox{si }  x < 0 \\
        \\
-       \dfrac{1}{45} & \mbox{si }0 <= x < 1 \\
+       \dfrac{1}{45} & \mbox{si }0 \leq x < 1 \\
        \\
-       \dfrac{17}{45}& \mbox{si }  1 <= x < 2 \\
+       \dfrac{17}{45}& \mbox{si }  1 \leq x < 2 \\
        \\
-       1 & \mbox{si } x >= 1 
+       1 & \mbox{si } x \geq 2
      \end{array}
    \right.
 $$
@@ -25,17 +32,25 @@ $$
 
 \subproblem
 \begin{itemize}
-\item Media: Es la esperanza matemática, es decir, el centro de gravedad de la distribución de probabilidad y se calcula como $$E[X] = \sum_i x_i \cdot P[X = x_i] = \dfrac{16}{45} + 2\cdot \dfrac{28}{45} = \dfrac{8}{5}$$
+\item Media: Es la esperanza matemática, es decir, el centro de gravedad de la distribución de probabilidad y se calcula como $$E[X] = \sum_i x_i \cdot P[X = x_i] = \dfrac{16}{45} + 2\cdot \dfrac{28}{45} = \dfrac{8}{5} \approx 2$$
 
-\item Mediana: Es el valor de la variable que deja por debajo la el 50\% de la probabilidad. En nuestro caso, mirando a la función de distribución tenemos que $$ \mbox{Me} = 2 $$
+De esta medida obtenemos que es esperable sacar 2 bolas blancas de la urna. 
+
+\item Mediana: Es el valor de la variable que deja por debajo al 50\% de la probabilidad. En nuestro caso, mirando a la función de distribución tenemos que $$ \mbox{Me} = 2 $$
+
+Como no hay ninguna probabilidad que deje debajo exactamente al 50\% de las probabilidades, únicamente se ha podido adoptar el valor 2, que es el máximo valor que puede tomar la variable estadística. 
+
+De esta medida podemos interpretar que la distribución de probabilidad no es uniforme, concentrando casi todas las probabilidades a la derecha $X=2$. 
 
 \item Moda: Es el valor de $x_i$ con mayor probabilidad, por lo que se calculará como el máximo de los $P[X = x_i]$. Por tanto $$ \mbox{Mo} = 2$$
+
+De esta medida podemos concluir que, después de realizar el experimento aleatorio, lo más común es que ambas bolas extraídas sean blancas. 
 \end{itemize}
 
 \subproblem
 Para el recorrido intercuartílico calculemos los percentiles 75 y 25: \\
 
-$$ P_{75} = \mbox{min}\{\ x_i\ /\ P[X < x_i] = F[x_i] > 0.75\} = x_2 = 2 $$
-$$ P_{25} = \mbox{min}\{\ x_i\ /\ P[X < x_i] = F[x_i] > 0.25\} = x_1 = 1 $$
+$$ Q_3 = P_{75} = \mbox{min}\{\ x_i\ /\ P[X < x_i] = F[x_i] > 0.75\} = x_2 = 2 $$
+$$ Q_1 = P_{25} = \mbox{min}\{\ x_i\ /\ P[X < x_i] = F[x_i] > 0.25\} = x_1 = 1 $$
 
 Por tanto el recorrido intercuartílico será $Q_3 - Q_1 = 2-1 = 1$, que indica la longitud del intervalo en el que se encuentra el 50\% de los datos.

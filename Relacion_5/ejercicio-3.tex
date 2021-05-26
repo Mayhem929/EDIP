@@ -1,4 +1,13 @@
 \problem 
+
+El n{\'u}mero de lanzamientos de una moneda hasta salir cara es  una variable aleatoria
+con distribuci{\'o}n  $P(X = x)  =  2^{-x};\ \ x = 1, 2, \ldots$
+\begin{enumerate}
+	\item [$a)$] Probar que la funci{\'o}n masa de probabilidad est{\'a} bien definida.
+	\item [$b)$] Calcular la probabilidad de que el n{\'u}mero de lanzamientos necesarios para salir cara est{\'e} entre $4$ y $10$.
+	\item [$c)$] Calcular los cuartiles y la moda de la distribuci{\'o}n, interpretando los valores.
+	\item [$d)$] Calcular la funci{\'o}n generatriz de momentos y, a partir de ella, el n{\'u}mero medio de lanzamientos necesarios para salir cara y la desviaci{\'o}n t{\'\i}pica.
+
 Sabemos que se trata de una variable aleatoria discreta. \\
 Para probar que la función masa de probabilidad está bien definida, comprobamos que cumple: \\
 \subproblem
@@ -9,11 +18,11 @@ $P(4\leq x \leq 10) = \sum^{10}_{i=4} p_i = \sum^{10}_{i=4} 2^{-x_i} = \frac{1}{
 \subproblem
 $Q_1: P(X\leq x_i) = \frac{25}{100} = 0'25 \Rightarrow \sum^{x_i}_{i=1} 2^{-x_i} = 0'25 < 0'5 = 2^{-1} \Rightarrow Q_1 = 1$ \\
 $Q_2: P(X \leq x_i) = \frac{50}{100} = 0'5 \Rightarrow 2^{-1} = 0'5 \Rightarrow Q_2 = [1,2)$ \\
-$Q_3: P(X \leq x_i) = \frac{75}{100 = 0'75} \Rightarrow \sum^2_{i=1} 2^{-x_i} = 0'5 + 0'25 = 0'75 \Rightarrow Q_3 = [2,3)$ \\
+$Q_3: P(X \leq x_i) = \frac{75}{100} = 0'75 \Rightarrow \sum^2_{i=1} 2^{-x_i} = 0'5 + 0'25 = 0'75 \Rightarrow Q_3 = [2,3)$ \\
 $M_o$: valor máximo. Cuanto mayor es $x_i$, menor es $\frac{1}{2^x_i}$. Por lo tanto, el valor máximo va a ser el primero, cuando $x_i = 1 \Rightarrow Mo = 1$ \\ \\
 \subproblem
-Función generatriz de momentos: $M_x(t) = \sum^\infty_{x=1} e^{tx}*P[X=x_i] = \sum^\infty_{x=1} e^{tx}*\frac{1}{2^x} = \sum^\infty_{x=1} (\frac{e^t}{2})^x = \frac{\frac{e^t}{2}}{1-\frac{e^t}{2}}$. Esto es una serie geométrica que converge si $\frac{e^t}{2} < 1 \Rightarrow e^t < 2 \Rightarrow t < log(2)$. Por lo tanto, converge en un entorno de cero. \\
+Función generatriz de momentos: $M_x(t) = \sum^\infty_{x=1} e^{tx}*P[X=x_i] = \sum^\infty_{x=1} e^{tx}*\frac{1}{2^x} = \sum^\infty_{x=1} (\frac{e^t}{2})^x = \frac{\frac{e^t}{2}}{1-\frac{e^t}{2}}$. Esto es una serie geométrica que converge si $\frac{e^t}{2} < 1 \Rightarrow e^t < 2 \Rightarrow t < log(2)$. Por lo tanto, converge en un entorno de cero, lo que implica que existe la función generatriz de momentos. \\
 Esperanza: $E[X] = M^{'} _x(t) = \frac{(\frac{e^t}{2})^{'}(1-\frac{e^t}{2})-(\frac{e^t}{2})(1-\frac{e^t}{2})^{'}}{(1-\frac{e^t}{2})^2} = \frac{\frac{e^t}{2}}{1 - e^t + \frac{e^t}{4}}$. Sustituimos t=0: $\frac{\frac{1}{2}}{\frac{1}{4}} = 2 = E[X]$ \\
-Desviación típica: $E[X^2] = M^{''}_x(t) = \frac{\frac{e^t}{2}-\frac{e^{3t}}{8}}{1-2e^t+\frac{3e^{2t}}{2}-\frac{e^{3t}}{2}+\frac{e^{4t}}{16}}$. Sustituimos t=0: $\frac{\frac{6}{16}}{\frac{1}{16}} = 6$ \\
+Momento de orden 2: $E[X^2] = M^{''}_x(t) = \frac{\frac{e^t}{2}-\frac{e^{3t}}{8}}{1-2e^t+\frac{3e^{2t}}{2}-\frac{e^{3t}}{2}+\frac{e^{4t}}{16}}$. Sustituimos t=0: $\frac{\frac{6}{16}}{\frac{1}{16}} = 6$ \\
 Varianza: $Var[X] = E[X^2]-E[X]^2 = 6-2^2 = 2 \Rightarrow \sigma_x = \sqrt{2} \simeq 1'414$
 

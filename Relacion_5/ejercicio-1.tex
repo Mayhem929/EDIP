@@ -1,7 +1,22 @@
 \problem
 
+Sea $X$ una variable aleatoria con funci{\'o}n masa de probabilidad
+$
+P(X = i)  = k  i ;\ \  i = 1, \ldots , 20.
+$
+\begin{itemize}\item [$a)$]      Determinar el valor de $k$, la funci{\'o}n de distribuci{\'o}n y las siguientes
+	probabilidades:
+	$$P(X=4) ,\  P(X<4) ,\  P(3 \leq X \leq 10) ,\
+	P(3< X \leq 10) ,\  P(3<X<10).$$
+	\item [$b)$] Supongamos que un jugador gana $20$  monedas si al observar esta variable obtiene un
+	valor menor que $4$, gana  $24$ monedas si obtiene el valor $4$ y, en caso
+	contrario, pierde una moneda. Calcular la ganancia esperada del jugador y decir
+	si el juego le es favorable.
+\end{itemize}
 
 \subproblem
+
+Nótese que la variable aleatoria X es discreta. 
 
 Para determinar el valor de k usaremos la siguiente característica de la función masa de probabilidad:
 \begin{equation*}
@@ -63,4 +78,4 @@ Ahora calculamos su esperanza matemática:
     E[Y] = \sum_i y_i \cdot P(Y=y_i) = \dfrac{120}{210} + \dfrac{96}{210} - \dfrac{20}{21} = \dfrac{8}{105} \approx 0.076
 \end{equation*}
 
-Al ser $E[Y] > 0$ vemos que el juego es favorable, aunque la ganancia será muy pequeña.
+Al ser $E[Y] > 0$ vemos que el juego es favorable, aunque la ganancia esperada será muy pequeña.
