@@ -1,16 +1,14 @@
 \problem
-\ vskip 0.75cm \ item Sea $ X $ une variable aleatoria con funci { \ ' o} n de densidad
-$$ f (x) = 1 , \ \ 0  \ leq x \ leq  1 . $$ Encontrar
-la distribuci { \ ' o} n de las variables:
-\ begin { itemize }
-\ item [ $ a) $ ]   $ Y = \ displaystyle \ frac {X} {1 + X} \ cdot $
-\ item [ $ b) $ ]   $ Z = \ left \ { \ begin {array} {} ll - 1 , et X < 3 / 4 \\  0 , et X = 3 / 4 \\  1 , & X> 3 / 4 . \ end {array} \ right . $
-	\ end { itemize }
-$$
-f_X (x) =   \ frac {1} {4}, \ \ - 2 <x < 2 .
-$$
+Sea $X$ una variable aleatoria  con funci{\'o}n de densidad
+$$f(x)=1, \ \ 0 \leq x \leq 1.$$ Encontrar
+la distribuci{\'o}n  de las variables:
 
-\subproblem\\ \\
+\begin{itemize}
+	\item [$a)$]  $Y=\displaystyle\frac{X}{1+X}\cdot$
+	\item [$b)$]  $Z=\left\{\begin{array}{ll}-1, & X<3/4\\ 0, & X=3/4\\ 1, & X>3/4.\end{array}\right.$
+\end{itemize}
+	
+	\subproblem\\ \\
 	Tenemos que $Y(1+X)= X \Rightarrow X = \frac{Y}{1-Y} $
 	\\ \\
 	\left\lbrace\begin{array}{c} $y=0$~~si~x~=~0\\ $y=\frac{1}{2}$~~si~x~=~1 \end{array}\right.\\ \\
@@ -19,14 +17,12 @@ $$
 	$f_{y}(y) = f(\frac{y}{1-y}) . |\frac{1-y-y(-1)}{(1-y)^{2}}| = \frac{1}{(1-y)^{2}}$\\ \\ \\
 	f_{y}(y)=	\left\lbrace\begin{array}{c} \frac{1}{(1-y)^{2}}~~si~0~<=~y~<=~0.5\\0~~~en~otro~caso \end{array}\right.\\ \\
 	
-\subproblem\\ \\
- \begin{equation}
+	\subproblem\\ \\
+	\begin{equation}
 	P(Z= -1) = P(X < \frac{3}{4}) = \int_{0}^{\frac{3}{4}}  \cdot dx = \frac{3}{4}
-\end{equation}\\ 
-$P(Z = 0) = 0$\\ 
-
-\begin{equation}
-P(Z = 1) = P(X > \frac{3}{4}) =  \int_{\frac{3}{4}}^{1}  \cdot dx = \frac{1}{4}
-\end{equation}\\ 
+	\end{equation}\\ 
+	$P(Z = 0) = 0$\\ 
 	
-\end{document}
+	\begin{equation}
+	P(Z = 1) = P(X > \frac{3}{4}) =  \int_{\frac{3}{4}}^{1}  \cdot dx = \frac{1}{4}
+	\end{equation}\\ 
